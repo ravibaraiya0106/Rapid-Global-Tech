@@ -1,0 +1,88 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.6 Background
+/*----------------------------------------*/
+.grey-bg {
+	background-color: var(--tp-grey-1);
+}
+.grey-bg-2 {
+	background-color: var(--tp-grey-3);
+}
+.grey-bg-3 {
+	background-color: var(--tp-grey-4);
+}
+.grey-bg-4 {
+	background-color: var(--tp-grey-5);
+}
+.theme-bg{
+	background-color: var(--tp-theme-1);
+}
+.white-bg {
+	background-color: var(--tp-common-white);
+}
+.black-bg{
+	background-color: var(--tp-common-black);
+}
+.black-bg-2{
+	background-color: var(--tp-common-black-2);
+}
+.black-bg-3{
+	background-color: var(--tp-common-black-3);
+}
+.black-bg-4{
+	background-color: var(--tp-common-black-4);
+}
+.pink-bg{
+	background-color: var(--tp-common-pink);
+}
+.purple-bg{
+	background-color: var(--tp-common-purple-4);
+}
+.purple-bg-2{
+	background-color: var(--tp-common-purple-2);
+}
+.yellow-bg{
+	background-color: var(--tp-common-yellow);
+}
+.gradient-bg{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: linear-gradient(180deg, #171b23 0%, #141820 100%);
+}
+.gradient-bg-2{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background: linear-gradient(180deg, #f8f9fd 0%, #fff 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[data-bg-color = "footer-bg-grey"] {
+	background-color: var(--tp-footer-grey-1);
+}
+[data-bg-color = "footer-bg-white"] {
+	background-color : var(--tp-common-white);
+}

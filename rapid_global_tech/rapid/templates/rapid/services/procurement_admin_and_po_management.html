@@ -1,0 +1,347 @@
+{% extends 'rapid/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'rapid/css/procurement_admin_and_po_management.css' %}">
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <h1 class="clr-white">Procurement Admin & Purchase Order Management Service</h1>
+    <h2 class="clr-white">Smarter Procurement Starts with Streamlined Administration</h2>
+    <p class="clr-white">In today's competitive and fast-paced business environment, efficient procurement is the
+      backbone of a responsive supply chain. Our service eliminates bottlenecks by acting as your extended procurement
+      arm.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary">
+        Get Started
+        <i data-lucide="arrow-right"></i>
+      </button>
+      <button class="btn-secondary">Learn More</button>
+    </div>
+  </div>
+  <div class="hero-gradient"></div>
+</section>
+
+<section id="core-capabilities" class="features">
+  <div class="container">
+    <div class="section-header">
+      <h2>Core Service Capabilities</h2>
+      <div class="accent-bar"></div>
+      <p>Our comprehensive procurement administration services streamline your purchasing processes from start to
+        finish.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-file-lines fa-2x"></i>
+        </div>
+        <h3>PO Creation & Issuance</h3>
+        <p>We handle the entire purchase order creation process with precision and efficiency.</p>
+        <ul>
+          <li>Generate POs based on approved requisitions</li>
+          <li>Ensure accurate item descriptions and pricing</li>
+          <li>Issue POs through preferred communication channels</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-box-taped fa-2x"></i>
+        </div>
+        <h3>PO Tracking & Follow-ups</h3>
+        <p>We maintain real-time visibility of your procurement pipeline.</p>
+        <ul>
+          <li>End-to-end tracking from issuance to fulfillment</li>
+          <li>Regular vendor follow-ups for delivery confirmation</li>
+          <li>Proactive alerts for potential delivery issues</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-circle-check fa-2x"></i>
+        </div>
+        <h3>Supplier Confirmation</h3>
+        <p>We ensure clear communication with suppliers to prevent misalignments.</p>
+        <ul>
+          <li>Rapid confirmation of order acceptance</li>
+          <li>Escalation support for unresponsive vendors</li>
+          <li>Centralized logging of all communications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="admin-financial">
+  <div class="container">
+    <div class="section-header">
+      <h2>Administrative & Financial Coordination</h2>
+      <div class="accent-bar"></div>
+      <p>We bridge the gap between procurement and finance to ensure seamless operations.</p>
+    </div>
+
+    <div class="admin-grid">
+      <div class="admin-content">
+        <div class="admin-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fa-solid fa-circle-dollar fa-2x"></i>
+            </div>
+            <div>
+              <h3>Cost Sheet Management & Updates</h3>
+              <p>Keep your cost data accurate and current with our detailed management.</p>
+            </div>
+          </div>
+          <ul>
+            <li>Maintain detailed cost sheets with updated supplier rates</li>
+            <li>Adjust PO values to reflect negotiated price changes</li>
+            <li>Align cost tracking with your budgeting standards</li>
+          </ul>
+        </div>
+
+        <div class="admin-card">
+          <div class="card-header">
+            <div class="card-icon">
+              <i class="fa-solid fa-file-lines fa-2x"></i>
+            </div>
+            <div>
+              <h3>Invoice Matching & Finance Coordination</h3>
+              <p>We bridge procurement and finance teams for seamless transaction processing.</p>
+            </div>
+          </div>
+          <ul>
+            <li>PO-to-invoice matching to confirm vendor billing accuracy</li>
+            <li>Timely submission of PO documents for payment processing</li>
+            <li>Support for resolving discrepancies between PO, GRN, and invoices</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="admin-image">
+        <img
+          src="https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Financial coordination">
+        <div class="image-overlay">
+          <div class="stat-badge">99.8% Invoice Accuracy Rate</div>
+          <p>Eliminate discrepancies between procurement and finance</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="monitoring">
+  <div class="container">
+    <div class="section-header light">
+      <h2>Monitoring, Reporting & Exception Management</h2>
+      <div class="accent-bar"></div>
+      <p>Stay informed with actionable insights and proactive alerts on your procurement activities.</p>
+    </div>
+
+    <div class="monitoring-grid">
+      <div class="monitoring-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-chart-column fa-2x"></i>
+        </div>
+        <h3>PO Status Dashboards & Analytics</h3>
+        <p>Stay informed with regular, actionable updates on your procurement activities.</p>
+
+        <div class="metrics">
+          <div class="metric">
+            <div class="metric-header">
+              <span>Open POs</span>
+              <span>42</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" style="width: 65%"></div>
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-header">
+              <span>Delivered</span>
+              <span>79%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress green" style="width: 79%"></div>
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metric-header">
+              <span>On-time Delivery</span>
+              <span>92%</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress orange" style="width: 92%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="monitoring-card">
+        <div class="card-icon orange">
+          <i class="fa-solid fa-bell fa-2x"></i>
+        </div>
+        <h3>Exception Alerts & Escalation Protocols</h3>
+        <p>We minimize procurement risks through automated alerts and established escalation paths.</p>
+
+        <div class="alerts">
+          <div class="alert critical">
+            <div class="alert-content">
+              <div class="alert-header">
+                <span class="alert-badge critical">Critical</span>
+                <h4>Delayed Deliveries</h4>
+              </div>
+              <p>Automatic alerts when shipments are delayed beyond threshold</p>
+            </div>
+          </div>
+
+          <div class="alert warning">
+            <div class="alert-content">
+              <div class="alert-header">
+                <span class="alert-badge warning">Warning</span>
+                <h4>PO Amendments</h4>
+              </div>
+              <p>Notification for any changes to purchase order terms</p>
+            </div>
+          </div>
+
+          <div class="alert info">
+            <div class="alert-content">
+              <div class="alert-header">
+                <span class="alert-badge info">Escalation</span>
+                <h4>Supplier Responses</h4>
+              </div>
+              <p>Escalation protocols for unresponsive suppliers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="container">
+    <div class="section-header">
+      <h2>Why This Service Matters</h2>
+      <div class="accent-bar"></div>
+      <p>Manual PO administration may seem routine — but it can silently drain productivity, increase costs, and erode
+        vendor relationships. Our service eliminates these pain points.</p>
+    </div>
+
+    <div class="benefits-container">
+      <div class="benefits-card">
+        <div class="card-header">
+          <h3 style="color: white;">Key Benefits</h3>
+        </div>
+
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2"></i>
+            <div>
+              <h4>Reduced Procurement Turnaround Times</h4>
+              <p>Eliminate bottlenecks and accelerate your procurement cycle with streamlined processes.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2"></i>
+            <div>
+              <h4>Improved Vendor Communication & Compliance</h4>
+              <p>Build stronger supplier relationships with consistent and clear communication.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2"></i>
+            <div>
+              <h4>Real-Time Visibility of PO Lifecycles</h4>
+              <p>Gain complete transparency into your procurement pipeline from order to delivery.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2"></i>
+            <div>
+              <h4>Accurate Documentation for Finance & Audit</h4>
+              <p>Maintain precise records that satisfy compliance requirements and simplify audits.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <i data-lucide="check-circle-2"></i>
+            <div>
+              <h4>End-to-End Support for Scalable Operations</h4>
+              <p>Enable your procurement function to scale efficiently with your business growth.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="benefits-cta">
+          <button class="btn-primary">
+            Schedule a Consultation
+            <i data-lucide="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-card">
+      <div class="cta-content">
+        <div class="cta-text">
+          <h2>Ready to streamline your procurement process?</h2>
+          <p>Let our experts show you how our Procurement Admin & PO Management Service can transform your operations
+            and deliver measurable results.</p>
+
+          <div class="cta-buttons">
+            <button class="btn-primary">
+              <i data-lucide="calendar"></i>
+              Schedule Demo
+            </button>
+            <button class="btn-outline">
+              <i data-lucide="message-square"></i>
+              Contact Sales
+            </button>
+          </div>
+        </div>
+
+        <div class="cta-stats">
+          <div class="stat-item">
+            <div class="stat-icon">%</div>
+            <div>
+              <p>Average cost reduction</p>
+              <span>23%</span>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">↓</div>
+            <div>
+              <p>Processing time reduction</p>
+              <span>67%</span>
+            </div>
+          </div>
+
+          <div class="stat-item">
+            <div class="stat-icon">↑</div>
+            <div>
+              <p>Supplier compliance</p>
+              <span>94%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="{% static 'js/procurement_admin_and_po_management.js' %}"></script>
+
+{% endblock %}

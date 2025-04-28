@@ -1,0 +1,118 @@
+{% extends 'rapid/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'rapid/css/logistic_coordination_and_tracking.css' %}">
+
+<div class="hero">
+   <div class="container fade-in">
+      <h1>Logistic Coordination & Tracking</h1>
+      <p class="subtitle clr-white">Streamlined Auto Parts Movement, Global Transparency, and End-to-End Control</p>
+      <button class="btn-primary">
+         Get Started
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+         </svg>
+      </button>
+   </div>
+</div>
+<!-- Overview Section -->
+<section class="overview">
+   <div class="container">
+      <div class="overview-content fade-in">
+         <h2 class="clr-black">Overview</h2>
+         <p class="clr-black">In today's fast-paced and highly competitive automotive market, logistics excellence is
+            non-negotiable. Auto parts must move seamlessly — from factories and suppliers, through customs and
+            warehouses, and finally to the customer — without delay or error. That's where our Logistic Coordination &
+            Tracking service comes in.</p>
+         <p class="clr-black">We offer a comprehensive, end-to-end logistics solution tailored specifically for the auto
+            parts industry. Whether your parts are traveling across borders or across the city, we manage each step of
+            the journey with precision, clarity, and efficiency.</p>
+         <p class="clr-black">Our logistics professionals act as an extension of your team — ensuring that every
+            component is picked up, moved, tracked, and delivered according to schedule. We collaborate closely with
+            suppliers, freight forwarders, third-party logistics (3PL) providers, and customs teams to eliminate
+            confusion, reduce risks, and create a seamless supply chain experience.</p>
+      </div>
+   </div>
+</section>
+
+<!-- Why It Matters Section -->
+<section class="why-matters">
+   <div class="container">
+      <div class="section-header">
+         <h2 class="why">Why It Matters</h2>
+      </div>
+      <div class="challenges-grid">
+         <div class="challenge-card fade-up">
+            <p class="clr-black">Delays disrupt production and reduce customer satisfaction</p>
+         </div>
+         <div class="challenge-card fade-up">
+            <p class="clr-black">Lack of visibility causes inventory mismanagement and wasted time</p>
+         </div>
+         <div class="challenge-card fade-up">
+            <p class="clr-black">Poor coordination leads to communication breakdowns across your supply chain</p>
+         </div>
+      </div>
+      <p class="solution-text">We eliminate these challenges by offering a reliable, fully-managed logistics
+         coordination solution built for modern auto parts distribution.</p>
+   </div>
+</section>
+
+<!-- Key Offerings Section -->
+<section class="key-offerings">
+   <div class="container">
+      <div class="section-header">
+         <h2 class="clr-black">Key Offerings</h2>
+      </div>
+      <div class="offerings-grid">
+         <div class="offering-card fade-up">
+            <div class="emoji">🚚</div>
+            <h3>Shipment Scheduling & Real-Time Tracking</h3>
+            <p>We take the guesswork out of logistics planning. Our team manages your shipment schedules based on your
+               delivery priorities and warehouse needs. Using advanced tracking systems, we provide real-time updates on
+               the exact location, condition, and status of your auto parts.</p>
+         </div>
+         <div class="offering-card fade-up">
+            <div class="emoji">🔗</div>
+            <h3>Supplier, 3PL & Customer Coordination</h3>
+            <p>We act as your logistics command center — aligning the efforts of every party involved in the movement of
+               goods. From coordinating with manufacturers and 3PL providers to updating your end customers, our team
+               ensures that every stakeholder is on the same page.</p>
+         </div>
+         <div class="offering-card fade-up">
+            <div class="emoji">⚠️</div>
+            <h3>Delay Alerts & Exception Management</h3>
+            <p>Shipping delays can happen, but they don't have to derail your operations. We proactively monitor every
+               shipment and use predictive logistics tools to identify potential disruptions before they impact your
+               delivery timelines.</p>
+         </div>
+         <div class="offering-card fade-up">
+            <div class="emoji">📄</div>
+            <h3>Customs Documentation & Compliance Support</h3>
+            <p>Cross-border shipments demand a deep understanding of regulatory requirements. Our team handles all
+               aspects of customs documentation, ensuring your shipments comply with import/export laws and reach their
+               destination without holdups.</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+<!-- Benefits Section -->
+<section class="benefits">
+   <div class="container">
+      <div class="section-header">
+         <h2 class="why">Benefits at a Glance</h2>
+      </div>
+      <div class="benefits-grid">
+         <div class="benefit-item fade-up">✔️ Increased supply chain visibility</div>
+         <div class="benefit-item fade-up">✔️ Faster, more reliable deliveries</div>
+         <div class="benefit-item fade-up">✔️ Reduced operational delays and penalties</div>
+         <div class="benefit-item fade-up">✔️ Streamlined international shipping compliance</div>
+         <div class="benefit-item fade-up">✔️ Complete coordination across all logistics partners</div>
+      </div>
+   </div>
+</section>
+<script src="{% static 'js/logistic_coordination_and_tracking.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,281 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.6 faq css
+/*----------------------------------------*/
+
+.tp-faq{
+    &-form{
+        &-box{
+            padding: 80px;
+            margin-left: 75px;
+            border-radius: 20px;
+            background-color: #eff1f2;
+            @media #{$xl}{
+                margin-left: 30px;
+            }
+            @media #{$lg,$md}{
+                padding: 40px;
+                margin-left: 0px;
+            }
+            @media #{$xs}{
+                padding: 20px;
+                margin-left: 0px;
+            }
+        }
+        &-wrap{
+            padding: 40px 50px;
+            border-radius: 10px;
+            background-color: var(--tp-common-white);
+            @media #{$xs}{
+                padding: 30px 20px;
+            }
+        }
+        &-content{
+            & p{
+                font-weight: 400;
+                font-size: 17px;
+                letter-spacing: -0.02em;
+                margin-bottom: 0;
+                color: var(--tp-common-black-3);
+                @media #{$xs}{
+                    font-size: 14px;
+                }
+            }
+        }
+        &-title{
+            font-weight: 800;
+            font-size: 26px;
+            line-height: 1.23;
+            letter-spacing: -0.02em;
+            color: var(--tp-common-black-3);
+            @media #{$md}{
+                font-size: 23px;
+            }
+            @media #{$xs}{
+                font-size: 20px;
+            }
+        }
+    }
+    &-input{
+        & input{
+            height: 46px;
+            border-radius: 30px;
+            color: var(--tp-common-black-3);
+            border: 1px solid rgba(1, 17, 22, 0.16);
+            @include tp-placeholder{
+                font-weight: 500;
+                font-size: 14px;
+                color: #848788;
+                letter-spacing: -0.02em;
+            }
+            &:focus{
+                border-color: var(--tp-common-blue);
+                box-shadow: 0 0 0 3px rgba(39, 125, 255, 0.1);
+            }
+        }
+    }
+    &-remeber{
+        & input{
+            display: none;
+            &:checked{
+                & ~ label{
+                    &::after{
+                        background-color: var(--tp-common-paste);
+                        border-color: var(--tp-common-paste);
+                    }
+                    &::before{
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        & label{
+            position: relative;
+            padding-left: 26px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1;
+            z-index: 1;
+            color: #4d5051;
+            letter-spacing: -0.02em;
+            &::after{
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                z-index: -1;
+                transition: .3s;
+                line-height: 16px;
+                border-radius: 4px;
+                text-align: center;
+                border: 1px solid #a1a5a7;
+            }
+            &::before{
+                position: absolute;
+                content: url('../img/home-03/faq/check.svg');
+                top: -1px;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+                visibility: hidden;
+                opacity: 0;
+                color: var(--tp-common-black);
+                transition: .3s;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    &-title-box{
+        @media #{$md,$xs}{
+            margin-bottom: 40px;
+        }
+    }
+    &-wrapper{
+        @media #{$md,$xs}{
+            margin-bottom: 40px;
+        }
+    }
+    &-style-2{
+        & .accordion-items:not(:last-child) {
+            box-shadow: none;
+        }
+        & .accordion-header .accordion-buttons {
+            padding-right: 60px;
+        }
+        @media #{$xs}{
+            & .accordion-body {
+                padding-right: 0;
+                & p{
+                    & br{
+                        display: none;
+                    }
+                }
+            }
+        }
+        & .accordion-items{
+            padding: 0px 30px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            transition: 0.3s;
+            border: 1px solid rgba(10, 11, 15, 0.1);
+            &.active{
+                border-radius: 10px;
+                background: var(--tp-common-white);
+                box-shadow: 0 6px 20px 0 rgba(20, 24, 32, 0.14), 0 1px 4px 0 rgba(20, 24, 32, 0.06);
+                & .accordion-buttons{
+                    cursor: pointer;
+                    pointer-events: none;
+                    color: var(--tp-common-blue);
+                }
+                & .accordion-icon::after {
+                    background-color: var(--tp-common-black);
+                } 
+                & .accordion-icon::before {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                } 
+                & .accordion-header .accordion-buttons .accordion-icon {
+                    background-color: #e8ebf0;
+                    border-color: #e8ebf0;
+                } 
+            }
+        }
+        & .accordion-header 
+          .accordion-buttons 
+          .accordion-icon {
+            position: absolute;
+            top: 20px;
+            right: 0px;
+            height: 34px;
+            width: 34px;
+            border-radius: 50%;
+            border: 1px solid rgba(10, 11, 15, 0.14);
+        }
+        & .accordion-header 
+          .accordion-buttons:not(.collapsed) 
+          .accordion-icon::after {
+            background-color: var(--tp-common-black);
+        }
+        & .accordion-header 
+          .accordion-buttons:not(.collapsed) 
+          .accordion-icon{
+            background-color: #e8ebf0;
+            border-color: #e8ebf0;
+        }
+    }
+    &-4{
+        &-area{
+            @media #{$xs}{
+                padding-top: 70px;
+                padding-bottom: 70px;
+            }
+        }
+        &-nav{
+            & nav{
+                & button{
+                    height: 30px;
+                    transition: .3s;
+                    padding: 0 12px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-left: 8px;
+                    border-radius: 6px;
+                    letter-spacing: -0.02em;
+                    color: var(--tp-common-black);
+                    background-color: #dbdde3;
+                    @media #{$xs}{
+                        margin-left: 0;
+                        margin-right: 8px;
+                    }
+                    &:hover{
+                        color: var(--tp-common-white);
+                        background-color: var(--tp-common-black);
+                    }
+                    &.active{
+                        color: var(--tp-common-white);
+                        background-color: var(--tp-common-black); 
+                    }
+                }
+            }
+        }
+        &-contact{
+            &-info{
+                padding: 20px 30px;
+                border-radius: 10px;
+                background: linear-gradient(180deg, #dde0e7 0%, rgba(221, 224, 231, 0) 100%); 
+            }
+            &-icon{
+                & span{
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    border-radius: 50%;
+                    text-align: center;
+                    margin-right: 11px;
+                    display: inline-block;
+                    background-color: var(--tp-common-white);
+                }
+            }
+            &-title{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.37;
+                letter-spacing: -0.02em;
+                color: var(--tp-common-black);
+            }
+        }
+    }
+}
+
+.pr-faq{
+    &-title-box{
+        padding-right: 60px;
+    }
+}

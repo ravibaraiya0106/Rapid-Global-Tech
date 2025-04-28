@@ -1,0 +1,207 @@
+{% extends 'rapid/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="min-h-screen bg-gray-50">
+   <!-- Hero Section -->
+   <div class="hero-section"
+      style="background-image: linear-gradient(135deg, #1d4ed8, #312e81), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');">
+      <div class="container">
+         <div class="hero-content mt-100">
+            <h1>Website Development Process</h1>
+            <p>Leveraging Agile SDLC for Efficient and Flexible Web Development</p>
+            <a href="#process" class="btn btn-primary">Explore Our Process</a>
+         </div>
+      </div>
+   </div>
+   <br><br><br>
+   <!-- Agile Overview Section -->
+   <div class="container section con-sec">
+      <div class="text-center section-header">
+         <h2>Our Web Development Process?</h2>
+         <hr>
+      </div>
+
+      <div class="benefits-grid">
+         <div class="benefit-card">
+            <div class="icon-container">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" />
+                  <path d="m9 12 2 2 4-4" />
+               </svg>
+            </div>
+            <h3>Iterative Development</h3>
+            <p>Regular releases and continuous improvement based on feedback</p>
+         </div>
+
+         <div class="benefit-card">
+            <div class="icon-container">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+               </svg>
+            </div>
+            <h3>Client Collaboration</h3>
+            <p>Close partnership and regular communication throughout the project</p>
+         </div>
+
+         <div class="benefit-card">
+            <div class="icon-container">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12a9 9 0 1 1-9-9c2.52 0 4.93 1 6.74 2.74L21 8" />
+                  <path d="M21 3v5h-5" />
+               </svg>
+            </div>
+            <h3>Rapid Adaptation</h3>
+            <p>Quick response to changes and evolving requirements</p>
+         </div>
+      </div>
+   </div>
+
+   <!-- Development Process Section -->
+   <div id="process" class="process-section">
+      <div class="container">
+         <div class="text-center section-header">
+            <h2>Agile Development Process</h2>
+            <p>A systematic approach to delivering high-quality web solutions</p>
+         </div>
+
+         <div class="process-timeline">
+            <div class="process-step">
+               <div class="step-number">1</div>
+               <div class="step-content">
+                  <h3>Project Planning</h3>
+                  <p>Requirements gathering, scope definition, and sprint planning</p>
+                  <ul class="step-details">
+                     <li>Stakeholder interviews</li>
+                     <li>Project scope documentation</li>
+                     <li>Sprint schedule creation</li>
+                     <li>Resource allocation</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="process-step">
+               <div class="step-number">2</div>
+               <div class="step-content">
+                  <h3>Design Sprint</h3>
+                  <p>UI/UX design, prototyping, and design system creation</p>
+                  <ul class="step-details">
+                     <li>Wireframe development</li>
+                     <li>Interactive prototypes</li>
+                     <li>Design system setup</li>
+                     <li>Client feedback integration</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="process-step">
+               <div class="step-number">3</div>
+               <div class="step-content">
+                  <h3>Development Sprints</h3>
+                  <p>Iterative development with regular deployments</p>
+                  <ul class="step-details">
+                     <li>Feature implementation</li>
+                     <li>Daily stand-ups</li>
+                     <li>Code reviews</li>
+                     <li>Sprint retrospectives</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="process-step">
+               <div class="step-number">4</div>
+               <div class="step-content">
+                  <h3>Testing & QA</h3>
+                  <p>Comprehensive testing and quality assurance</p>
+                  <ul class="step-details">
+                     <li>Unit testing</li>
+                     <li>Integration testing</li>
+                     <li>User acceptance testing</li>
+                     <li>Performance optimization</li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="process-step">
+               <div class="step-number">5</div>
+               <div class="step-content">
+                  <h3>Deployment & Support</h3>
+                  <p>Launch and continuous improvement</p>
+                  <ul class="step-details">
+                     <li>Production deployment</li>
+                     <li>Performance monitoring</li>
+                     <li>User feedback collection</li>
+                     <li>Continuous updates</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Technologies Section -->
+   <div class="container section">
+      <div class="text-center section-header">
+         <h2>Technologies We Use</h2>
+         <p>Modern tech stack for robust and scalable web solutions</p>
+      </div>
+
+      <div class="tech-grid">
+         <div class="tech-card">
+            <h3>Frontend</h3>
+            <ul>
+               <li>HTML5 & CSS3</li>
+               <li>JavaScript (ES6+)</li>
+               <li>React.js</li>
+               <li>Vue.js</li>
+            </ul>
+         </div>
+
+         <div class="tech-card">
+            <h3>Backend</h3>
+            <ul>
+               <li>Node.js</li>
+               <li>Python</li>
+               <li>PHP</li>
+               <li>Java</li>
+            </ul>
+         </div>
+
+         <div class="tech-card">
+            <h3>Database</h3>
+            <ul>
+               <li>PostgreSQL</li>
+               <li>MongoDB</li>
+               <li>MySQL</li>
+               <li>Redis</li>
+            </ul>
+         </div>
+
+         <div class="tech-card">
+            <h3>DevOps</h3>
+            <ul>
+               <li>Docker</li>
+               <li>Kubernetes</li>
+               <li>AWS</li>
+               <li>CI/CD</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <!-- CTA Section -->
+   <div class="container bg-blue">
+      <div class="cta-section">
+         <h2 class="clr-white">Ready to Start Your Project?</h2>
+         <p>Let's discuss how our Agile development process can help bring your vision to life</p>
+         <button class="btn-inq"><a href="contact.html">Schedule Consultation</a></button>
+      </div>
+   </div>
+</div>
+{% endblock %}

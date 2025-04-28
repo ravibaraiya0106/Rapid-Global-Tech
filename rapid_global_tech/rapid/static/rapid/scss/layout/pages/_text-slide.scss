@@ -1,0 +1,83 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.19 text slide css
+/*----------------------------------------*/
+
+.tp-text{
+    &-item{
+        & span{
+            font-weight: 800;
+            font-size: 140px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            color: rgba($color: #fff, $alpha: 0.06);
+            @media #{$xs}{
+                font-size: 90px;
+            }
+        }
+    }
+    &-wrapper{
+        & .text-transtion{
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+        }
+    }
+    &-active{
+        & .swiper-slide{
+            width: auto;
+        }
+    }
+    &-style-2{
+        & .tp-text-item span {
+            color: var(--tp-common-blue);
+        }
+    }
+    &-slider-3{
+        &-title{
+            font-weight: 800;
+            font-size: 60px;
+            line-height: 1;
+            margin-right: 55px;
+            color: var(--tp-common-black-3);
+        }
+        &-active{
+            & .swiper-slide{
+                width: auto;
+            }
+        }
+        &-wave-shape{
+            &-1{
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+            &-2{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+.slider-transtion{
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.tp-text{
+    &-inner-style{
+        & .tp-text-slider-3-title {
+            color: var(--tp-common-blue);
+        }
+        & .tp-text-item span {
+            color: #bfcee3;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+{% extends 'rapid/main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'rapid/css/freelance_project_support.css' %}">
+
+<section class="hero">
+   <div class="container">
+      <h1 class="heading">Freelance Project Support</h1>
+      <p class="subtitle">A perfect fit for urgent projects, pilot tools, automation ideas, or POCs — without any
+         long-term
+         obligation.</p>
+      <p class="description">
+         When you need specialized support for short-term or one-off projects, our freelance model delivers
+         the agility and expertise you're looking for — without the overhead of a full-time hire.
+      </p>
+      <p class="description">
+         At Rapid Global Tech, we connect you with highly skilled professionals who can take on focused
+         assignments and deliver quality results within tight timelines. Whether it's a technical challenge,
+         process automation, or building a pricing dashboard — we've got the right expert for the job.
+      </p>
+   </div>
+</section>
+
+<section class="projects">
+   <div class="container">
+      <h2>Ideal For Projects Like:</h2>
+      <div class="project-grid">
+         <div class="project-card">Automating Excel-based workflows</div>
+         <div class="project-card">Building Power BI dashboards or Python scripts</div>
+         <div class="project-card">Creating sales or stock analysis tools</div>
+         <div class="project-card">One-time price benchmarking or competitor study</div>
+         <div class="project-card">Data cleanup, structuring, and visual formatting</div>
+         <div class="project-card">Web-based tools (Flask/Django) for internal operations</div>
+      </div>
+   </div>
+</section>
+
+<section class="benefits">
+   <div class="container">
+      <h2 class="clr-blue"> Why Choose Our Freelance Support?</h2>
+      <div class="benefits-grid">
+         <div class="benefit-card">
+            <h3>Quick Onboarding</h3>
+            <p>Start your project within 1–2 days</p>
+         </div>
+         <div class="benefit-card">
+            <h3 class="clr-blue">No Contracts</h3>
+            <p>Pay only for the project scope you define</p>
+         </div>
+         <div class="benefit-card">
+            <h3 class="clr-blue">Expert Talent</h3>
+            <p>Specialists in Pricing, Automation, Data, CRM, and more</p>
+         </div>
+         <div class="benefit-card">
+            <h3 class="clr-blue">Flexible Delivery</h3>
+            <p>One-off or milestone-based delivery plans</p>
+         </div>
+         <div class="benefit-card">
+            <h3 class="clr-blue">Quality & Confidentiality</h3>
+            <p>100% professional output, NDAs available</p>
+         </div>
+      </div>
+   </div>
+</section>
+
+<section class="cta">
+   <div class="container">
+      <p>🚀 A perfect fit for urgent projects, pilot tools, automation ideas, or POCs — without any long-term
+         obligation.</p>
+      <p>Let us turn your business idea or challenge into a smart, functional solution.</p>
+      <button id="contactBtn" class="cta-button">Get Started Today</button>
+   </div>
+</section>
+
+<script src="{% static 'js/freelance_project_support.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,151 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.8 goal css
+/*----------------------------------------*/
+
+.tp-goal{
+    &-shape{
+        position: absolute;
+        top: 200px;
+        right: -59px;
+        @media #{$md,$xs}{
+            right: 30px;
+        }
+        & img{
+            animation: rotate 15s linear infinite;
+        }
+    }
+    &-left{
+        margin-right: 45px;
+        @media #{$md,$xs}{
+            margin-right: 0;
+        }
+    }
+    &-thumb{
+        @media #{$md,$xs}{
+            margin-bottom: 40px;
+        }
+    }
+    &-right{
+        &-thumb{
+            & img{
+                @media #{$md,$xs}{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &-text{
+        & p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.5;
+            padding-right: 60px;
+            color: rgba($color: #FFFFFF, $alpha: 0.8);
+            @media #{$lg,$xs}{
+                padding-right: 0;
+            }
+        }
+    }
+    &-content{
+        padding-left: 100px;
+        @media #{$xl}{
+            padding-left: 65px;
+        }
+        @media #{$lg}{
+            padding-left: 20px;
+        }
+        @media #{$md}{
+            padding-left: 20px;
+        }
+        @media #{$xs}{
+            padding-left: 0px;
+        }
+    }
+    &-list{
+        & ul{
+            & li{
+                position: relative;
+                padding-left: 90px;
+                list-style-type: none;
+                margin-bottom: 50px;
+                & > span{
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    line-height: 1;
+                    & > span{
+                        position: relative;
+                        display: inline-block;
+                        line-height: 1;
+                        & i{
+                            height: 60px;
+                            width: 60px;
+                            transition: .3s;
+                            text-align: center;
+                            border-radius: 50%;
+                            display: inline-block;
+                            background-color: rgba(255, 255, 255, 0.06);
+                        }
+                        & svg{
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            transform: translateY(-50%);
+                            color: var(--tp-theme-1);
+                            transition: .3s;
+                        }
+                    }
+                }
+                & p{
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 1.2;
+                    color: var(--tp-common-white);
+                }
+                &:hover{
+                    & span{
+                        & span{
+                            & i{
+                                transform: scale(1.1);
+                                background-color: var(--tp-theme-1);
+                            }
+                            & svg{
+                                color: var(--tp-common-black);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-style-2{
+        & .tp-goal-text p {
+            color: #525356;
+        }
+        & .tp-goal-list ul li p {
+            color: var(--tp-common-black);
+        }
+        & .tp-goal-list ul li > span > span{
+            & i {
+                &.tp-goal-color{
+                    &-1{
+                        background-color: #a5d3fa;
+                    }
+                    &-2{
+                        background-color: #fbcea0;
+                    }
+                    &-3{
+                        background-color: #ccdcb3;
+                    }
+                }
+            }
+            & svg {
+                color: var(--tp-common-black);
+            }
+        }
+    }
+}

@@ -1,0 +1,1270 @@
+{% extends 'rapid/main.html' %}
+{% load static %}
+{% block content %}
+<div id="smooth-wrapper">
+   <div id="smooth-content">
+      <!-- tp-hero-area-start -->
+      <div class="tp-hero-4-area tp-hero-4-bg" data-background="{% static 'rapid/img/home-04/hero/hero-bg.jpg' %}"
+         style="padding-top : 120px;">
+         <div class="container">
+            <div class="tp-hero-4-wrap p-relative">
+               <div class="tp-hero-4-scroll-nav smooth z-index-1">
+                  <a href="#service">
+                     Scroll Down
+                     <span>
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M7 1V13" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                           <path d="M13 7L7 13L1 7" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                              stroke-linejoin="round" />
+                        </svg>
+                     </span>
+                  </a>
+               </div>
+               <div class="row align-items-center">
+                  <div class="col-xl-7 col-lg-6">
+                     <div class="tp-hero-4-title-box">
+                        <!-- <span class="tp-hero-4-subtitle mb-10 tp-split-text tp-split-right"></span> -->
+                        <h6 class="tp-hero-4-subtitle mb-10 tp-split-text tp-split-right">
+                           <span class="tp-hero-4-subtitle mb-10 tp-split-text tp-split-right"
+                              style="margin-top: 0;">Welcome to Rapid Global Tech</span>
+                        </h6>
+                        <h6 class="tp-hero-4-title mb-30 tp_fade_anim" style="font-size : 70px;">Transforming businesses
+                           with innovative IT solutions.</h6>
+                        <a class="tp-btn-purple" href="service-details.html">
+                           What We Offer
+                           <span>
+                              <svg width="15" height="14" viewBox="0 0 15 14" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M1.5 7H13.5" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                 <path d="M7.5 1L13.5 7L7.5 13" stroke="currentcolor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                           </span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-6">
+                     <div class="tp-hero-4-thumb-wrap text-lg-end text-center p-relative">
+                        <div class="tp-hero-4-circle d-none d-sm-block">
+                           <span></span>
+                        </div>
+                        <div class="tp-hero-4-thumb p-relative">
+                           <img src="{% static 'rapid/img/home-04/hero/hero-img-1.png' %}" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-hero-area-end -->
+
+      <!-- tp-brand-area-start -->
+      <div class="tp-brand-4-area pt-80 pb-130">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6">
+               </div>
+            </div>
+            <div class="row">
+            </div>
+         </div>
+         <!-- tp-brand-area-end -->
+
+         <!-- service area start -->
+         <div id="service" class="tp-service-4-area pb-130">
+            <div class="container">
+               <div class="tp-service-4-title-wrap mb-60">
+                  <div class="row align-items-end">
+                     <!-- Title Section -->
+                     <div class="col-12 col-md-8 col-xl-6">
+                        <div class="tp-service-4-title-box">
+                           <span class="tp-section-2-subtitle mb-10">What we do.</span>
+                           <h4 class="tp-section-title display-4 display-md-5 display-lg-4 mb-0">How does it even work?
+                           </h4>
+                        </div>
+                     </div>
+
+                     <!-- Tab Section -->
+                     <div class="col-12 col-md-4 col-xl-6">
+                        <div class="tp-service-4-tab-wrap text-start text-md-end">
+                           <div class="tp-service-4-tab tp-marker-tab d-inline-flex justify-content-end p-relative">
+                              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                       data-bs-target="#home-tab-pane" type="button" role="tab"
+                                       aria-controls="home-tab-pane" aria-selected="true">Website</button>
+                                 </li>
+                                 <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                       data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                       aria-controls="profile-tab-pane" aria-selected="false">Desktop App</button>
+                                 </li>
+                              </ul>
+                              <span id="lineMarker"></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="row">
+                  <div class="col-xl-12">
+                     <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                           aria-labelledby="home-tab" tabindex="0">
+                           <div class="row">
+                              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                 <div class="tp-service-4-item text-center">
+                                    <div class="tp-service-4-icon">
+                                       <span>
+                                          <svg width="50" height="52" viewBox="0 0 50 52" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M44.0568 7.48062L28.9147 0.736434C26.6925 -0.245478 23.3333 -0.245478 21.1111 0.736434L5.96894 7.48062C2.14465 9.18605 1.57617 11.5116 1.57617 12.7519C1.57617 13.9922 2.14465 16.3178 5.96894 18.0233L21.1111 24.7674C22.2222 25.2584 23.6175 25.5168 25.0129 25.5168C26.4082 25.5168 27.8036 25.2584 28.9147 24.7674L44.0568 18.0233C47.8811 16.3178 48.4496 13.9922 48.4496 12.7519C48.4496 11.5116 47.9069 9.18605 44.0568 7.48062Z"
+                                                fill="#CE6868" />
+                                             <path opacity="0.4"
+                                                d="M25.0129 38.876C24.031 38.876 23.0491 38.6693 22.1447 38.2817L4.72868 30.5298C2.06718 29.3411 0 26.1629 0 23.243C0 22.1835 0.852713 21.3308 1.91214 21.3308C2.97158 21.3308 3.82429 22.1835 3.82429 23.243C3.82429 24.6383 4.98708 26.4471 6.27907 27.0156L23.6951 34.7675C24.522 35.1293 25.478 35.1293 26.3049 34.7675L43.7209 27.0156C45.0129 26.4471 46.1757 24.6641 46.1757 23.243C46.1757 22.1835 47.0284 21.3308 48.0879 21.3308C49.1473 21.3308 50 22.1835 50 23.243C50 26.137 47.9328 29.3411 45.2713 30.5298L27.8553 38.2817C26.9767 38.6693 25.9948 38.876 25.0129 38.876Z"
+                                                fill="#CE6868" />
+                                             <path opacity="0.4"
+                                                d="M25.0129 51.6923C24.031 51.6923 23.0491 51.4856 22.1447 51.098L4.72868 43.3461C1.86047 42.0799 0 39.2117 0 36.0592C0 34.9998 0.852713 34.1471 1.91214 34.1471C2.97158 34.1471 3.82429 34.9998 3.82429 36.0592C3.82429 37.6871 4.78036 39.16 6.27907 39.8318L23.6951 47.5838C24.522 47.9455 25.478 47.9455 26.3049 47.5838L43.7209 39.8318C45.1938 39.1859 46.1757 37.6871 46.1757 36.0592C46.1757 34.9998 47.0284 34.1471 48.0879 34.1471C49.1473 34.1471 50 34.9998 50 36.0592C50 39.2117 48.1395 42.0541 45.2713 43.3461L27.8553 51.098C26.9767 51.4856 25.9948 51.6923 25.0129 51.6923Z"
+                                                fill="#CE6868" />
+                                          </svg>
+                                       </span>
+                                    </div>
+                                    <div class="tp-service-4-content">
+                                       <span class="tp-service-4-subtitle mb-15">PLANNING</span>
+                                       <h4 class="tp-service-4-title"><a href="service-details.html">Set clear goals and
+                                             project requirements</a></h4>
+                                    </div>
+                                    <div class="tp-service-4-link">
+                                       <a href="service-details.html">
+                                          Learn More
+                                          <span>
+                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6H11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 1L11 6L6 11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                             </svg>
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                 <div class="tp-service-4-item text-center">
+                                    <div class="tp-service-4-icon">
+                                       <span>
+                                          <svg width="50" height="54" viewBox="0 0 50 54" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M23.8076 26.1913C31.0401 26.1913 36.9032 20.3282 36.9032 13.0956C36.9032 5.86312 31.0401 0 23.8076 0C16.575 0 10.7119 5.86312 10.7119 13.0956C10.7119 20.3282 16.575 26.1913 23.8076 26.1913Z"
+                                                fill="#95B05A" />
+                                             <path opacity="0.4"
+                                                d="M23.8079 32.7391C10.6861 32.7391 0 41.5394 0 52.3826C0 53.116 0.576208 53.6922 1.30956 53.6922H46.3063C47.0397 53.6922 47.6159 53.116 47.6159 52.3826C47.6159 41.5394 36.9298 32.7391 23.8079 32.7391Z"
+                                                fill="#95B05A" />
+                                             <path
+                                                d="M48.5058 33.368C46.1486 31.0108 44.2891 31.7703 42.6914 33.368L33.4196 42.6398C33.0529 43.0065 32.7124 43.6874 32.6339 44.185L32.1362 47.7207C31.9529 49.0041 32.8434 49.8946 34.1268 49.7113L37.6625 49.2137C38.1602 49.1351 38.8674 48.7946 39.2079 48.428L48.4796 39.1563C50.1034 37.5848 50.863 35.7252 48.5058 33.368Z"
+                                                fill="#95B05A" />
+                                          </svg>
+                                       </span>
+                                    </div>
+                                    <div class="tp-service-4-content">
+                                       <span class="tp-service-4-subtitle mb-15">DEVELOPMENT</span>
+                                       <h4 class="tp-service-4-title"><a href="service-details.html">User-friendly
+                                             interface makes it easy</a></h4>
+                                    </div>
+                                    <div class="tp-service-4-link">
+                                       <a href="service-details.html">
+                                          Learn More
+                                          <span>
+                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6H11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 1L11 6L6 11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                             </svg>
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                 <div class="tp-service-4-item text-center">
+                                    <div class="tp-service-4-icon">
+                                       <span>
+                                          <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path opacity="0.4"
+                                                d="M30.9302 49.2326C30.1628 49.2326 29.4419 48.7209 29.2326 47.9302C29 47 29.5349 46.0465 30.4651 45.7907C39.907 43.3023 46.4884 34.7442 46.4884 24.9767C46.4884 13.1163 36.8372 3.46512 24.9767 3.46512C14.907 3.46512 8.30233 9.34884 5.2093 12.907H12.0465C13 12.907 13.7907 13.6977 13.7907 14.6512C13.7907 15.6047 13.0465 16.4186 12.0698 16.4186H1.76744C1.60465 16.4186 1.44186 16.3953 1.27907 16.3488C1.06977 16.2791 0.883721 16.186 0.72093 16.0698C0.511628 15.9302 0.348837 15.7442 0.232558 15.5349C0.116279 15.3023 0.0232558 15.0698 0 14.814C0 14.7442 0 14.6977 0 14.6279V4.06977C0 3.11628 0.790698 2.32558 1.74419 2.32558C2.69767 2.32558 3.48837 3.11628 3.48837 4.06977V9.62791C7.27907 5.55814 14.4186 0 25 0C38.7907 0 50 11.2093 50 25C50 36.3488 42.3488 46.3023 31.3721 49.1861C31.2326 49.2093 31.0698 49.2326 30.9302 49.2326Z"
+                                                fill="#9D3CBF" />
+                                             <path
+                                                d="M23.3488 49.9535C23.3023 49.9535 23.2326 49.9535 23.186 49.9303C20.6977 49.7675 18.2558 49.2094 15.9302 48.3024C15.2558 48.0466 14.814 47.3721 14.814 46.6512C14.814 46.4419 14.8605 46.2326 14.9302 46.0466C15.2791 45.1628 16.3023 44.6977 17.186 45.0466C19.186 45.8373 21.3023 46.3024 23.4419 46.4652H23.4651C24.3953 46.5117 25.093 47.3024 25.093 48.2326C25.093 48.2559 25.093 48.3024 25.093 48.3256C25.0233 49.2326 24.2558 49.9535 23.3488 49.9535ZM10.5349 44.9535C10.1395 44.9535 9.76744 44.8373 9.44186 44.5814C7.48837 43.0233 5.7907 41.1861 4.37209 39.1163C4.16279 38.814 4.04651 38.4884 4.04651 38.1396C4.04651 37.5582 4.32558 37.0233 4.81395 36.6977C5.5814 36.1628 6.72093 36.3721 7.23256 37.1396C8.46512 38.9303 9.93023 40.5117 11.6279 41.8373C12.0233 42.1628 12.2791 42.6512 12.2791 43.1861C12.2791 43.5814 12.1628 43.9768 11.907 44.3024C11.5814 44.721 11.0698 44.9535 10.5349 44.9535ZM2.76744 33.6047C2 33.6047 1.32558 33.1163 1.11628 32.3954C0.372093 30 0 27.5117 0 25C0 24.0466 0.790698 23.2559 1.74419 23.2559C2.69767 23.2559 3.48837 24.0466 3.48837 25C3.48837 27.1628 3.81395 29.3024 4.44186 31.3489C4.48837 31.5117 4.51163 31.6977 4.51163 31.8838C4.51163 32.6512 4.02326 33.3024 3.30233 33.5349C3.11628 33.5814 2.95349 33.6047 2.76744 33.6047Z"
+                                                fill="#9D3CBF" />
+                                             <path opacity="0.4"
+                                                d="M24.9996 34.3023C30.1371 34.3023 34.3019 30.1375 34.3019 25C34.3019 19.8624 30.1371 15.6976 24.9996 15.6976C19.8621 15.6976 15.6973 19.8624 15.6973 25C15.6973 30.1375 19.8621 34.3023 24.9996 34.3023Z"
+                                                fill="#9D3CBF" />
+                                          </svg>
+                                       </span>
+                                    </div>
+                                    <div class="tp-service-4-content">
+                                       <span class="tp-service-4-subtitle mb-15">LAUNCH & SUPPORT</span>
+                                       <h4 class="tp-service-4-title"><a href="service-details.html">Deploy and enhance
+                                             performance</a></h4>
+                                    </div>
+                                    <div class="tp-service-4-link">
+                                       <a href="service-details.html">
+                                          Learn More
+                                          <span>
+                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6H11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 1L11 6L6 11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                             </svg>
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                           tabindex="0">
+                           <div class="row">
+                              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                 <div class="tp-service-4-item text-center">
+                                    <div class="tp-service-4-icon">
+                                       <span>
+                                          <svg width="50" height="52" viewBox="0 0 50 52" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M44.0568 7.48062L28.9147 0.736434C26.6925 -0.245478 23.3333 -0.245478 21.1111 0.736434L5.96894 7.48062C2.14465 9.18605 1.57617 11.5116 1.57617 12.7519C1.57617 13.9922 2.14465 16.3178 5.96894 18.0233L21.1111 24.7674C22.2222 25.2584 23.6175 25.5168 25.0129 25.5168C26.4082 25.5168 27.8036 25.2584 28.9147 24.7674L44.0568 18.0233C47.8811 16.3178 48.4496 13.9922 48.4496 12.7519C48.4496 11.5116 47.9069 9.18605 44.0568 7.48062Z"
+                                                fill="#CE6868" />
+                                             <path opacity="0.4"
+                                                d="M25.0129 38.876C24.031 38.876 23.0491 38.6693 22.1447 38.2817L4.72868 30.5298C2.06718 29.3411 0 26.1629 0 23.243C0 22.1835 0.852713 21.3308 1.91214 21.3308C2.97158 21.3308 3.82429 22.1835 3.82429 23.243C3.82429 24.6383 4.98708 26.4471 6.27907 27.0156L23.6951 34.7675C24.522 35.1293 25.478 35.1293 26.3049 34.7675L43.7209 27.0156C45.0129 26.4471 46.1757 24.6641 46.1757 23.243C46.1757 22.1835 47.0284 21.3308 48.0879 21.3308C49.1473 21.3308 50 22.1835 50 23.243C50 26.137 47.9328 29.3411 45.2713 30.5298L27.8553 38.2817C26.9767 38.6693 25.9948 38.876 25.0129 38.876Z"
+                                                fill="#CE6868" />
+                                             <path opacity="0.4"
+                                                d="M25.0129 51.6923C24.031 51.6923 23.0491 51.4856 22.1447 51.098L4.72868 43.3461C1.86047 42.0799 0 39.2117 0 36.0592C0 34.9998 0.852713 34.1471 1.91214 34.1471C2.97158 34.1471 3.82429 34.9998 3.82429 36.0592C3.82429 37.6871 4.78036 39.16 6.27907 39.8318L23.6951 47.5838C24.522 47.9455 25.478 47.9455 26.3049 47.5838L43.7209 39.8318C45.1938 39.1859 46.1757 37.6871 46.1757 36.0592C46.1757 34.9998 47.0284 34.1471 48.0879 34.1471C49.1473 34.1471 50 34.9998 50 36.0592C50 39.2117 48.1395 42.0541 45.2713 43.3461L27.8553 51.098C26.9767 51.4856 25.9948 51.6923 25.0129 51.6923Z"
+                                                fill="#CE6868" />
+                                          </svg>
+                                       </span>
+                                    </div>
+                                    <div class="tp-service-4-content">
+                                       <span class="tp-service-4-subtitle mb-15">STRATEGY</span>
+                                       <h4 class="tp-service-4-title"><a href="service-details.html">Define goals and
+                                             user experience</a></h4>
+                                    </div>
+                                    <div class="tp-service-4-link">
+                                       <a href="service-details.html">
+                                          Learn More
+                                          <span>
+                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6H11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 1L11 6L6 11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                             </svg>
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                 <div class="tp-service-4-item text-center">
+                                    <div class="tp-service-4-icon">
+                                       <span>
+                                          <svg width="50" height="54" viewBox="0 0 50 54" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M23.8076 26.1913C31.0401 26.1913 36.9032 20.3282 36.9032 13.0956C36.9032 5.86312 31.0401 0 23.8076 0C16.575 0 10.7119 5.86312 10.7119 13.0956C10.7119 20.3282 16.575 26.1913 23.8076 26.1913Z"
+                                                fill="#95B05A" />
+                                             <path opacity="0.4"
+                                                d="M23.8079 32.7391C10.6861 32.7391 0 41.5394 0 52.3826C0 53.116 0.576208 53.6922 1.30956 53.6922H46.3063C47.0397 53.6922 47.6159 53.116 47.6159 52.3826C47.6159 41.5394 36.9298 32.7391 23.8079 32.7391Z"
+                                                fill="#95B05A" />
+                                             <path
+                                                d="M48.5058 33.368C46.1486 31.0108 44.2891 31.7703 42.6914 33.368L33.4196 42.6398C33.0529 43.0065 32.7124 43.6874 32.6339 44.185L32.1362 47.7207C31.9529 49.0041 32.8434 49.8946 34.1268 49.7113L37.6625 49.2137C38.1602 49.1351 38.8674 48.7946 39.2079 48.428L48.4796 39.1563C50.1034 37.5848 50.863 35.7252 48.5058 33.368Z"
+                                                fill="#95B05A" />
+                                          </svg>
+                                       </span>
+                                    </div>
+                                    <div class="tp-service-4-content">
+                                       <span class="tp-service-4-subtitle mb-15" style="width: max-content;">DESIGN &
+                                          Development</span>
+                                       <h4 class="tp-service-4-title"><a href="service-details.html">Create an intuitive
+                                             and engaging app</a></h4>
+                                    </div>
+                                    <div class="tp-service-4-link">
+                                       <a href="service-details.html">
+                                          Learn More
+                                          <span>
+                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6H11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 1L11 6L6 11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                             </svg>
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                 <div class="tp-service-4-item text-center">
+                                    <div class="tp-service-4-icon">
+                                       <span>
+                                          <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path opacity="0.4"
+                                                d="M30.9302 49.2326C30.1628 49.2326 29.4419 48.7209 29.2326 47.9302C29 47 29.5349 46.0465 30.4651 45.7907C39.907 43.3023 46.4884 34.7442 46.4884 24.9767C46.4884 13.1163 36.8372 3.46512 24.9767 3.46512C14.907 3.46512 8.30233 9.34884 5.2093 12.907H12.0465C13 12.907 13.7907 13.6977 13.7907 14.6512C13.7907 15.6047 13.0465 16.4186 12.0698 16.4186H1.76744C1.60465 16.4186 1.44186 16.3953 1.27907 16.3488C1.06977 16.2791 0.883721 16.186 0.72093 16.0698C0.511628 15.9302 0.348837 15.7442 0.232558 15.5349C0.116279 15.3023 0.0232558 15.0698 0 14.814C0 14.7442 0 14.6977 0 14.6279V4.06977C0 3.11628 0.790698 2.32558 1.74419 2.32558C2.69767 2.32558 3.48837 3.11628 3.48837 4.06977V9.62791C7.27907 5.55814 14.4186 0 25 0C38.7907 0 50 11.2093 50 25C50 36.3488 42.3488 46.3023 31.3721 49.1861C31.2326 49.2093 31.0698 49.2326 30.9302 49.2326Z"
+                                                fill="#9D3CBF" />
+                                             <path
+                                                d="M23.3488 49.9535C23.3023 49.9535 23.2326 49.9535 23.186 49.9303C20.6977 49.7675 18.2558 49.2094 15.9302 48.3024C15.2558 48.0466 14.814 47.3721 14.814 46.6512C14.814 46.4419 14.8605 46.2326 14.9302 46.0466C15.2791 45.1628 16.3023 44.6977 17.186 45.0466C19.186 45.8373 21.3023 46.3024 23.4419 46.4652H23.4651C24.3953 46.5117 25.093 47.3024 25.093 48.2326C25.093 48.2559 25.093 48.3024 25.093 48.3256C25.0233 49.2326 24.2558 49.9535 23.3488 49.9535ZM10.5349 44.9535C10.1395 44.9535 9.76744 44.8373 9.44186 44.5814C7.48837 43.0233 5.7907 41.1861 4.37209 39.1163C4.16279 38.814 4.04651 38.4884 4.04651 38.1396C4.04651 37.5582 4.32558 37.0233 4.81395 36.6977C5.5814 36.1628 6.72093 36.3721 7.23256 37.1396C8.46512 38.9303 9.93023 40.5117 11.6279 41.8373C12.0233 42.1628 12.2791 42.6512 12.2791 43.1861C12.2791 43.5814 12.1628 43.9768 11.907 44.3024C11.5814 44.721 11.0698 44.9535 10.5349 44.9535ZM2.76744 33.6047C2 33.6047 1.32558 33.1163 1.11628 32.3954C0.372093 30 0 27.5117 0 25C0 24.0466 0.790698 23.2559 1.74419 23.2559C2.69767 23.2559 3.48837 24.0466 3.48837 25C3.48837 27.1628 3.81395 29.3024 4.44186 31.3489C4.48837 31.5117 4.51163 31.6977 4.51163 31.8838C4.51163 32.6512 4.02326 33.3024 3.30233 33.5349C3.11628 33.5814 2.95349 33.6047 2.76744 33.6047Z"
+                                                fill="#9D3CBF" />
+                                             <path opacity="0.4"
+                                                d="M24.9996 34.3023C30.1371 34.3023 34.3019 30.1375 34.3019 25C34.3019 19.8624 30.1371 15.6976 24.9996 15.6976C19.8621 15.6976 15.6973 19.8624 15.6973 25C15.6973 30.1375 19.8621 34.3023 24.9996 34.3023Z"
+                                                fill="#9D3CBF" />
+                                          </svg>
+                                       </span>
+                                    </div>
+                                    <div class="tp-service-4-content">
+                                       <span class="tp-service-4-subtitle mb-15">DEPLOYMENT</span>
+                                       <h4 class="tp-service-4-title"><a href="service-details.html">Deliver and monitor
+                                             performance</a></h4>
+                                    </div>
+                                    <div class="tp-service-4-link">
+                                       <a href="service-details.html">
+                                          Learn More
+                                          <span>
+                                             <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 6H11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M6 1L11 6L6 11" stroke="currentcolor" stroke-width="1.5"
+                                                   stroke-linecap="round" stroke-linejoin="round" />
+                                             </svg>
+                                          </span>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- service area end -->
+
+         <!-- cta area start -->
+         <div class="tp-cta-4-area tp-cta-4-bg purple-bg z-index-1">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-6" style="background-color: transparent;">
+                     <div class="tp-cta-4-left">
+                        <h4 class="tp-cta-4-stroke-text">How can We help you?</h4>
+                     </div>
+                  </div>
+                  <div class="col-xl-6">
+                     <div class="tp-cta-4-right d-flex align-items-center">
+                        <div class="tp-cta-4-content">
+                           <span>Available Field <br> Workspaces & Increasing</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- cta area end -->
+
+         <!-- feature area start -->
+         <div class="tp-feature-area pt-140 pb-80">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-6 col-lg-5">
+                     <div class="tp-feature-title-wrap p-relative">
+                        <div class="tp-feature-shape d-none d-xl-block">
+                           <span>
+                              <svg width="101" height="77" viewBox="0 0 101 77" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M1 1C4.53011 26.1547 15.254 80.3898 29.9088 46.0934C48.2272 3.22281 49.6583 110.106 64.8283 64.0051C79.9982 17.9045 84.6923 76 101 76"
+                                    stroke="#999950" stroke-width="2" />
+                              </svg>
+                           </span>
+                        </div>
+                        <div class="tp-feature-title-box mb-40">
+                           <span class="tp-section-2-subtitle mb-10">How it works.</span>
+                           <h4 clss="tp-section-title fs-44 mb-0 tp-split-text tp-split-right">Let's Create Your
+                              Website!</h4>
+                        </div>
+                        <div class="tp-feature-btn">
+                           <a class="tp-btn-border-radius-6 grey-border" href="service-2.html">
+                              See all stories
+                              <span>
+                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 7H13" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                                       stroke-linejoin="round" />
+                                    <path d="M7 1L13 7L7 13" stroke="currentcolor" stroke-width="1.5"
+                                       stroke-linecap="round" stroke-linejoin="round" />
+                                 </svg>
+                              </span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-7">
+                     <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                           <div class="tp-feature-wrap mb-40 d-flex justify-content-start justify-content-md-center">
+                              <div class="tp-service-3-item text-center">
+                                 <div class="tp-service-3-icon">
+                                    <span data-bg-color="#a5d3fa">
+                                       <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path opacity="0.4"
+                                             d="M0 12.3765V10.2655C0 9.01817 1.01949 7.98669 2.27886 7.98669C4.44978 7.98669 5.33733 6.45146 4.24588 4.5684C3.62219 3.48894 3.994 2.08564 5.08546 1.46195L7.16042 0.274544C8.10795 -0.289174 9.33133 0.0466583 9.89505 0.994185L10.027 1.22207C11.1064 3.10513 12.8816 3.10513 13.973 1.22207L14.1049 0.994185C14.6687 0.0466583 15.8921 -0.289174 16.8396 0.274544L18.9145 1.46195C20.006 2.08564 20.3778 3.48894 19.7541 4.5684C18.6627 6.45146 19.5502 7.98669 21.7211 7.98669C22.9685 7.98669 24 9.00618 24 10.2655V12.3765C24 13.6239 22.9805 14.6554 21.7211 14.6554C19.5502 14.6554 18.6627 16.1906 19.7541 18.0736C20.3778 19.1651 20.006 20.5564 18.9145 21.1801L16.8396 22.3675C15.8921 22.9312 14.6687 22.5954 14.1049 21.6479L13.973 21.42C12.8936 19.5369 11.1184 19.5369 10.027 21.42L9.89505 21.6479C9.33133 22.5954 8.10795 22.9312 7.16042 22.3675L5.08546 21.1801C3.994 20.5564 3.62219 19.1531 4.24588 18.0736C5.33733 16.1906 4.44978 14.6554 2.27886 14.6554C1.01949 14.6554 0 13.6239 0 12.3765Z"
+                                             fill="#062037" />
+                                          <path
+                                             d="M11.9942 15.2192C14.1471 15.2192 15.8923 13.474 15.8923 11.3211C15.8923 9.16831 14.1471 7.4231 11.9942 7.4231C9.84141 7.4231 8.09619 9.16831 8.09619 11.3211C8.09619 13.474 9.84141 15.2192 11.9942 15.2192Z"
+                                             fill="#062037" />
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="tp-service-3-content">
+                                    <h4 class="tp-service-3-title sm"><a href="service-details.html">Pioneering <br>
+                                          Technologies</a>
+                                       <h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                           <div class="tp-feature-wrap mb-40 d-flex justify-content-start justify-content-md-center">
+                              <div class="tp-service-3-item text-center">
+                                 <div class="tp-service-3-icon">
+                                    <span data-bg-color="#fbcea0">
+                                       <svg width="24" height="26" viewBox="0 0 24 26" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path opacity="0.4"
+                                             d="M17.9993 3.00076H13.2834L14.9754 1.5968C15.3594 1.2728 15.4073 0.708814 15.0953 0.324818C14.7713 -0.0591769 14.2073 -0.10722 13.8234 0.204776L10.2234 3.20474C10.0194 3.37274 9.89941 3.62475 9.89941 3.90075C9.89941 4.17675 10.0194 4.41677 10.2234 4.59676L13.8234 7.59673C13.9914 7.74073 14.1954 7.8007 14.3994 7.8007C14.6514 7.8007 14.9153 7.69268 15.0953 7.47668C15.4193 7.09269 15.3594 6.5287 14.9754 6.2047L13.2834 4.80074H17.9993C18.8273 4.80074 19.4993 5.47273 19.4993 6.30072V17.7006C19.4993 18.1926 19.9073 18.6006 20.3993 18.6006C20.8913 18.6006 21.2993 18.1926 21.2993 17.7006V6.30072C21.2993 4.47674 19.8233 3.00076 17.9993 3.00076Z"
+                                             fill="#382007" />
+                                          <path
+                                             d="M20.3998 24.9006C22.388 24.9006 23.9997 23.2888 23.9997 21.3006C23.9997 19.3124 22.388 17.7007 20.3998 17.7007C18.4116 17.7007 16.7998 19.3124 16.7998 21.3006C16.7998 23.2888 18.4116 24.9006 20.3998 24.9006Z"
+                                             fill="#382007" />
+                                          <path opacity="0.4"
+                                             d="M13.7761 21.2045L10.1761 18.2045C9.79212 17.8805 9.22813 17.9406 8.90414 18.3246C8.58014 18.7086 8.64011 19.2726 9.0241 19.5966L10.7161 21.0005H6.00015C5.17216 21.0005 4.50017 20.3285 4.50017 19.5005V8.10067C4.50017 7.60868 4.09218 7.20068 3.60018 7.20068C3.10819 7.20068 2.7002 7.60868 2.7002 8.10067V19.5005C2.7002 21.3245 4.17618 22.8005 6.00015 22.8005H10.7161L9.0241 24.2045C8.64011 24.5285 8.59214 25.0924 8.90414 25.4764C9.08413 25.6924 9.33611 25.8005 9.60011 25.8005C9.80411 25.8005 10.0081 25.7285 10.1761 25.5965L13.7761 22.5965C13.9801 22.4285 14.1001 22.1765 14.1001 21.9005C14.1001 21.6245 13.9801 21.3845 13.7761 21.2045Z"
+                                             fill="#382007" />
+                                          <path
+                                             d="M3.59996 8.10079C5.58816 8.10079 7.19991 6.48904 7.19991 4.50083C7.19991 2.51263 5.58816 0.900879 3.59996 0.900879C1.61176 0.900879 0 2.51263 0 4.50083C0 6.48904 1.61176 8.10079 3.59996 8.10079Z"
+                                             fill="#382007" />
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="tp-service-3-content">
+                                    <h4 class="tp-service-3-title sm"><a href="service-details.html">Brand <br>
+                                          Crafting</a></h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                           <div class="tp-feature-wrap mb-40 d-flex justify-content-start justify-content-md-center">
+                              <div class="tp-service-3-item text-center">
+                                 <div class="tp-service-3-icon">
+                                    <span data-bg-color="#E8E2FA">
+                                       <svg width="18" height="26" viewBox="0 0 18 26" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path opacity="0.4"
+                                             d="M9.00018 0C5.65075 0 2.92773 2.72301 2.92773 6.07244C2.92773 9.35795 5.49734 12.017 8.84677 12.1321C8.94904 12.1193 9.05131 12.1193 9.12802 12.1321C9.15359 12.1321 9.16637 12.1321 9.19194 12.1321C9.20472 12.1321 9.20472 12.1321 9.21751 12.1321C12.4902 12.017 15.0598 9.35795 15.0726 6.07244C15.0726 2.72301 12.3496 0 9.00018 0Z"
+                                             fill="#1A0A4A" />
+                                          <path
+                                             d="M15.4943 15.5326C11.9276 13.1548 6.11079 13.1548 2.51847 15.5326C0.894886 16.6193 0 18.0895 0 19.6619C0 21.2344 0.894886 22.6917 2.50568 23.7656C4.29545 24.9673 6.64773 25.5682 9 25.5682C11.3523 25.5682 13.7045 24.9673 15.4943 23.7656C17.1051 22.679 18 21.2216 18 19.6363C17.9872 18.0639 17.1051 16.6065 15.4943 15.5326Z"
+                                             fill="#1A0A4A" />
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="tp-service-3-content">
+                                    <h4 class="tp-service-3-title sm"><a href="service-details.html">Tech-Savvy <br>
+                                          Asset Coordinator</a></h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                           <div class="tp-feature-wrap mb-40 d-flex justify-content-start justify-content-md-center">
+                              <div class="tp-service-3-item text-center">
+                                 <div class="tp-service-3-icon">
+                                    <span data-bg-color="#D1EDE2">
+                                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M20.7183 12.3876L19.7296 11.4204L11.4014 19.7379L12.4008 20.7373C13.239 21.5755 14.1094 21.9946 14.9691 21.9946C15.8288 21.9946 16.6992 21.5755 17.5374 20.7373L20.7183 17.5564C22.4269 15.8371 22.4269 14.1069 20.7183 12.3876Z"
+                                             fill="#083825" />
+                                          <path
+                                             d="M9.59629 1.26536C7.90915 -0.421785 6.13604 -0.421785 4.44889 1.26536L1.2573 4.44621C-0.419099 6.13335 -0.419099 7.90646 1.2573 9.5936L2.24594 10.5822L10.5742 2.254L9.59629 1.26536Z"
+                                             fill="#083825" />
+                                          <path opacity="0.4"
+                                             d="M21.5458 2.35081C20.1381 5.86479 16.925 10.4534 13.8623 13.4516C13.4218 10.6791 11.2081 8.50834 8.41406 8.12148C11.423 5.04809 16.0438 1.79201 19.5685 0.373525C20.1918 0.13711 20.8151 0.319795 21.2019 0.706655C21.6103 1.11501 21.8037 1.72754 21.5458 2.35081Z"
+                                             fill="#083825" />
+                                          <path
+                                             d="M13.8622 13.4517C13.3249 13.9782 12.7876 14.4618 12.2718 14.8701L10.1548 16.568C9.88612 16.7615 9.61747 16.9227 9.31658 17.0516C9.31658 16.8474 9.29509 16.6433 9.27359 16.4283C9.15539 15.5364 8.74703 14.6875 8.02704 13.9675C7.28556 13.2367 6.40438 12.8176 5.49096 12.6994C5.27604 12.6779 5.05037 12.6672 4.84619 12.6779C4.9644 12.3448 5.14708 12.0332 5.37275 11.7753L7.04915 9.65828C7.44675 9.15321 7.90884 8.6374 8.4139 8.12158C11.2079 8.50844 13.4216 10.6792 13.8622 13.4517Z"
+                                             fill="#083825" />
+                                          <path opacity="0.4"
+                                             d="M9.31731 17.0512C9.31731 18.2333 8.86598 19.3616 8.00629 20.2106C7.35077 20.8768 6.46959 21.3282 5.39498 21.4571L2.76218 21.7473C1.3222 21.9085 0.0863939 20.6727 0.247586 19.2219L0.537731 16.5784C0.795638 14.225 2.76218 12.7205 4.84693 12.6776C5.0511 12.6668 5.27677 12.6776 5.49169 12.699C6.40511 12.8173 7.28629 13.2364 8.02778 13.9671C8.74777 14.6871 9.15612 15.536 9.27433 16.428C9.29582 16.6429 9.31731 16.8471 9.31731 17.0512Z"
+                                             fill="#083825" />
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="tp-service-3-content">
+                                    <h4 class="tp-service-3-title sm"><a href="service-details.html">Structural Visual
+                                          <br> Design</a></h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                           <div class="tp-feature-wrap mb-40 d-flex justify-content-start justify-content-md-center">
+                              <div class="tp-service-3-item text-center">
+                                 <div class="tp-service-3-icon">
+                                    <span data-bg-color="#FBD2EB">
+                                       <svg width="18" height="25" viewBox="0 0 18 25" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M9 2.06689V22.6747L8.01043 23.8003C6.6374 25.3589 5.51177 24.9383 5.51177 22.8602V13.9541H1.68955C-0.0421923 13.9541 -0.524608 12.8903 0.625767 11.5915L9 2.06689Z"
+                                             fill="#350622" />
+                                          <path opacity="0.4"
+                                             d="M17.3742 13.15L9 22.6746V2.06681L9.98957 0.941172C11.3626 -0.6174 12.4882 -0.196833 12.4882 1.88126V10.7874H16.3104C18.0422 10.7874 18.5246 11.8512 17.3742 13.15Z"
+                                             fill="#350622" />
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="tp-service-3-content">
+                                    <h4 class="tp-service-3-title sm"><a href="service-details.html">Customizable <br>
+                                          Archives</a></h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-6">
+                           <div class="tp-feature-wrap mb-40 d-flex justify-content-start justify-content-md-center">
+                              <div class="tp-service-3-item text-center">
+                                 <div class="tp-service-3-icon">
+                                    <span data-bg-color="#E5EDD9">
+                                       <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path
+                                             d="M17.182 9.62496C16.709 9.62496 16.335 9.23996 16.335 8.77796C16.335 8.37096 15.928 7.52396 15.246 6.78696C14.575 6.07196 13.838 5.65396 13.222 5.65396C12.749 5.65396 12.375 5.26896 12.375 4.80696C12.375 4.34496 12.76 3.95996 13.222 3.95996C14.322 3.95996 15.477 4.55396 16.489 5.62096C17.435 6.62196 18.04 7.86496 18.04 8.76696C18.04 9.23996 17.655 9.62496 17.182 9.62496Z"
+                                             fill="#1C2B07" />
+                                          <path
+                                             d="M21.1527 9.625C20.6797 9.625 20.3057 9.24 20.3057 8.778C20.3057 4.873 17.1267 1.705 13.2327 1.705C12.7597 1.705 12.3857 1.32 12.3857 0.858C12.3857 0.396 12.7597 0 13.2217 0C18.0617 0 21.9997 3.938 21.9997 8.778C21.9997 9.24 21.6147 9.625 21.1527 9.625Z"
+                                             fill="#1C2B07" />
+                                          <path opacity="0.4"
+                                             d="M10.769 13.431L7.172 17.028C6.776 16.676 6.391 16.313 6.017 15.939C4.884 14.795 3.861 13.596 2.948 12.342C2.046 11.088 1.32 9.834 0.792 8.591C0.264 7.337 0 6.138 0 4.994C0 4.246 0.132 3.531 0.396 2.871C0.66 2.2 1.078 1.584 1.661 1.034C2.365 0.341 3.135 0 3.949 0C4.257 0 4.565 0.0660001 4.84 0.198C5.126 0.33 5.379 0.528 5.577 0.814L8.129 4.411C8.327 4.686 8.47 4.939 8.569 5.181C8.668 5.412 8.723 5.643 8.723 5.852C8.723 6.116 8.646 6.38 8.492 6.633C8.349 6.886 8.14 7.15 7.876 7.414L7.04 8.283C6.919 8.404 6.864 8.547 6.864 8.723C6.864 8.811 6.875 8.888 6.897 8.976C6.93 9.064 6.963 9.13 6.985 9.196C7.183 9.559 7.524 10.032 8.008 10.604C8.503 11.176 9.031 11.759 9.603 12.342C9.999 12.727 10.384 13.101 10.769 13.431Z"
+                                             fill="#1C2B07" />
+                                          <path
+                                             d="M21.9674 17.9631C21.9674 18.2711 21.9124 18.5901 21.8024 18.8981C21.7694 18.9861 21.7364 19.0741 21.6924 19.1621C21.5054 19.5581 21.2634 19.9321 20.9444 20.2841C20.4054 20.8781 19.8114 21.3071 19.1404 21.5821C19.1294 21.5821 19.1184 21.5931 19.1074 21.5931C18.4584 21.8571 17.7544 22.0001 16.9954 22.0001C15.8734 22.0001 14.6744 21.7361 13.4094 21.1971C12.1444 20.6581 10.8794 19.9321 9.62535 19.0191C9.19635 18.7001 8.76735 18.3811 8.36035 18.0401L11.9574 14.4431C12.2654 14.6741 12.5404 14.8501 12.7714 14.9711C12.8264 14.9931 12.8924 15.0261 12.9694 15.0591C13.0574 15.0921 13.1454 15.1031 13.2444 15.1031C13.4314 15.1031 13.5744 15.0371 13.6954 14.9161L14.5314 14.0911C14.8064 13.8161 15.0704 13.6071 15.3234 13.4751C15.5764 13.3211 15.8294 13.2441 16.1044 13.2441C16.3134 13.2441 16.5334 13.2881 16.7754 13.3871C17.0174 13.4861 17.2704 13.6291 17.5454 13.8161L21.1864 16.4011C21.4724 16.5991 21.6704 16.8301 21.7914 17.1051C21.9014 17.3801 21.9674 17.6551 21.9674 17.9631Z"
+                                             fill="#1C2B07" />
+                                       </svg>
+                                    </span>
+                                 </div>
+                                 <div class="tp-service-3-content">
+                                    <h4 class="tp-service-3-title sm"><a href="service-details.html">Premium
+                                          Round-the-Clock <br> Assistance</a></h4>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- feature area end -->
+
+         <!-- testimonial area start -->
+         <div class="tp-testimonial-4-area purple-bg-2 pt-100 pb-100 p-relative">
+            <div class="tp-testimonial-4-shape d-none d-xl-block">
+            </div>
+            <div class="container mt-100">
+               <div class="tp-technology-stack-area pt-100 pb-120 p-relative">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xl-12 text-center">
+                           <div class="tp-technology-title-box mb-60">
+                              <h2 class="tp-section-container-title fs-44 mb-10">Technology Stack</h2>
+                              <p class="font-10">We leverage a robust and scalable technology stack to deliver
+                                 high-performance, secure, and cutting-edge solutions.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-6 pdl-50">
+                           <h3 class="tp-subtitle mb-80">Web Technologies :~</h3>
+                           <hr style="border: 1px solid white;">
+                           <div class="tp-tech-category">
+                              <h4>Frontend :</h4>
+                              <div class="tp-tech-items">
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="fab fa-react icons"></i> React
+                                 </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="fab fa-angular icons"></i>
+                                    Angular </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="fab fa-vuejs icons"></i> VueJS
+                                 </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="fab fa-html5 icons"></i> HTML
+                                 </div>
+                              </div><br><br>
+                              <h4>Backend :</h4>
+                              <div class="tp-tech-items">
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="fab fa-node-js icons"></i>
+                                    NodeJS </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="fab fa-python icons"></i>
+                                    Python </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="fab fa-java icons"></i> Java
+                                 </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="fab fa-php icons"></i> PHP
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 pdl-50">
+                           <h3 class="tp-subtitle">Mobile Technologies :~</h3>
+                           <hr style="border: 1px solid white;">
+                           <div class="tp-tech-items-block">
+                              <div class="tp-tech-category">
+                                 <h4>iOS :</h4>
+                                 <div class="tp-tech-items mt-10">
+                                    <div class="tp-tech-item"><i aria-hidden="true" class="fab fa-swift icons"></i>Swift
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tp-tech-category">
+                                 <h4>Android :</h4>
+                                 <div class="tp-tech-items mt-10">
+                                    <div class="tp-tech-item"><i aria-hidden="true" class="cib-kotlin icons"></i>Kotlin
+                                    </div>
+                                    <div class="tp-tech-item"><i aria-hidden="true" class="fab fa-java icons"></i>Java
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tp-tech-category mt-20">
+                                 <h4>Cross Platform :</h4>
+                                 <div class="tp-tech-items">
+                                    <div class="tp-tech-item"><i aria-hidden="true"
+                                          class="cib-flutter icons"></i>Flutter</div>
+                                    <div class="tp-tech-item"><i aria-hidden="true" class="fab fa-react icons"></i>React
+                                       Native</div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 pdl-50">
+                           <h3 class="tp-subtitle mt-20">DevOps~</h3>
+                           <hr style="border: 1px solid white;">
+                           <div class="tp-tech-category">
+                              <div class="tp-tech-items">
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="cib-amazon-aws icons"></i>AWS
+                                 </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="cib-docker icons"></i> Docker
+                                 </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="cib-kubernetes icons"></i>
+                                    Kubernetes </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="cib-ansible icons"></i> Ansible
+                                 </div>
+                              </div><br><br>
+                           </div>
+                        </div>
+                        <div class="col-lg-6 pdl-50">
+                           <h3 class="tp-subtitle mt-20">Ecoomerce & Woocommerce :~</h3>
+                           <hr style="border: 1px solid white;">
+                           <div class="tp-tech-category">
+                              <div class="tp-tech-items">
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="cib-shopify icons"></i>Shoify
+                                 </div>
+                                 <div class="tp-tech-item"> <i aria-hidden="true" class="cib-wordpress icons"></i> Word
+                                    Press </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <div class="container">
+            </div>
+         </div>
+      </div>
+
+      <!-- team area end -->
+
+      <!-- faq area start -->
+      <div class="tp-faq-4-area pt-115">
+         <div class="container">
+            <div class="tp-faq-title-wrap mb-40">
+               <div class="row align-items-end">
+                  <div class="col-xl-7 col-lg-7 col-md-7">
+                     <div class="tp-faq-4-title-box mb-20">
+                        <span class="tp-section-2-subtitle mb-10">FAQ,s</span>
+                        <h4 class="tp-section-title fs-44 mb-0 tp-split-text tp-split-right">Need Help?</h4>
+                     </div>
+                  </div>
+                  <div class="col-xl-5 col-lg-5 col-md-5">
+                     <div class="tp-faq-4-nav mb-20">
+                        <nav>
+                           <div class="nav nav-tab d-flex justify-content-start justify-content-md-end" id="nav-tab"
+                              role="tablist">
+                              <button class="nav-links active" id="nav-platform-tab" data-bs-toggle="tab"
+                                 data-bs-target="#nav-platform" type="button" role="tab" aria-controls="nav-platform"
+                                 aria-selected="true">Platform</button>
+                              <button class="nav-links" id="nav-tracking-tab" data-bs-toggle="tab"
+                                 data-bs-target="#nav-tracking" type="button" role="tab" aria-controls="nav-tracking"
+                                 aria-selected="false">Tracking</button>
+                              <button class="nav-links" id="nav-support-tab" data-bs-toggle="tab"
+                                 data-bs-target="#nav-support" type="button" role="tab" aria-controls="nav-support"
+                                 aria-selected="false">Support</button>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-xl-12">
+                  <div class="tp-faq-4-tab">
+                     <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-platform" role="tabpanel"
+                           aria-labelledby="nav-platform-tab" tabindex="0">
+                           <div class="tp-faq-wrapper tp-faq-style-2">
+                              <div class="accordion" id="accordionExample">
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseOne-1" aria-expanded="true"
+                                          aria-controls="collapseOne-1">
+                                          How does it generate responses?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseOne-1" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items active">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseTwo-1"
+                                          aria-expanded="false" aria-controls="collapseTwo-1">
+                                          Do I get all the demos and templates with a single license?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseTwo-1" class="accordion-collapse collapse show"
+                                       data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseThree-1"
+                                          aria-expanded="false" aria-controls="collapseThree-1">
+                                          How do you find different criteria in your process?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseThree-1" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseFour-1"
+                                          aria-expanded="false" aria-controls="collapseFour-1">
+                                          What do I need to apply for an account?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseFour-1" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseFive-1"
+                                          aria-expanded="false" aria-controls="collapseFive-1">
+                                          Can you explain your unlimited cleanup policy?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseFive-1" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-tracking" role="tabpanel" aria-labelledby="nav-tracking-tab"
+                           tabindex="0">
+                           <div class="tp-faq-wrapper tp-faq-style-2">
+                              <div class="accordion" id="accordionExample-2">
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseOne-2" aria-expanded="true"
+                                          aria-controls="collapseOne-2">
+                                          How does it generate responses?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseOne-2" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample-2">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseTwo-2"
+                                          aria-expanded="false" aria-controls="collapseTwo-2">
+                                          Do I get all the demos and templates with a single license?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseTwo-2" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample-2">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items active">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseThree-2"
+                                          aria-expanded="false" aria-controls="collapseThree-2">
+                                          How do you find different criteria in your process?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseThree-2" class="accordion-collapse collapse show"
+                                       data-bs-parent="#accordionExample-2">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseFour-2"
+                                          aria-expanded="false" aria-controls="collapseFour-2">
+                                          What do I need to apply for an account?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseFour-2" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample-2">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseFive-2"
+                                          aria-expanded="false" aria-controls="collapseFive-2">
+                                          Can you explain your unlimited cleanup policy?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseFive-2" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample-2">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-support" role="tabpanel" aria-labelledby="nav-support-tab"
+                           tabindex="0">
+                           <div class="tp-faq-wrapper tp-faq-style-2">
+                              <div class="accordion" id="accordionExample-3">
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseOne-3" aria-expanded="true"
+                                          aria-controls="collapseOne-3">
+                                          How does it generate responses?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseOne-3" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample-3">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseTwo-3"
+                                          aria-expanded="false" aria-controls="collapseTwo-3">
+                                          Do I get all the demos and templates with a single license?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseTwo-3" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample-3">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseThree-3"
+                                          aria-expanded="false" aria-controls="collapseThree-3">
+                                          How do you find different criteria in your process?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseThree-3" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample-3">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items active">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseFour-3"
+                                          aria-expanded="false" aria-controls="collapseFour-3">
+                                          What do I need to apply for an account?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseFour-3" class="accordion-collapse collapse show"
+                                       data-bs-parent="#accordionExample-3">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="accordion-items">
+                                    <h2 class="accordion-header">
+                                       <button class="accordion-buttons collapsed" type="button"
+                                          data-bs-toggle="collapse" data-bs-target="#collapseFive-3"
+                                          aria-expanded="false" aria-controls="collapseFive-3">
+                                          Can you explain your unlimited cleanup policy?
+                                          <span class="accordion-icon"></span>
+                                       </button>
+                                    </h2>
+                                    <div id="collapseFive-3" class="accordion-collapse collapse"
+                                       data-bs-parent="#accordionExample-3">
+                                       <div class="accordion-body">
+                                          <p>
+                                             Our tools are easy to use and affordable, so you can start <br> improving
+                                             your website's SEO today.
+                                          </p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- faq area end -->
+
+      <!-- blog area start -->
+      <div class="tp-blog-4-area tp-blog-style-4 pt-140 pb-160">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-6 col-lg-5">
+                  <div class="tp-blog-4-title-box mb-40">
+                     <span class="tp-section-2-subtitle mb-10">News archive.</span>
+                     <h4 class="tp-section-title fs-44 mb-0 tp-split-text tp-split-right">Our recent news <br> &
+                        insights.</h4>
+                  </div>
+                  <div class="tp-blog-4-btn">
+                     <a class="tp-btn-circle tp-hover-btn-wrapper tp-hover-btn-item tp-hover-btn" href="blog.html">
+                        <span class="tp-btn-circle-text">See all <br> blog post</span>
+                        <span class="tp-btn-circle-icon">
+                           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10.625 9.75L15 5.375L10.625 1" stroke="currentcolor" stroke-width="1.5"
+                                 stroke-linecap="round" stroke-linejoin="round" />
+                              <path
+                                 d="M1 15V8.875C1 7.94674 1.36875 7.0565 2.02513 6.40013C2.6815 5.74375 3.57174 5.375 4.5 5.375H15"
+                                 stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                                 stroke-linejoin="round" />
+                           </svg>
+                        </span>
+                        <i class="tp-btn-circle-dot"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xl-6 col-lg-7">
+                  <div class="row">
+                     <div class="col-xl-12">
+                        <div class="tp-blog-3-item">
+                           <div class="row gx-0 align-items-center">
+                              <div class="col-xl-8 col-lg-8 col-md-7 col-sm-7">
+                                 <div class="tp-blog-3-content">
+                                    <div class="tp-blog-3-category">
+                                       <a href="#">Software</a>
+                                    </div>
+                                    <h4 class="tp-blog-3-title"><a href="#">Google Without Having to <br> Hire an SEO
+                                          Expert.</a></h4>
+                                    <div class="tp-blog-3-meta">
+                                       <span>
+                                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
+                                                stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                             <path d="M8 3.7998V7.9998L10.8 9.3998" stroke="currentcolor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                       </span>
+                                       <span>14 July, 2024</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5">
+                                 <div class="tp-blog-3-thumb fix text-end">
+                                    <a href="#"><img src="{% static 'rapid/img/home-04/blog/blog-1.jpg' %}" alt=""></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-12">
+                        <div class="tp-blog-3-item">
+                           <div class="row gx-0 align-items-center">
+                              <div class="col-xl-8 col-lg-8 col-md-7 col-sm-7">
+                                 <div class="tp-blog-3-content">
+                                    <div class="tp-blog-3-category">
+                                       <a href="#">Career</a>
+                                    </div>
+                                    <h4 class="tp-blog-3-title"><a href="#">Even Startups Can Benefit <br> From These
+                                          tools.</a></h4>
+                                    <div class="tp-blog-3-meta">
+                                       <span>
+                                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
+                                                stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                             <path d="M8 3.7998V7.9998L10.8 9.3998" stroke="currentcolor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                       </span>
+                                       <span>14 July, 2024</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5">
+                                 <div class="tp-blog-3-thumb fix text-end">
+                                    <a href="blog-details.html"><img
+                                          src="{% static 'rapid/img/home-04/blog/blog-2.jpg' %}" alt=""></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-12">
+                        <div class="tp-blog-3-item">
+                           <div class="row gx-0 align-items-center">
+                              <div class="col-xl-8 col-lg-8 col-md-7 col-sm-7">
+                                 <div class="tp-blog-3-content">
+                                    <div class="tp-blog-3-category">
+                                       <a href="#">UI Desige</a>
+                                    </div>
+                                    <h4 class="tp-blog-3-title"><a href="#">Designer’s Checklist for <br> Every UX/UI
+                                          Project.</a></h4>
+                                    <div class="tp-blog-3-meta">
+                                       <span>
+                                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                             <path
+                                                d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
+                                                stroke="currentcolor" stroke-width="1.5" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                             <path d="M8 3.7998V7.9998L10.8 9.3998" stroke="currentcolor"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                          </svg>
+                                       </span>
+                                       <span>14 July, 2024</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5">
+                                 <div class="tp-blog-3-thumb fix text-end">
+                                    <a href="blog-details.html"><img
+                                          src="{% static 'rapid/img/home-04/blog/blog-3.jpg' %}" alt=""></a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- blog area end -->
+
+      <!-- cta area start -->
+      <div class="tp-cta-5-area grey-bg-2 pt-100 pb-100">
+         <div class="container">
+            <div class="tp-cta-5-wrap p-relative">
+               <div class="tp-cta-5-shape-1 d-none d-lg-block">
+                  <span>
+                     <svg width="201" height="152" viewBox="0 0 201 152" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                           d="M1 1C8.06023 51.3093 29.5081 159.78 58.8175 91.1868C95.4544 5.44561 98.3166 219.211 128.657 127.01C158.996 34.809 168.385 151 201 151"
+                           stroke="#BB86FF" stroke-width="2" />
+                     </svg>
+                  </span>
+               </div>
+               <div class="tp-cta-5-shape-2 d-none d-lg-block">
+                  <img src="{% static 'rapid/img/home-04/shape/cta-5-2.png' %}" alt="">
+               </div>
+               <div class="row justify-content-center">
+                  <div class="col-xl-6 col-lg-10">
+                     <div class="tp-cta-5-content text-center">
+                        <div class="tp-cta-5-icon mb-35">
+                           <span>
+                              <svg width="40" height="39" viewBox="0 0 40 39" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M9.52381 19.0479C4.26667 19.0479 0 23.2955 0 28.5717C0 33.8479 4.26667 38.0955 9.52381 38.0955C14.781 38.0955 19.0476 33.8288 19.0476 28.5717C19.0476 23.3145 14.8 19.0479 9.52381 19.0479ZM5.63808 24.686H9.52381C10.2476 24.686 10.819 25.2764 10.819 25.9812C10.819 26.6859 10.2286 27.2764 9.52381 27.2764H5.63808C4.91427 27.2764 4.34285 26.6859 4.34285 25.9812C4.34285 25.2764 4.91427 24.686 5.63808 24.686ZM13.4095 32.4574H5.61907C4.89526 32.4574 4.32379 31.8669 4.32379 31.1621C4.32379 30.4574 4.91431 29.8669 5.61907 29.8669H13.4095C14.1333 29.8669 14.7048 30.4574 14.7048 31.1621C14.7048 31.8669 14.1333 32.4574 13.4095 32.4574Z"
+                                    fill="#12B177" />
+                                 <path opacity="0.4"
+                                    d="M30.4762 0H11.4286C5.71431 0 1.90479 2.85714 1.90479 9.52381V15.5048C1.90479 16.8952 3.33338 17.7714 4.60957 17.219C6.70481 16.3047 9.08571 15.9619 11.5809 16.3619C16.5714 17.1809 20.6476 21.1238 21.6572 26.0762C21.9429 27.5238 21.981 28.9333 21.7905 30.2857C21.6381 31.4095 22.5524 32.4 23.6762 32.4H30.4762C36.1905 32.4 40 29.5428 40 22.8762V9.54285C40 2.85713 36.1905 0 30.4762 0Z"
+                                    fill="#12B177" />
+                                 <path
+                                    d="M20.9522 16.8951C19.3522 16.8951 17.7331 16.3999 16.495 15.3903L10.5331 10.6284C9.92359 10.1332 9.80932 9.23794 10.3046 8.62842C10.7998 8.01889 11.695 7.90462 12.3045 8.39986L18.2664 13.1618C19.7141 14.3237 22.1712 14.3237 23.6188 13.1618L29.5807 8.39986C30.1903 7.90462 31.1045 7.99985 31.5807 8.62842C32.0759 9.23794 31.9807 10.1522 31.3521 10.6284L25.3902 15.3903C24.1712 16.3999 22.5522 16.8951 20.9522 16.8951Z"
+                                    fill="#12B177" />
+                              </svg>
+                           </span>
+                        </div>
+                        <h4 class="tp-section-title fs-44 mb-50 tp-split-text tp-split-right">Stay up to date and <br>
+                           never miss out.</h4>
+                        <div class="tp-cta-5-input-box">
+                           <form action="#">
+                              <div class="tp-cta-5-input p-relative mb-35">
+                                 <input type="text" placeholder="Enter  your email address">
+                                 <button class="tp-cta-5-btn tp-btn-subscribe" type="submit">
+                                    <span>
+                                       <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                          xmlns="http://www.w3.org/2000/svg">
+                                          <path d="M12.9999 1L6.3999 7.6" stroke="currentcolor" stroke-width="1.5"
+                                             stroke-linecap="round" stroke-linejoin="round" />
+                                          <path d="M13 1L8.8 13L6.4 7.6L1 5.2L13 1Z" stroke="currentcolor"
+                                             stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                       </svg>
+                                    </span>
+                                    Subscribe
+                                 </button>
+                              </div>
+                              <div class="tp-cta-5-remeber">
+                                 <input id="remeber" type="checkbox">
+                                 <label for="remeber"><span>I agree to the <span>Privacy Policy.</span></span></label>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- cta area end -->
+   </div>
+</div>
+{% endblock %}

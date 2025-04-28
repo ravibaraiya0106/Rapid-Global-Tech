@@ -1,0 +1,183 @@
+{% extends 'rapid/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="min-h-screen bg-gray-50">
+   <!-- Hero Section -->
+   <div class="hero-section"
+      style="background-image: linear-gradient(135deg, #1d4ed8, #312e81), url('https://images.unsplash.com/photo-1537432376769-00f5c2f4c8d2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80');">
+      <div class="container">
+         <div class="hero-content mt-70">
+            <h1>Desktop Application Development</h1>
+            <p>Building powerful, efficient, and user-friendly desktop solutions using the Agile SDLC model</p>
+            <a href="#process" class="btn btn-primary">Explore Our Process</a>
+         </div>
+      </div>
+   </div>
+   <!-- Desktop Development Benefits -->
+   <div class="container section mt-100">
+      <div class="text-center section-header">
+         <h2>Why Choose Our Desktop Solutions?</h2>
+         <p>We deliver high-performance desktop applications that streamline your business operations</p>
+      </div>
+      <div class="benefits-grid">
+         <div class="benefit-card">
+            <div class="icon-container">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                  <path d="M13 2v7h7" />
+               </svg>
+            </div>
+            <h3>Native Performance</h3>
+            <p>Optimized applications that leverage full system capabilities</p>
+         </div>
+         <div class="benefit-card">
+            <div class="icon-container">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+               </svg>
+            </div>
+            <h3>Enhanced Security</h3>
+            <p>Robust security measures for sensitive business applications</p>
+         </div>
+         <div class="benefit-card">
+            <div class="icon-container">
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+               </svg>
+            </div>
+            <h3>Offline Capability</h3>
+            <p>Full functionality without requiring constant internet connection</p>
+         </div>
+      </div>
+   </div>
+   <!-- Development Process Section -->
+   <div id="process" class="process-section">
+      <div class="container">
+         <div class="text-center section-header">
+            <h2>Desktop Development Process</h2>
+            <p>Our systematic approach to delivering robust desktop applications</p>
+         </div>
+         <div class="process-timeline">
+            <div class="process-step">
+               <div class="step-number">1</div>
+               <div class="step-content">
+                  <h3>Requirements Analysis</h3>
+                  <p>Comprehensive analysis of business needs and technical requirements</p>
+                  <ul class="step-details">
+                     <li>Business process analysis</li>
+                     <li>User workflow mapping</li>
+                     <li>System requirements specification</li>
+                     <li>Technology stack selection</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="process-step">
+               <div class="step-number">2</div>
+               <div class="step-content">
+                  <h3>Architecture Design</h3>
+                  <p>Creating robust application architecture and UX design</p>
+                  <ul class="step-details">
+                     <li>System architecture design</li>
+                     <li>Database schema planning</li>
+                     <li>UI/UX wireframing</li>
+                     <li>Security architecture</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="process-step">
+               <div class="step-number">3</div>
+               <div class="step-content">
+                  <h3>Agile Development</h3>
+                  <p>Iterative development with regular client feedback</p>
+                  <ul class="step-details">
+                     <li>Sprint planning</li>
+                     <li>Feature implementation</li>
+                     <li>Regular builds</li>
+                     <li>Client demonstrations</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="process-step">
+               <div class="step-number">4</div>
+               <div class="step-content">
+                  <h3>Quality Assurance</h3>
+                  <p>Rigorous testing across multiple environments</p>
+                  <ul class="step-details">
+                     <li>Unit testing</li>
+                     <li>Integration testing</li>
+                     <li>Performance testing</li>
+                     <li>User acceptance testing</li>
+                  </ul>
+               </div>
+            </div>
+            <div class="process-step">
+               <div class="step-number">5</div>
+               <div class="step-content">
+                  <h3>Deployment & Support</h3>
+                  <p>Smooth deployment and ongoing maintenance</p>
+                  <ul class="step-details">
+                     <li>Installation package creation</li>
+                     <li>User documentation</li>
+                     <li>Staff training</li>
+                     <li>Technical support</li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Technologies Section -->
+   <div class="container section mb-100">
+      <div class="text-center section-header">
+         <h2>Development Technologies</h2>
+         <p>Industry-standard technologies for robust desktop applications</p>
+      </div>
+
+      <div class="tech-grid">
+         <div class="tech-card">
+            <h3>Core Technologies</h3>
+            <ul>
+               <li>C# / .NET</li>
+               <li>Java</li>
+               <li>Python</li>
+               <li>C++</li>
+            </ul>
+         </div>
+
+         <div class="tech-card">
+            <h3>UI Frameworks</h3>
+            <ul>
+               <li>WPF</li>
+               <li>JavaFX</li>
+               <li>Qt</li>
+               <li>Electron</li>
+            </ul>
+         </div>
+
+         <div class="tech-card">
+            <h3>Databases</h3>
+            <ul>
+               <li>SQLite</li>
+               <li>SQL Server</li>
+               <li>PostgreSQL</li>
+               <li>MongoDB</li>
+            </ul>
+         </div>
+
+         <div class="tech-card">
+            <h3>Tools & DevOps</h3>
+            <ul>
+               <li>Git</li>
+               <li>Jenkins</li>
+               <li>Docker</li>
+               <li>Azure DevOps</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+{% endblock %}
