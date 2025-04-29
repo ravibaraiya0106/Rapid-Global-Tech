@@ -1,0 +1,161 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  2.15 Section Title
+/*----------------------------------------*/
+.tp-section{
+    &-subtitle{
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        display: inline-block;
+        text-transform: uppercase;
+        color: rgba($color: #FFFFFF, $alpha: 0.7);
+        &::before{
+            content: '';
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            margin-right: 9px;
+            display: inline-block;
+            transform: translateY(-3px);
+            background-color: rgba($color: #FFFFFF, $alpha: 0.7);
+        }
+        &.black-dot{
+            &::before{
+                background-color: var(--tp-common-black);
+            }
+        }
+        &.fs-12{
+            font-weight: 600;
+            font-size: 12px;
+            border-radius: 20px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            background-color: #eef3f6;
+            padding: 2px 23px;
+            color: var(--tp-common-black-3);
+            &::before{
+                display: none;
+                margin-right: 0;
+            }
+        }
+        &.sky-bg{
+            background-color: #cae1ec;
+        }
+    }
+    &-2{
+        &-subtitle{
+            font-weight: 600;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+            display: inline-block;
+            text-transform: uppercase;
+            color: var(--tp-common-black);
+            &::before{
+                content: "";
+                height: 1px;
+                width: 30px;
+                margin-right: 10px;
+                display: inline-block;
+                transform: translateY(-4px);
+                background-color: var(--tp-common-black);
+            }
+            &.text-white{
+                &::before{
+                    background-color: var(--tp-common-white);
+                }
+            }
+        }
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 1;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: var(--tp-common-white);
+        @media #{$lg}{
+            font-size: 50px;
+        }
+        @media #{$md}{
+            font-size: 52px;
+        }
+        @media #{$xs}{
+            font-size: 35px;
+        }
+        &.sm{
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 1.25;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: var(--tp-common-white);
+            @media #{$xs}{
+                font-size: 28px;
+            }
+            & > span{
+                color: var(--tp-common-pink-2);
+            }
+        }
+        &.fs-40{
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: var(--tp-common-black-3);
+            @media #{$lg,$md}{
+                font-size: 35px;
+            }
+            @media #{$xs}{
+                font-size: 30px;
+                & br{
+                    display: none;
+                }
+            }
+        }
+        &.fs-44{
+            font-size: 44px;
+            line-height: 1.18;
+            color: var(--tp-common-black);
+            @media #{$lg,$md}{
+                font-size: 35px;
+                & br{
+                    display: none;
+                }
+            }
+            @media #{$xs}{
+                font-size: 30px;
+                & br{
+                    display: none;
+                }
+            }
+            & span{
+                color: var(--tp-common-blue);
+            }
+        }
+        &.fs-55{
+            font-weight: 800;
+            font-size: 55px;
+            line-height: 1.17;
+            letter-spacing: -0.02em;
+            color: var(--tp-common-black);
+            @media #{$lg,$md,$xs}{
+                font-size: 45px;
+            }
+        }
+        &.fs-70{
+            font-weight: 800;
+            font-size: 70px;
+            line-height: 1;
+            letter-spacing: -0.02em;
+            color: var(--tp-common-black);
+            @media #{$md}{
+                font-size: 55px;
+            }
+            @media #{$xs}{
+                font-size: 45px;
+            }
+        }
+    }
+}

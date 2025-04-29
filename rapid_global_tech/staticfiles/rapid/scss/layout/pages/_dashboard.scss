@@ -1,0 +1,85 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.5 dashboard css
+/*----------------------------------------*/
+
+.tp-dashboard{
+    &-bg{
+        border-radius: 14px 14px 16px 14px;
+        padding: 105px 70px 105px 70px;
+        @media #{$lg}{
+            padding: 90px 50px 90px 50px;
+        }
+        @media #{$md}{
+            padding: 70px 70px 105px 70px;
+        }
+        @media #{$xs}{
+            padding: 50px 30px 60px 30px;
+        }
+    }
+    &-title-box{
+        & p{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.57;
+            color: #cacbce;
+            margin-bottom: 30px;
+            @media #{$xs}{
+                & br{
+                    display: none;
+                }
+            }
+        }
+    }
+    &-list{
+        & ul{
+            display: flex;
+            align-items: center;
+            & li{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1;
+                list-style-type: none;
+                color: var(--tp-common-white);
+                @media #{$xs}{
+                    font-size: 13px;
+                }
+                &:not(:last-child){
+                    margin-right: 30px;
+                }
+                & span{
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 10px;
+                    line-height: 18px;
+                    border-radius: 50%;
+                    text-align: center;
+                    display: inline-block;
+                    background-color: var(--tp-theme-1);
+                }
+            }
+        }
+    }
+    &-thumb{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        @media #{$lg}{
+            bottom: -45px;
+            right: -50px;
+        }
+        @media #{$md,$xs}{
+            position: static;
+        }
+        & img{
+            @media #{$lg}{
+                transform: scale(.8);
+            }  
+            @media #{$md,$xs}{
+                width: 100%;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}

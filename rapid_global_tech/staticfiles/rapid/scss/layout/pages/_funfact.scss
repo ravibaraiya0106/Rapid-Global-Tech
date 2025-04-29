@@ -1,0 +1,46 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.7 funfact css
+/*--------------------------------*/
+
+.tp-funfact{
+    &-number{
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: var(--tp-common-white); 
+    }
+    &-item{
+        position: relative;
+        padding-left: 40px;
+        & > span{
+            font-weight: 500;
+            font-size: 16px;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #abaeb4; 
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: -19px;
+            width: 1px;
+            height: 144px;
+            background-color: var(--tp-common-yellow-2);
+        }
+    }
+    &-style-2{
+        & .tp-funfact-number {
+            color: var(--tp-common-black);
+        }
+        & .tp-funfact-item::after {
+            background-color: var(--tp-common-blue);
+        }
+        & .tp-funfact-item > span {
+            color: #525356;
+        }
+    }
+}

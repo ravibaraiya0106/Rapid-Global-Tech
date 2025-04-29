@@ -1,0 +1,329 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.1 about css
+/*----------------------------------------*/
+
+.tp-about-4{
+    &-title-box{
+        padding-right: 120px;
+        @media #{$lg}{
+            padding-right: 60px;
+        }
+        @media #{$xs}{
+            padding-right: 0px;
+        }
+        & p{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.57;
+            color: #cacbce;
+        }
+    }
+    &-list{
+        & ul{
+            & li{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1;
+                padding-left: 45px;
+                position: relative;
+                list-style-type: none;
+                color: var(--tp-common-white); 
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                & span{
+                    position: absolute;
+                    top: -4px;
+                    left: 0;
+                    height: 24px;
+                    width: 24px;
+                    line-height: 21px;
+                    text-align: center;
+                    border-radius: 50%;
+                    display: inline-block;
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+            }
+        }
+    }
+    &-thumb{
+        & img{
+            border-radius: 14px;
+            @media #{$md}{
+                width: 100%;
+            }
+            @media #{$xs}{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    &-funfact{
+        padding: 30px 40px;
+        border-radius: 10px 0 0 0;
+        background-color: var(--tp-common-white);
+        @media #{$lg}{
+            padding: 20px 30px;
+        }
+        &.yellow-box{
+            background-color: #ffef5b;
+            border-radius: 0 0 10px 0;
+        }
+        & h4{
+            font-weight: 800;
+            font-size: 46px;
+            margin-bottom: 15px;
+            letter-spacing: -0.02em;
+            color: var(--tp-common-black);
+        }
+        & > span{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+            color: var(--tp-common-black);
+            @media #{$xl}{
+                font-size: 18px;
+            }
+            @media #{$lg}{
+                font-size: 15px;
+            }
+        }
+        &-wrap{
+            margin-right: 100px;
+            margin-top: -205px;
+            @media #{$xs}{
+                margin-right: 0;
+                margin-top: 0; 
+            }
+        }
+    }
+    &-tab-wrap{
+        margin-bottom: 60px;
+        border-bottom: 2px solid  rgba(255, 255, 255, 0.08);
+        & ul{
+            & li{
+                padding-right: 160px;
+                padding-bottom: 10px;
+                @media #{$lg}{
+                    padding-right: 120px;
+                }
+                @media #{$md}{
+                    padding-right: 60px;
+                }
+                @media #{$xs}{
+                    padding-right: 50px;
+                }
+                @media #{$sm}{
+                    padding-right: 20px;
+                }
+                & button{
+                    font-weight: 600;
+                    font-size: 16px;
+                    min-width: 100px;
+                    color: #8e8f92;
+                    text-align: left;
+                    transition: .3s;
+                    &.active{
+                        color: var(--tp-common-white);
+                    }
+                    &:hover{
+                        color: var(--tp-common-white);
+                    }
+                }
+            }
+        }
+    }
+    &-btn{
+        @media #{$md,$xs}{
+            margin-bottom: 50px;
+        }
+    }
+    &-area {
+        @media #{$lg,$md}{
+            padding-top: 60px;
+        }
+        @media #{$xs}{
+            padding-top: 70px;
+        }
+    }
+}
+
+#lineMarker-2{
+    position: absolute;
+    bottom: -1px;
+    height: 2px;
+    min-width: 160px;
+    z-index: 1;
+    transition: .4s;
+    border-radius: 6px;
+    display: inline-block;
+    background: var(--tp-common-white);
+    @media #{$md}{
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+.tp-about-5{
+    &-area{
+        @media #{$xs}{
+            padding-top: 70px;
+            padding-bottom: 0;
+        }
+    }
+    &-list{
+        & ul{
+            & li{
+                list-style-type: none;
+                &:not(:last-child){
+                    margin-bottom: 15px;
+                }
+                & a{
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 1;
+                    color: #8e8f92;
+                    transition: .3s;
+                    display: inline-block;
+                    & span{
+                        opacity: 0;
+                        transition: .3s;
+                        visibility: hidden;
+                        padding-right: 13px;
+                        & svg{
+                            transform: translateY(-1px);
+                        }
+                    }
+                    &.active{
+                        color: var(--tp-common-black);
+                        & span{
+                            opacity: 1;
+                            visibility: visible;
+                            color: var(--tp-common-blue);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-shape{
+        &-1{
+            position: absolute;
+            top: 35%;
+            left: 0;
+            animation: anim-top-bottom 1s linear infinite alternate;
+            @media #{$md}{
+                left: 80px;
+            }
+        }
+    }
+    &-thumb{
+        padding-left: 15px;
+        @media #{$md}{
+            padding-left: 0;
+            margin-bottom: 50px;
+        }
+        @media #{$xs}{
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+    }
+    &-title-box{
+        @media #{$md}{
+            & .tp-section-title.fs-44 {
+                font-size: 34px;
+            }
+        }
+    }
+    &-big-text{
+        position: absolute;
+        top: -30%;
+        left: -4px;
+        z-index: -1;
+        @media #{$xl,$lg}{
+            top: -25%;
+        }
+        & h1{
+            @media #{$xl}{
+                font-size: 335px;
+            }
+            @media #{$lg}{
+                font-size: 290px;
+            }
+            font-weight: 800;
+            font-size: 400px;
+            line-height: .8;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            background: linear-gradient(180deg, rgba(24, 43, 82, 0.1) 0%, rgba(24, 43, 82, 0) 100%);
+            background-clip: border-box;
+        }
+    }
+    &-left {
+        @media #{$xs}{
+            margin-left: 0;
+        }
+    }
+}
+
+.tp-about{
+    &-inner-style{
+        & .tp-about-4-tab-wrap ul li button {
+            color: #8e8f92;
+            &:hover{
+                color: var(--tp-common-black);
+            }
+        }
+        & .tp-about-4-tab-wrap {
+            border-bottom: 2px solid  rgba(20, 24, 32, 0.1);
+        }
+        & #lineMarker-2 {
+            background: var(--tp-common-black);
+        }
+        & .tp-about-4-tab-wrap ul li button.active {
+            color: var(--tp-common-black);
+        }
+        & .tp-about-4-title-box p {
+            color: #525356;
+        }
+        & .tp-about-4-list ul li {
+            color: var(--tp-common-black);
+        }
+        & .tp-about-4-list ul li span {
+            color: var(--tp-common-black);
+            background-color: rgba(20, 24, 32, 0.1);
+        }
+        & .tp-about-4-funfact {
+            background-color: var(--tp-common-black);
+        }
+        & .tp-about-4-funfact.yellow-box {
+            background-color: #ffef5b;
+        }
+        & .tp-about-4-funfact h4 {
+            color: var(--tp-common-white);
+        }
+        & .tp-about-4-funfact > span {
+            color: var(--tp-common-white);
+        }
+        & .tp-about-4-funfact.yellow-box h4 {
+            color: var(--tp-common-black);
+        }
+        & .tp-about-4-funfact.yellow-box > span {
+            color: var(--tp-common-black);
+        }
+    }
+}
+
+.tp-about{
+    &-6{
+        &-area{
+            @media #{$md,$xs}{
+                padding-top: 50px;
+                padding-bottom: 70px;
+            }
+        }
+    }
+}

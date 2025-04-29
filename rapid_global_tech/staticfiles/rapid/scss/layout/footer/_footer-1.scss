@@ -1,0 +1,164 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  6.1 Footer Style 1
+/*----------------------------------------*/
+
+.tp-footer{
+    &-logo{
+        margin-bottom: 30px;
+        & img{
+            width: 135px;
+            height: auto;
+        }
+    }
+    &-text{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #afb2b8;
+        margin-bottom: 40px;
+    }
+    &-link{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        transition: .3s;
+        color: var(--tp-common-white);
+        & span{
+            margin-left: 10px;
+        }
+        &:hover{
+            color: var(--tp-theme-1);
+        }
+    }
+    &-col{
+        &-1{
+            padding-right: 50px;
+        }
+        &-3{
+            padding-left: 55px;
+            @media #{$md,$xs}{
+                padding-left: 0;
+            }
+        }
+    }
+    &-widget{
+        &-title{
+            font-weight: 700;
+            font-size: 20px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            color: var(--tp-common-white);
+        }
+        &-content{
+            & ul{
+                & li{
+                    list-style-type: none;
+                    &:not(:last-child){
+                        margin-bottom: 7px;
+                    }
+                    & a{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 1;
+                        color: #afb2b8;
+                        transition: .3s;
+                        & span{
+                            display: inline-block;
+                            margin-right: 10px;
+                            @extend %svg-2;
+                        }
+                        &:hover{
+                            color: var(--tp-theme-1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-style-2{
+        & .tp-footer-text {
+            color: var(--tp-common-black);
+        }
+        & .tp-footer-link {
+            color: var(--tp-common-black);
+            &:hover{
+                color: var(--tp-common-blue);
+            }
+        }
+        & .tp-footer-widget-title {
+            color: var(--tp-common-black);
+        }
+        & .tp-footer-widget-content ul li a {
+            color: #525356;
+            &:hover{
+                color: var(--tp-common-blue);
+            }
+        }
+    }
+}
+
+.tp-copyright{
+    &-bg{
+        padding: 30px 30px;
+        background: rgba(255, 255, 255, 0.04);
+    }
+    &-social{
+        & > span{
+            font-weight: 700;
+            font-size: 14px;
+            color: #828386;
+            margin-right: 11px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        & a{
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 50%;
+            margin-right: 6px;
+            color: rgba(255, 255, 255, 0.5);
+            background-color: rgba(255, 255, 255, 0.06);
+            &:hover{
+                color: var(--tp-common-black);
+                background-color: var(--tp-theme-1);
+            }
+        }
+    }
+    &-text{
+        & span{
+            font-weight: 500;
+            font-size: 14px;
+            color: #828386;
+            & a{
+                color: var(--tp-common-white);
+            } 
+        }
+    }
+    &-style-2{
+        & .tp-copyright-bg {
+            background:#eef0f5;
+        }
+        & .tp-copyright-text span {
+            color: #525356;
+        }
+        & .tp-copyright-text span a {
+            color: var(--tp-common-blue);
+        }
+        & .tp-copyright-social > span {
+            color: #525356;
+        }
+        & .tp-copyright-social a {
+            color: #525356;
+            background-color: var(--tp-common-white);
+            &:hover{
+                color: var(--tp-common-white);
+                background-color: var(--tp-common-blue);
+            }
+        }
+    }
+}

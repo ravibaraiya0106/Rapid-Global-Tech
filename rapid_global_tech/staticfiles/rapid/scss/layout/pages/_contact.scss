@@ -1,0 +1,168 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.3 contact css
+/*----------------------------------------*/
+
+.contact{
+    &-left{
+        &-title{
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1;
+            margin-bottom: 40px;
+            letter-spacing: -0.02em;
+            color: var(--tp-common-black);
+        }
+        &-wrap{
+            margin-right: 65px;
+            border-radius: 10px;
+            padding: 40px 35px 35px 40px;
+            border: 1px solid rgba(20, 24, 32, 0.1);
+            @media #{$lg}{
+                margin-right: 0;
+            }
+            @media #{$md,$xs}{
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+        &-info{
+            &-item{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+            }
+            &-icon{
+                margin-right: 15px;
+                & span{
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    border-radius: 100%;
+                    text-align: center;
+                    display: inline-block;
+                    background-color: rgba(247, 165, 214, 0.5);
+                }
+            }
+            & span{
+                font-weight: 600;
+                font-size: 12px;
+                display: block;
+                color: #999b9e;
+                line-height: 1;
+                margin-bottom: 3px;
+                text-transform: uppercase;
+            }
+            & a{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1;
+                color: var(--tp-common-black);
+            }
+        }
+    }
+    &-right{
+        &-wrap{
+            padding: 80px;
+            border-radius: 14px;
+            background-color: #eef0f5;
+            @media #{$lg,$md,$xs}{
+                padding: 40px;
+            }
+            & .team-details-input {
+                & input,
+                & textarea {
+                    border: none;
+                    border-radius: 6px;
+                    color: var(--tp-common-black);
+                    border: 1px solid transparent;
+                }
+            }
+            & .team-details-input input:focus, 
+            & .team-details-input textarea:focus {
+                border: 1px solid #277dff;
+                box-shadow: 0 0 0 3px rgba(39, 125, 255, 0.1);
+            }
+        }
+    }
+}
+.location{
+    &-thumb{
+        position: relative;
+        overflow: hidden;
+        @media #{$xs}{
+            height: 500px;
+        }
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            content: '';
+            border-radius: 14px;
+            background: linear-gradient(180deg, rgba(12, 14, 19, 0) 0%, rgba(12, 14, 19, 0.8) 100%);
+        }
+        & img{
+            border-radius: 14px;
+            @media #{$xs}{
+                height: 100%;
+            }
+        }
+    }
+    &-info{
+        &-main{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 60px;
+            @media #{$xs}{
+                padding: 30px;
+            }
+        }
+        &-content{
+            & a{
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 1.13;
+                display: block;
+                margin-bottom: 7px;
+                letter-spacing: -0.02em;
+                color: var(--tp-common-white);
+                @media #{$xs}{
+                    font-size: 22px;
+                }
+                &:hover{
+                    color: var(--tp-common-blue);
+                }
+            }
+            & span{
+                font-weight: 600;
+                font-size: 14px;
+                margin-bottom: 20px;
+                display: inline-block;
+                letter-spacing: -0.02em;
+                color: var(--tp-common-white);
+            }
+        }
+        & .team-details-left-info{
+            border-top: 2px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+            & > span {
+                color: var(--tp-common-white);
+                &::after {
+                    width: 2px;
+                    background-color: rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+    }
+    &-top-shape{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}

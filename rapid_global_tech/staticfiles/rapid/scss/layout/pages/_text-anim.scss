@@ -1,0 +1,52 @@
+@use '../../utils' as *;
+
+/*----------------------------------------*/
+/*  7.18 text-anim css
+/*----------------------------------------*/
+
+.tp-reveal-line {
+	overflow: hidden;
+	padding-bottom: 9px;
+}
+
+.tp-border{
+	&-line{
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		z-index: 3;
+		width: 18.60%;
+		z-index: -1;
+		border-right: 1px solid rgba(255, 255, 255, 0.06);
+		&::after{
+			position: absolute;
+			top: 300px;
+			right: -1px;
+			width: 1px;
+			opacity: 0.5;
+			height: 100px;
+			content: '';
+			animation: scroll1 15s ease-out infinite;
+			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+		}
+		&.line-2{
+			width: 39.6%;
+			&::after{
+				animation: scroll1 25s ease-out infinite;
+			}
+		}
+		&.line-3{
+			width: 60.6%;
+			&::after{
+				animation: scroll1 15s ease-out infinite;
+			}
+		}
+		&.line-4{
+			width: 81.6%;
+			&::after{
+				animation: scroll1 25s ease-out infinite;
+			}
+		}
+	}
+}

@@ -1,0 +1,311 @@
+
+/* Base styles */
+:root {
+  --blue-700: #1d4ed8;
+  --indigo-900: #312e81;
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --white: #ffffff;
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-600: #4b5563;
+  --gray-900: #111827;
+  --indigo-900: #312e81;
+  --white: #ffffff;
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(to bottom, var(--blue-50), var(--white));
+    min-height: 100vh;
+    color: var(--gray-600);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Emoji styles */
+  .emoji {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Section Header */
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .section-header h2 {
+    font-size: 2.5rem;
+    color : black;
+    margin-top: 1rem;
+  }
+  .section-header .why {
+    font-size: 2.5rem;
+    color : white;
+    margin-top: 1rem;
+  }
+  
+  .section-header .solution-text {
+    color : white;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 6rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--blue-700), var(--indigo-900));
+    position: relative;
+    color: var(--white);
+    margin-top: 10px;
+    overflow: hidden;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: var(--blue-900);
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero .subtitle {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Button styles */
+  .btn-primary {
+    background-color: var(--blue-600);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    border-radius: 9999px;
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: white;
+    color : blue;
+    /* background-color: var(--blue-700); */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+  }
+  
+  .btn-primary svg {
+    margin-left: 0.5rem;
+  }
+  
+  /* Overview Section */
+  .overview {
+    padding: 6rem 0;
+    background-color: white;
+  }
+  
+  .overview-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .overview h2 {
+    font-size: 2.5rem;
+    color: var(--blue-900);
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .overview p {
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+  }
+  
+  /* Why It Matters Section */
+  .why-matters {
+    padding: 6rem 0;
+    background : linear-gradient(135deg, var(--blue-700), var(--indigo-900));;
+  }
+  
+  .clr-white{
+    color: white;
+  }
+
+  .challenges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .challenge-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .challenge-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgb(245, 242, 242);
+    border: 1px solid gray;
+  }
+  
+  .solution-text {
+    text-align: center;
+    font-size: 1.25rem;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Key Offerings Section */
+  .key-offerings {
+    padding: 6rem 0;
+    background-color: white;
+  }
+  
+  .offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .offering-card {
+    padding: 2rem;
+    border: 2px solid var(--gray-100);
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .offering-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offering-card h3 {
+    font-size: 1.5rem;
+    color: var(--blue-900);
+    margin: 1rem 0;
+  }
+  
+  /* Benefits Section */
+  .benefits {
+    padding: 6rem 0;
+    background :linear-gradient(135deg, var(--blue-700), var(--indigo-900));
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .benefit-item {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgb(245, 242, 242);
+    border: 1px solid gray;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, var(--blue-900), var(--blue-700));
+    color: var(--white);
+  }
+  
+  .contact-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-info {
+    margin: 3rem 0;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+  }
+  
+  /* Animations */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.5s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero .subtitle {
+      font-size: 1.25rem;
+    }
+    
+    .section-header h2 {
+      font-size: 2rem;
+    }
+    
+    .offerings-grid,
+    .benefits-grid,
+    .challenges-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .contact-content h2 {
+      font-size: 2rem;
+    }
+  }
+  
