@@ -1,5 +1,191 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Cloud ERP for Auto Parts Trading</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/products/cloud_erp_for_auto_parts_trading.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="erp-icon">
+            <i class="fas fa-cloud"></i>
+        </div>
+        <h1>Cloud ERP for Auto Parts Trading</h1>
+        <p>One Platform. All Operations. Zero Chaos.</p>
+
+        <div class="highlight-box">
+            <p>In the fast-moving world of auto parts trading, running your business on spreadsheets or disconnected
+                systems leads to lost time, revenue leaks, and customer dissatisfaction. The solution? A powerful,
+                cloud-based ERP tailored for your exact industry needs.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>Integrated Modules for Sales, Purchase, Stock, Finance, CRM, and Pricing</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-shopping-cart"></i></span> Sales & Quotations</h3>
+            <p>Everything connected. Everyone on the same page.</p>
+            <ul>
+                <li>Create, manage, and track orders in real-time</li>
+                <li>No more bouncing between tools or relying on fragmented data</li>
+                <li>Real-time data flowing between modules</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-boxes"></i></span> Purchasing</h3>
+            <p>Manage supplier relationships and restock with ease</p>
+            <ul>
+                <li>Auto-generate purchase orders based on safety stock</li>
+                <li>Monitor supplier performance by cost and delivery time</li>
+                <li>Set supplier rotation rules for better negotiation</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-warehouse"></i></span> Inventory</h3>
+            <p>Real-time part-level tracking across locations</p>
+            <ul>
+                <li>Apply replenishment logic to reorder fast-moving SKUs</li>
+                <li>Prevent overstocking while avoiding stockouts</li>
+                <li>Track inventory movement across multiple warehouses</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-chart-line"></i></span> Margin Reporting</h3>
+            <p>Profitability insights at your fingertips</p>
+            <ul>
+                <li>View gross and net margins by product, category, customer</li>
+                <li>Filter by time periods to track market fluctuations</li>
+                <li>Pinpoint underperforming segments quickly</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Key Features</h2>
+    </div>
+
+    <div class="modules">
+        <div class="module">
+            <h3><i class="fas fa-cogs"></i> Auto PO Generation</h3>
+            <p>Stockouts and manual PO entry? A thing of the past.</p>
+            <ul>
+                <li>Auto-generate POs based on safety stock and sales trends</li>
+                <li>Apply replenishment logic without overstocking</li>
+                <li>Set supplier rotation rules for fair distribution</li>
+            </ul>
+        </div>
+
+        <div class="module">
+            <h3><i class="fas fa-chart-pie"></i> Margin Reporting</h3>
+            <p>Know exactly where your margins are made — and lost</p>
+            <ul>
+                <li>View margins by product, category, customer, or geography</li>
+                <li>Track impact of market fluctuations or pricing changes</li>
+                <li>Empower finance teams with data-driven decisions</li>
+            </ul>
+        </div>
+
+        <div class="module">
+            <h3><i class="fas fa-tachometer-alt"></i> Dashboard View</h3>
+            <p>Start every day with clarity</p>
+            <ul>
+                <li>Real-time snapshot of key business metrics</li>
+                <li>Order value today vs previous days</li>
+                <li>Pending quotations and follow-up alerts</li>
+                <li>Shipment delays and stock-out flags</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Ideal For</h2>
+    </div>
+
+    <div class="benefits">
+        <div class="benefit">
+            <h3><i class="fas fa-city"></i> Auto Parts Traders</h3>
+            <p>Scaling across multiple cities and locations</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-globe"></i> Importers/Exporters</h3>
+            <p>Managing multi-currency and cross-border operations</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-store"></i> B2B Sellers</h3>
+            <p>Needing robust inventory, pricing, and financial controls</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-sync-alt"></i> Modernizing Businesses</h3>
+            <p>Replacing outdated Tally/Excel systems with real-time tools</p>
+        </div>
+    </div>
+
+    <div class="why-choose">
+        <div class="section-title">
+            <h2>Why Businesses Choose Our Cloud ERP</h2>
+        </div>
+
+        <div class="why-choose-grid">
+            <div class="why-choose-item">
+                <i class="fas fa-cloud"></i>
+                <div>
+                    <h4>Fully Cloud-Based</h4>
+                    <p>Access from anywhere, anytime with internet connection</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-expand"></i>
+                <div>
+                    <h4>Scalable</h4>
+                    <p>Handles 10,000+ SKUs and 100+ daily orders with ease</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-cog"></i>
+                <div>
+                    <h4>Customizable</h4>
+                    <p>Tailored logic for pricing, credit control, tax rules</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h4>Secure</h4>
+                    <p>Role-based access and audit trails for compliance</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-plug"></i>
+                <div>
+                    <h4>Integrations</h4>
+                    <p>Connects with eCommerce portals, CRMs, and logistics</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Upgrade to Real-Time Control & Long-Term Growth</h2>
+        <p>Running an auto parts trading business is complex — but your ERP doesn't have to be. Let our Cloud ERP bring
+            clarity to your operations, automation to your workflows, and confidence to your decisions.</p>
+        <a href="#" class="cta-button">
+            <span>Book a Live Demo Today</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/products/cloud_erp_for_auto_parts_trading.js' %}"></script>
+
 {% endblock %}

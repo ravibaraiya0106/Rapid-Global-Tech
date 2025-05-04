@@ -1,5 +1,214 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>AI Forecasting Tools</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/ai_forecasting_tools.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="ai-icon">
+            <i class="fas fa-brain"></i>
+        </div>
+        <h1>AI Forecasting Tools</h1>
+        <p>Transform Guesswork into Data-Driven Decisions</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-chart-line"></i> Plan smarter, reduce wastage, avoid stockouts, and optimize operations
+                with our predictive AI tools.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>What We Offer</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-chart-bar"></i></span> Predictive Modeling</h3>
+            <p>Custom-built AI models for your unique forecasting needs:</p>
+            <ul>
+                <li><strong>Sales Forecasting:</strong> Predict trends by product, category, or region</li>
+                <li><strong>Stock Level Prediction:</strong> Anticipate reorder needs to prevent shortages</li>
+                <li><strong>Customer Demand Forecasting:</strong> Understand buying pattern shifts</li>
+                <li><strong>Procurement Planning:</strong> Optimize supplier orders based on projections</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="how-it-works">
+        <div class="section-title">
+            <h2>How It Works</h2>
+        </div>
+
+        <div class="work-steps">
+            <div class="work-step">
+                <div class="work-step-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Time-Series Forecasting</h3>
+                <p>Advanced techniques like ARIMA, Prophet, and LSTM networks analyze your historical data to predict
+                    future values with precision.</p>
+            </div>
+
+            <div class="work-step">
+                <div class="work-step-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Trained on Your Data</h3>
+                <p>Your AI model learns specifically from your business's unique history, sales records, and market
+                    conditions.</p>
+            </div>
+
+            <div class="work-step">
+                <div class="work-step-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Continuous Learning</h3>
+                <p>Models recalibrate and refine predictions automatically as new data comes in, keeping you ahead of
+                    market changes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Why AI Forecasting Matters</h2>
+    </div>
+
+    <div class="benefits">
+        <div class="benefit-card">
+            <h3><i class="fas fa-boxes"></i> Optimized Inventory</h3>
+            <ul>
+                <li>Know exactly when and how much to restock</li>
+                <li>Avoid unnecessary storage costs</li>
+                <li>Prevent lost sales from stockouts</li>
+            </ul>
+        </div>
+
+        <div class="benefit-card">
+            <h3><i class="fas fa-coins"></i> Better Financial Planning</h3>
+            <ul>
+                <li>Accurately predict cash flow and revenue</li>
+                <li>Optimize procurement budgets</li>
+                <li>Plan for seasonal fluctuations</li>
+            </ul>
+        </div>
+
+        <div class="benefit-card">
+            <h3><i class="fas fa-users"></i> Customer Satisfaction</h3>
+            <ul>
+                <li>Always have high-demand products ready</li>
+                <li>Reduce customer frustration</li>
+                <li>Build loyalty through reliability</li>
+            </ul>
+        </div>
+
+        <div class="benefit-card">
+            <h3><i class="fas fa-truck"></i> Strategic Procurement</h3>
+            <ul>
+                <li>Place smarter, earlier orders</li>
+                <li>Benefit from early-bird pricing</li>
+                <li>Secure bulk discounts</li>
+            </ul>
+        </div>
+
+        <div class="benefit-card">
+            <h3><i class="fas fa-tachometer-alt"></i> Operational Efficiency</h3>
+            <ul>
+                <li>Move from reactive to proactive management</li>
+                <li>Align sales, operations, and logistics</li>
+                <li>Reduce last-minute scrambling</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Typical Use Cases</h2>
+    </div>
+
+    <div class="use-cases">
+        <div class="use-case">
+            <i class="fas fa-car"></i>
+            <span>Auto Parts: Predict seasonal demand for brakes, batteries, tires</span>
+        </div>
+
+        <div class="use-case">
+            <i class="fas fa-shopping-cart"></i>
+            <span>E-commerce: Forecast product sales for promotions and logistics</span>
+        </div>
+
+        <div class="use-case">
+            <i class="fas fa-industry"></i>
+            <span>Manufacturing: Anticipate raw material needs</span>
+        </div>
+
+        <div class="use-case">
+            <i class="fas fa-warehouse"></i>
+            <span>Distributors: Optimize stock across multiple warehouses</span>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Technologies We Use</h2>
+    </div>
+
+    <div class="technologies">
+        <div class="tech-badge"><i class="fab fa-python"></i> Python (Pandas, TensorFlow)</div>
+        <div class="tech-badge"><i class="fas fa-database"></i> SQL/NoSQL Databases</div>
+        <div class="tech-badge"><i class="fab fa-aws"></i> AWS Sagemaker</div>
+        <div class="tech-badge"><i class="fab fa-microsoft"></i> Azure ML</div>
+        <div class="tech-badge"><i class="fas fa-chart-bar"></i> Data Visualization</div>
+        <div class="tech-badge"><i class="fas fa-network-wired"></i> LSTM Networks</div>
+    </div>
+
+    <div class="why-us">
+        <div class="section-title">
+            <h2>Why Partner With Us?</h2>
+        </div>
+
+        <div class="why-us-grid">
+            <div class="why-us-item">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                    <h4>Domain Expertise</h4>
+                    <p>Years of experience in auto parts, manufacturing, e-commerce, and distribution.</p>
+                </div>
+            </div>
+
+            <div class="why-us-item">
+                <i class="fas fa-cut"></i>
+                <div>
+                    <h4>Custom-Built Models</h4>
+                    <p>We build and fine-tune forecasting models based on YOUR reality.</p>
+                </div>
+            </div>
+
+            <div class="why-us-item">
+                <i class="fas fa-hands-helping"></i>
+                <div>
+                    <h4>End-to-End Support</h4>
+                    <p>From data collection to deployment and monitoring, we handle it all.</p>
+                </div>
+            </div>
+
+            <div class="why-us-item">
+                <i class="fas fa-bullseye"></i>
+                <div>
+                    <h4>Actionable Outputs</h4>
+                    <p>Focus on usable insights that directly feed into your business strategies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to See the Future with Confidence?</h2>
+        <p>Start making smarter, faster, and sharper decisions today with our AI Forecasting Tools.</p>
+        <a href="#" class="cta-button">
+            <span>Schedule a Discovery Session</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/ai_forecasting_tools.js' %}"></script>
+
 {% endblock %}

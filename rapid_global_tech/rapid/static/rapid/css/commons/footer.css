@@ -1,0 +1,88 @@
+footer {
+    background-color: #0077b6;
+    color: white;
+}
+
+.tp-footer-3-widget-title {
+    font-size: 18px;
+    color: #fff;
+}
+
+.tp-footer-3-widget-menu ul {
+    padding: 0;
+    list-style: none;
+}
+
+.tp-footer-3-widget-menu ul li {
+    margin-bottom: 10px;
+}
+
+.tp-footer-3-widget-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.tp-footer-3-widget-menu ul li a:hover {
+    color: #ffd700;
+}
+
+.tp-footer-3-widget-contact-item span {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.tp-footer-3-widget-contact-item a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.tp-footer-3-widget-contact-item a:hover {
+    color: #fff;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons .social-icon {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #0077b6;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    background-color: #005f8c;
+}
+
+.tp-copyright-3-left p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.tp-copyright-3-left a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.tp-copyright-3-left a:hover {
+    color: #fff;
+}

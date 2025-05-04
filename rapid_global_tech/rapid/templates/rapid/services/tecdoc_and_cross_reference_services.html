@@ -1,6 +1,119 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>TecDoc & Cross-Reference
-        Services</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/tecdoc_and_cross_reference_services.css' %}">
+
+<section class="hero">
+    <h1 class="clr-white">TecDoc & Cross-Reference <br>
+        <span class="clr-white">Services</span>
+    </h1>
+
+    <p class="hero-text clr-white">
+        Empowering auto parts businesses with precise catalog data management,
+        vehicle application accuracy, and optimized product information for global markets.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#services" class="btn-primary">Explore Our Services</a>
+        <a href="#contact" class="btn-secondary">Contact Us</a>
+    </div>
+    </div>
+</section>
+
+<section class="service-overview" id="services">
+    <div class="container">
+        <h2>Comprehensive TecDoc and Cross-Reference Support</h2>
+        <p class="section-text">
+            At Rapid Global Tech, we specialize in providing comprehensive TecDoc and cross-reference
+            support services tailored to meet the unique needs of auto parts brands, distributors, and
+            private labels. Our solutions are designed to empower your business by:
+        </p>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <p class="clr-black">Enhanced catalog presence</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Refined vehicle application accuracy</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Improved product data quality</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Global market compatibility</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Commercial optimization</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">TecDoc compliance</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2>Our Key Offerings</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-database fa-2x"></i>
+                </div>
+                <h3>TecDoc Data Management</h3>
+                <p>We help structure, maintain, and publish your product information with maximum precision</p>
+                <ul class="feature-list">
+                    <li>Vehicle Application Linking</li>
+                    <li>Product-to-Vehicle Mapping</li>
+                    <li>Article Management</li>
+                    <li>Publishing Support</li>
+                </ul>
+                <a href="#learn-more" class="learn-more">Learn more</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-code-compare fa-2x"></i>
+                </div>
+                <h3>Cross-Reference & OE Mapping</h3>
+                <p>We provide robust, research-driven cross-reference services that strengthen your product coverage</p>
+                <ul class="feature-list">
+                    <li>OE and Competitor Matching</li>
+                    <li>Catalog Cross-Checking</li>
+                    <li>Equivalency Verification</li>
+                </ul>
+                <a href="#learn-more" class="learn-more">Learn more</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </div>
+                <h3>PartFinder Tool Integration</h3>
+                <p>Deliver a superior customer experience with high-performing vehicle lookup tools</p>
+                <ul class="feature-list">
+                    <li>Web-Based PartFinder Development</li>
+                    <li>TecDoc Integration</li>
+                    <li>Real-Time Lookup</li>
+                    <li>Enhanced Product Pages</li>
+                </ul>
+                <a href="#learn-more" class="learn-more">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2 class="clr-white">Ready to Optimize Your Automotive Data?</h2>
+        <p class="clr-white">Partner with us to ensure your catalog is not only TecDoc-compliant but also strategically
+            positioned for increased visibility, reliability, and commercial success.</p>
+        <div class="cta-buttons">
+            <a href="#contact" class="btn-primary">Contact Us Today</a>
+            <a href="#demo" class="btn-secondary">Request Demo</a>
+        </div>
+    </div>
+</section>
+<script src="{% static 'rapid/js/services/tecdoc_and_cross_reference_services.js' %}"></script>
+
 {% endblock %}

@@ -1,5 +1,120 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Monthly Reporting Dashboards</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/monthly_reporting_dashboards.css' %}">
+
+<section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title clr-white">Transform Your Data Into <span class="accent">Strategic Insights</span></h1>
+        <p class="hero-subtitle">Custom monthly reporting dashboards that help senior management make data-driven decisions with clarity and confidence.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Schedule a Demo</a>
+          <a href="#features" class="btn btn-secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-badge">Trusted by 500+ companies worldwide</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Services</span>
+        <h2 class="section-title">Comprehensive Dashboard Solutions</h2>
+        <p class="section-subtitle">Our monthly reporting dashboards transform raw data into actionable insights, helping your business make informed decisions.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fa-solid fa-chart-column fa-3x"></i>
+          <h3 class="pt-30">Custom Excel & Power BI Dashboards</h3>
+          <p>Tailored reporting solutions designed specifically for senior management needs, with flexible options for both Excel and Power BI platforms.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-chart-line-up fa-3x"></i>
+          <h3 class="pt-30">Sales Performance Analysis</h3>
+          <p>Comprehensive breakdowns by customer, country, brand, and product category to identify growth opportunities.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-chart-pie-simple fa-3x"></i>
+          <h3 class="pt-30">Margin Heatmaps & Variance</h3>
+          <p>Visual representations that highlight profitability trends and compare actual performance against goals.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-up-to-line fa-3x"></i>
+          <h3 class="pt-30">Forecast vs Actual Trends</h3>
+          <p>Easy-to-understand comparisons between projections and results, helping improve forecasting accuracy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="dashboards" class="dashboards">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Dashboard Examples</span>
+        <h2 class="section-title">Powerful Visualization Solutions</h2>
+        <p class="section-subtitle clr-black">Explore how our customized dashboards bring clarity to complex data and help drive strategic decisions.</p>
+      </div>
+      <div class="dashboard-grid">
+        <div class="dashboard-card">
+          <img src="https://images.pexels.com/photos/6476260/pexels-photo-6476260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sales Dashboard">
+          <div class="dashboard-content">
+            <h3>Sales Performance Dashboard</h3>
+            <p>Track sales across customers, countries, brands, and product categories with interactive filters.</p>
+            <ul class="dashboard-features">
+              <li>Customer segmentation</li>
+              <li>Geographical analysis</li>
+              <li>Brand performance</li>
+              <li>Product category breakdown</li>
+            </ul>
+          </div>
+        </div>
+        <div class="dashboard-card">
+          <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Margin Dashboard">
+          <div class="dashboard-content">
+            <h3>Margin Analysis Dashboard</h3>
+            <p>Visualize profitability with color-coded heatmaps that highlight high and low-margin areas.</p>
+            <ul class="dashboard-features">
+              <li>Margin heatmaps</li>
+              <li>Profitability trends</li>
+              <li>Variance analysis</li>
+              <li>Cost breakdowns</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits" class="benefits">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-badge">Why Choose Us</span>
+        <h2 class="clr-white">Transform How You Use Data</h2>
+        <p class="clr-white">Our Monthly Reporting Dashboards Service provides competitive advantages that drive business success.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <i class="fa-light fa-clock fa-3x"></i>
+          <h3 class="pt-30">Faster Decision Making</h3>
+          <p>React quickly to challenges and opportunities without waiting for manual reports.</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-regular fa-users fa-3x"></i>
+          <h3 class="pt-30">Improved Transparency</h3>
+          <p>Build trust across teams and promote accountability with clear reporting.</p>
+        </div>
+        <div class="benefit-card">
+          <i class="fa-regular fa-bolt fa-3x"></i>
+          <h3 class="pt-30">Increased Efficiency</h3>
+          <p>Reduce administrative work, allowing teams to focus on analysis and strategy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="{% static 'rapid/js/services/monthly_reporting_dashboards.js' %}"></script>
+
 {% endblock %}

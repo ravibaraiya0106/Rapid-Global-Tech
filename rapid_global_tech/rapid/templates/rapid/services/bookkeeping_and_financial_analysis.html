@@ -1,5 +1,249 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Bookkeeping & Financial Analysis</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/bookkeeping_and_financial_analysis.css' %}">
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="fade-in clr-white">Expert Bookkeeping & Financial Analysis</h1>
+            <p class="fade-in">Unlock the true potential of your business with our comprehensive financial services.</p>
+            <div class="hero-buttons fade-in">
+                <a href="#services" class="btn btn-primary">Explore Services</a>
+                <a href="#contact" class="btn btn-outline">Get a Free Consultation</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Comprehensive Services</h2>
+            <p>Professional financial support tailored to your business needs</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 6L9 17L4 12"></path>
+                    </svg>
+                </div>
+                <h3>Daily Transaction Recording</h3>
+                <p>Accurate recording of purchases, sales, payments, and journal entries to keep your books up-to-date.
+                </p>
+                <ul class="service-features">
+                    <li>Real-time transaction tracking</li>
+                    <li>Error-free documentation</li>
+                    <li>Complete financial visibility</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M12 6v6l4 2"></path>
+                    </svg>
+                </div>
+                <h3>Multi-Currency Support</h3>
+                <p>Comprehensive support for businesses engaging in international transactions with multiple currencies.
+                </p>
+                <ul class="service-features">
+                    <li>Real-time exchange rates</li>
+                    <li>Accurate currency conversion</li>
+                    <li>Proper recording of gains/losses</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                        </path>
+                        <polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline>
+                        <polyline points="7.5 19.79 7.5 14.6 3 12"></polyline>
+                        <polyline points="21 12 16.5 14.6 16.5 19.79"></polyline>
+                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                    </svg>
+                </div>
+                <h3>Account Reconciliation</h3>
+                <p>Thorough reconciliation of bank, supplier, and customer ledgers to ensure accuracy and detect
+                    discrepancies.</p>
+                <ul class="service-features">
+                    <li>Regular verification checks</li>
+                    <li>Early error detection</li>
+                    <li>Financial integrity assurance</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                    </svg>
+                </div>
+                <h3>Ledger Management</h3>
+                <p>Meticulous maintenance of your trial balance and general ledger for accurate financial reporting.</p>
+                <ul class="service-features">
+                    <li>Properly categorized entries</li>
+                    <li>Regular trial balance verification</li>
+                    <li>Audit-ready ledger management</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <h3>Month & Year-End Closing</h3>
+                <p>Comprehensive support for month-end and year-end closing processes to ensure accurate financial
+                    reporting.</p>
+                <ul class="service-features">
+                    <li>Closing entries preparation</li>
+                    <li>Financial statement generation</li>
+                    <li>Compliance verification</li>
+                </ul>
+            </div>
+
+            <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                        <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                    </svg>
+                </div>
+                <h3>Financial Analysis</h3>
+                <p>In-depth ratio analysis and budget comparisons to provide actionable insights for better
+                    decision-making.</p>
+                <ul class="service-features">
+                    <li>Liquidity & profitability ratios</li>
+                    <li>Budget variance analysis</li>
+                    <li>Strategic recommendations</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-banner">
+    <div class="container">
+        <div class="cta-content">
+            <h2 class="clr-white">Transform Your Financial Management Today</h2>
+            <p class="clr-white">Take control of your business finances with our expert bookkeeping and analysis
+                services.</p>
+            <a href="#contact" class="btn btn-accent">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<section id="benefits" class="benefits">
+    <div class="container">
+        <div class="section-header">
+            <h2>Why Choose Our Services</h2>
+            <p>Experience the difference with our professional approach</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card" data-aos="fade-right">
+                <div class="benefit-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3>Personalized Attention</h3>
+                <p>Tailored services to meet your specific business needs and industry standards with individual
+                    attention.</p>
+            </div>
+
+            <div class="benefit-card" data-aos="fade-right" data-aos-delay="100">
+                <div class="benefit-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                    </svg>
+                </div>
+                <h3>Experienced Professionals</h3>
+                <p>Our team consists of certified bookkeepers and financial analysts with years of industry experience.
+                </p>
+            </div>
+
+            <div class="benefit-card" data-aos="fade-right" data-aos-delay="200">
+                <div class="benefit-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                </div>
+                <h3>Cutting-Edge Technology</h3>
+                <p>Utilizing the latest accounting software and cloud-based platforms for faster, more accurate results.
+                </p>
+            </div>
+
+            <div class="benefit-card" data-aos="fade-right" data-aos-delay="300">
+                <div class="benefit-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </div>
+                <h3>Transparent Communication</h3>
+                <p>Regular updates and easy-to-understand reports to keep you informed about your financial status.</p>
+            </div>
+
+            <div class="benefit-card" data-aos="fade-right" data-aos-delay="400">
+                <div class="benefit-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                </div>
+                <h3>Full Compliance & Security</h3>
+                <p>Strict adherence to all regulations with confidential handling of your sensitive financial data.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <div class="container">
+        <div class="about-content">
+            <div class="about-text" data-aos="fade-right">
+                <div class="section-header">
+                    <h2>Who We Are</h2>
+                </div>
+                <p>At Rapid Global Tech, we believe that every business deserves top-notch financial support. Our
+                    mission is to empower businesses with accurate financial records and meaningful insights that drive
+                    success.</p>
+                <p>With years of experience in the industry, our team of certified professionals is committed to
+                    delivering excellence in bookkeeping and financial analysis. We understand the challenges businesses
+                    face in managing their finances and we're here to make it easier.</p>
+                <p>Our approach combines technical expertise with a deep understanding of your business needs, ensuring
+                    that our services add real value to your operations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{% static 'rapid/js/services/bookkeeping_and_financial_analysis.js' %}"></script>
+
 {% endblock %}

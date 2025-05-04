@@ -1,6 +1,179 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Pricing Strategy & Market
-        Research</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/pricing_strategy_and_market_research.css' %}">
+
+<section class="hero">
+    <h1 class="clr-white">Pricing Strategy & <br>
+        <span>Market Research</span>
+    </h1>
+
+    <p class="hero-text clr-white">
+        Data-driven pricing strategies and market insights to optimize your automotive aftermarket business
+        for maximum profitability and competitive advantage.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="#services" class="btn-primary">Explore Our Services</a>
+        <a href="#contact" class="btn-secondary">Contact Us</a>
+    </div>
+    </div>
+</section>
+
+<section class="service-overview" id="services">
+    <div class="container">
+        <h2>Comprehensive Pricing Strategy Solutions</h2>
+        <p class="section-text">
+            In the ever-evolving automotive aftermarket industry, staying ahead requires more than quality products.
+            Our comprehensive pricing and research services help you optimize strategies for sustainable growth.
+        </p>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <p class="clr-black">Data-driven pricing decisions</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Competitive market analysis</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Regional market insights</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Margin optimization</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Channel-specific strategies</p>
+            </div>
+            <div class="benefit-card">
+                <p class="clr-black">Launch strategy support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2>Strategic Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-chart-bar fa-2x"></i>
+                </div>
+                <h3>Competitor Pricing Analysis</h3>
+                <p>In-depth analysis across brands, customer segments, and markets</p>
+                <ul class="feature-list">
+                    <li>Brand-wise comparison</li>
+                    <li>Customer-focused insights</li>
+                    <li>Market-specific trends</li>
+                    <li>Competitive positioning</li>
+                </ul>
+                <a href="#learn-more" class="learn-more clr-blue">Learn more</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-code-compare fa-2x"></i>
+                </div>
+                <h3>OEM vs IAM Benchmarking</h3>
+                <p>Strategic price positioning between OEM and aftermarket segments</p>
+                <ul class="feature-list">
+                    <li>Premium margin analysis</li>
+                    <li>IAM trend tracking</li>
+                    <li>Customer behavior insights</li>
+                    <li>Market share optimization</li>
+                </ul>
+                <a href="#learn-more" class="learn-more clr-blue">Learn more</a>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fa-solid fa-globe fa-2x"></i>
+                </div>
+                <h3>Country-Specific Strategy</h3>
+                <p>Localized pricing strategies with detailed margin simulations</p>
+                <ul class="feature-list">
+                    <li>Economic analysis</li>
+                    <li>Tax consideration</li>
+                    <li>Margin simulation</li>
+                    <li>Market adaptation</li>
+                </ul>
+                <a href="#learn-more" class="learn-more clr-blue">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-content">
+                <h2>Dynamic Price Banding</h2>
+                <p class="feature-description">
+                    Optimize pricing across multiple sales channels with our dynamic price banding strategy:
+                </p>
+                <ul class="feature-list-detailed">
+                    <li>
+                        <strong>Channel-Specific Pricing</strong>
+                        <p>Tailored price ranges for direct sales, stockists, and e-commerce platforms</p>
+                    </li>
+                    <li>
+                        <strong>Distributor Management</strong>
+                        <p>Balanced discount structures that protect relationships and margins</p>
+                    </li>
+                    <li>
+                        <strong>E-commerce Optimization</strong>
+                        <p>Special pricing strategies considering digital marketplace dynamics</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="feature-image">
+                <div class="image-placeholder">
+                    <i class="icon-trending-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="research-support">
+    <div class="container">
+        <h2>Research Support for Market Entry</h2>
+        <div class="research-grid">
+            <div class="research-card">
+                <i class="icon-search"></i>
+                <h3>Pre-launch Studies</h3>
+                <p>Comprehensive market analysis before product development</p>
+            </div>
+            <div class="research-card">
+                <i class="icon-target"></i>
+                <h3>Entry Strategy</h3>
+                <p>Optimal pricing approach for market penetration</p>
+            </div>
+            <div class="research-card">
+                <i class="icon-users"></i>
+                <h3>Competitor Analysis</h3>
+                <p>Detailed review of existing market offerings</p>
+            </div>
+            <div class="research-card">
+                <i class="icon-flag"></i>
+                <h3>Launch Planning</h3>
+                <p>Strategic pricing and promotional recommendations</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2>Ready to Optimize Your Pricing Strategy?</h2>
+        <p class="clr-white">Let's work together to future-proof your automotive parts business with smart,
+            adaptive pricing strategies and market insights that deliver real results.</p>
+        <div class="cta-buttons">
+            <a href="#contact" class="btn-primary">Contact Us Today</a>
+            <a href="#demo" class="btn-secondary">Request Consultation</a>
+        </div>
+    </div>
+</section>
+<script src="{% static 'rapid/js/services/pricing_strategy_and_market_research.js' %}"></script>
+
 {% endblock %}

@@ -1,5 +1,285 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Excel To Web Conversions</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/excel_to_web_conversions.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="erp-icon">
+            <i class="fas fa-file-excel"></i>
+        </div>
+        <h1>Excel to Web Conversions</h1>
+        <p>Transform your complex spreadsheets into powerful, accessible web applications</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-lightbulb"></i> Bridge the gap between traditional spreadsheet usage and modern
+                web-based tools.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>Why Convert Excel to Web?</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-exclamation-triangle"></i></span> Complexity & Errors</h3>
+            <p>Spreadsheets often grow into complex documents with dozens of formulas and hidden dependencies:</p>
+            <ul>
+                <li>Single accidental changes can cascade into major errors</li>
+                <li>Troubleshooting takes hours of valuable time</li>
+                <li>Web interfaces offer controlled inputs and protected logic</li>
+                <li>Minimizes room for user error</li>
+                <li>Streamlines workflows significantly</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-copy"></i></span> Version Control Nightmares</h3>
+            <p>Teams waste time dealing with conflicting spreadsheet versions:</p>
+            <ul>
+                <li>No more "Final_V2_Updated_Latest.xlsx" confusion</li>
+                <li>Web apps provide one live version for all users</li>
+                <li>Real-time data access reduces misalignment</li>
+                <li>Saves hours of rework and reconciliation</li>
+                <li>Eliminates costly mistakes from version conflicts</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-users"></i></span> Collaboration Challenges</h3>
+            <p>Excel limits simultaneous work and real-time updates:</p>
+            <ul>
+                <li>Emailing files back and forth slows processes</li>
+                <li>Cloud sharing still restricts collaboration</li>
+                <li>Web apps allow multiple users to work in parallel</li>
+                <li>Update entries and generate reports simultaneously</li>
+                <li>Access from any device, anywhere</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>What We Offer</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-laptop-code"></i></span> Turn Excel Workflows into Web Interfaces
+            </h3>
+            <p>We transform your spreadsheets into intuitive web applications:</p>
+            <ul>
+                <li>Smart forms for structured data input</li>
+                <li>Conditional logic and dropdown menus</li>
+                <li>Real-time calculations and results display</li>
+                <li>Tab-based or step-by-step workflows</li>
+                <li>Built-in validations and error-checking</li>
+                <li>Cleaner than complex multi-tab spreadsheets</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-tachometer-alt"></i></span> Replace Spreadsheets with Dashboards
+            </h3>
+            <p>Condense complex tools into purpose-driven web apps:</p>
+            <ul>
+                <li>Visual dashboards with KPIs and trend graphs</li>
+                <li>Instant calculators for costing and financial metrics</li>
+                <li>Clean input forms with auto-fill and dependencies</li>
+                <li>Search interfaces to find data by criteria</li>
+                <li>One-click exports to PDF, Excel, and CSV</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-lock"></i></span> Streamlined Logic & Centralized Access</h3>
+            <p>Protect your business logic with web-based solutions:</p>
+            <ul>
+                <li>Formulas locked in backend code</li>
+                <li>Input errors flagged instantly</li>
+                <li>Real-time calculation updates</li>
+                <li>Audit trails track all user actions</li>
+                <li>Version history maintained automatically</li>
+                <li>Role-based access controls</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Benefits of Excel to Web Conversion</h2>
+    </div>
+
+    <div class="benefits">
+        <div class="benefit">
+            <h3><i class="fas fa-rocket"></i> Increased Speed & Efficiency</h3>
+            <p>Fewer clicks, faster inputs, and immediate outputs optimize productivity.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-globe"></i> Anywhere, Anytime Access</h3>
+            <p>Access from desktops, tablets, or phones with just a web browser.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-shield-alt"></i> Better Data Security</h3>
+            <p>Password protection, user access levels, and encrypted databases.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-chart-line"></i> Smarter Decisions</h3>
+            <p>Centralized dashboards and analytics provide clearer insights.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-cogs"></i> Easy Maintenance</h3>
+            <p>Roll out controlled updates without requiring user actions.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-expand"></i> Future Scalability</h3>
+            <p>Add new features without rebuilding entire spreadsheets.</p>
+        </div>
+    </div>
+
+    <div class="use-cases">
+        <div class="section-title">
+            <h2>Use Cases Across Industries</h2>
+        </div>
+
+        <div class="use-cases-grid">
+            <div class="use-case">
+                <h4><i class="fas fa-car"></i> Auto Parts & Manufacturing</h4>
+                <ul>
+                    <li>Price lookup portals</li>
+                    <li>Inventory calculators</li>
+                    <li>Part compatibility matchers</li>
+                    <li>Service cost estimators</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h4><i class="fas fa-coins"></i> Finance & Insurance</h4>
+                <ul>
+                    <li>Loan calculators</li>
+                    <li>Quotation systems</li>
+                    <li>Investment simulations</li>
+                    <li>Budgeting dashboards</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h4><i class="fas fa-hard-hat"></i> Construction & Real Estate</h4>
+                <ul>
+                    <li>Cost estimation tools</li>
+                    <li>Material calculators</li>
+                    <li>Timeline planning</li>
+                    <li>Bid generation platforms</li>
+                </ul>
+            </div>
+
+            <div class="use-case">
+                <h4><i class="fas fa-shopping-cart"></i> E-Commerce & Retail</h4>
+                <ul>
+                    <li>Pricing engines</li>
+                    <li>Bulk order estimators</li>
+                    <li>Supplier comparison tools</li>
+                    <li>Product configurators</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-choose">
+        <div class="section-title">
+            <h2>Our Process</h2>
+        </div>
+
+        <div class="process-steps">
+            <div class="process-step">
+                <h4>Requirement Gathering</h4>
+                <p>We review your Excel sheet and map all inputs, formulas, outputs, and dependencies.</p>
+            </div>
+
+            <div class="process-step">
+                <h4>UI/UX Prototyping</h4>
+                <p>We design wireframes of your web application layout, ensuring user-friendliness.</p>
+            </div>
+
+            <div class="process-step">
+                <h4>Development</h4>
+                <p>Our developers translate spreadsheet logic into clean, responsive code.</p>
+            </div>
+
+            <div class="process-step">
+                <h4>Testing & Validation</h4>
+                <p>We rigorously test for performance, accuracy, and cross-device compatibility.</p>
+            </div>
+
+            <div class="process-step">
+                <h4>Deployment & Training</h4>
+                <p>We deploy to your preferred hosting and provide team onboarding.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech-stack">
+        <div class="section-title">
+            <h2>Technologies We Use</h2>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item">
+                <i class="fab fa-react"></i>
+                <span>React.js</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fab fa-vuejs"></i>
+                <span>Vue.js</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fab fa-python"></i>
+                <span>Python (Flask, Django)</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fab fa-php"></i>
+                <span>PHP</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <span>MySQL, PostgreSQL</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fas fa-lock"></i>
+                <span>HTTPS, JWT, 2FA</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Upgrade Your Excel Game?</h2>
+        <p>Let us help you transition from spreadsheets to a robust, scalable web application.</p>
+        <a href="#" class="cta-button">
+            <span>Book a Free Demo</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/excel_to_web_conversions.js' %}"></script>
+
 {% endblock %}

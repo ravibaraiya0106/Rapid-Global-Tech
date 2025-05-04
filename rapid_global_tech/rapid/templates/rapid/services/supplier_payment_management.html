@@ -1,5 +1,266 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Supplier Payment Management</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/supplier_payment_management.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Streamline Your Accounts Payable for Peak Efficiency</h1>
+        <p>Transform your supplier payment processes from operational necessity to strategic advantage with our
+            intelligent payment management solution.</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-exclamation-circle"></i> Did you know? Companies using automated payment systems save an
+                average of 2-3% annually through early payment discounts and reduced processing costs.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>Our Supplier Payment Management Solution</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon">1</span> End-to-End Accounts Payable Tracking</h3>
+            <p>Gain complete visibility and control over your entire accounts payable lifecycle from purchase order to
+                payment.</p>
+
+            <p><strong>Our Solution:</strong></p>
+            <ul>
+                <li>Automated invoice capture from multiple sources</li>
+                <li>3-way matching (PO, invoice, GRN)</li>
+                <li>Real-time payable tracking dashboard</li>
+                <li>Automated payment status updates</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-chart-line"></i> Key Benefits</h4>
+                <ul>
+                    <li>Eliminate manual tracking spreadsheets</li>
+                    <li>Reduce payment errors by up to 90%</li>
+                    <li>Improve audit readiness</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon">2</span> Intelligent Payment Scheduling</h3>
+            <p>Optimize cash flow by strategically scheduling payments based on multiple business priorities.</p>
+
+            <p><strong>Our Solution:</strong></p>
+            <ul>
+                <li>Dynamic payment calendars</li>
+                <li>Discount opportunity alerts</li>
+                <li>Supplier priority management</li>
+                <li>Cash flow forecasting tools</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-hand-holding-usd"></i> Key Benefits</h4>
+                <ul>
+                    <li>Capture 98%+ of early payment discounts</li>
+                    <li>Improve supplier relationships</li>
+                    <li>Enhance working capital management</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon">3</span> Automated Approval Workflows</h3>
+            <p>Implement robust financial controls with flexible, multi-level approval processes.</p>
+
+            <p><strong>Our Solution:</strong></p>
+            <ul>
+                <li>Customizable approval rules</li>
+                <li>Mobile approvals</li>
+                <li>Audit trails with digital signatures</li>
+                <li>Exception management</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-shield-alt"></i> Key Benefits</h4>
+                <ul>
+                    <li>Reduce fraud risk</li>
+                    <li>Accelerate approval cycles by 70%</li>
+                    <li>Maintain compliance effortlessly</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon">4</span> Smart Payment Alerts</h3>
+            <p>Never miss a critical payment event with our proactive notification system.</p>
+
+            <p><strong>Our Solution:</strong></p>
+            <ul>
+                <li>Configurable alert thresholds</li>
+                <li>Multi-channel notifications</li>
+                <li>Duplicate payment prevention</li>
+                <li>FX risk monitoring</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-bell"></i> Key Benefits</h4>
+                <ul>
+                    <li>Eliminate late payment penalties</li>
+                    <li>Prevent duplicate payments</li>
+                    <li>Mitigate currency risk</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon">5</span> Seamless System Integration</h3>
+            <p>Connect your payment processes with existing financial systems for end-to-end automation.</p>
+
+            <p><strong>Our Solution:</strong></p>
+            <ul>
+                <li>Pre-built ERP connectors</li>
+                <li>API-first architecture</li>
+                <li>Bi-directional sync</li>
+                <li>Custom integration support</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-plug"></i> Key Benefits</h4>
+                <ul>
+                    <li>Eliminate manual data entry</li>
+                    <li>Maintain single source of truth</li>
+                    <li>Reduce reconciliation time</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon">6</span> Advanced Payment Analytics</h3>
+            <p>Gain actionable insights from your payment data to drive better financial decisions.</p>
+
+            <p><strong>Our Solution:</strong></p>
+            <ul>
+                <li>Real-time payment dashboards</li>
+                <li>Custom report builder</li>
+                <li>Supplier performance metrics</li>
+                <li>Cash flow forecasting</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-chart-pie"></i> Key Benefits</h4>
+                <ul>
+                    <li>Identify cost-saving opportunities</li>
+                    <li>Improve financial planning</li>
+                    <li>Enhance stakeholder reporting</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-choose">
+        <div class="why-choose-content">
+            <h2>Why Leading Companies Choose Our Solution</h2>
+            <p class="subtitle">We don't just automate payments - we transform your accounts payable into a strategic
+                financial asset</p>
+
+            <div class="why-choose-grid">
+                <div class="why-choose-item">
+                    <div class="icon"><i class="fas fa-industry"></i></div>
+                    <div>
+                        <h3>Industry-Specific Expertise</h3>
+                        <p>Tailored solutions for manufacturing, retail, healthcare, technology and more with
+                            specialized payment workflows for your sector.</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-item">
+                    <div class="icon"><i class="fas fa-sliders-h"></i></div>
+                    <div>
+                        <h3>Unmatched Flexibility</h3>
+                        <p>Customizable to your unique payment terms, approval hierarchies, supplier categories and
+                            reporting requirements.</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-item">
+                    <div class="icon"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <h3>AI-Powered Intelligence</h3>
+                        <p>Machine learning algorithms that continuously optimize payment timing and detect anomalies.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-choose-item">
+                    <div class="icon"><i class="fas fa-lock"></i></div>
+                    <div>
+                        <h3>Bank-Grade Security</h3>
+                        <p>Enterprise-level security with SOC 2 compliance, encryption, and multi-factor authentication.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-choose-item">
+                    <div class="icon"><i class="fas fa-globe"></i></div>
+                    <div>
+                        <h3>Global Payment Support</h3>
+                        <p>Manage payments in 120+ currencies with automated FX conversion and hedging alerts.</p>
+                    </div>
+                </div>
+
+                <div class="why-choose-item">
+                    <div class="icon"><i class="fas fa-headset"></i></div>
+                    <div>
+                        <h3>Dedicated Support</h3>
+                        <p>Your assigned payment specialist ensures smooth implementation and ongoing optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="case-study">
+        <div class="case-study-content">
+            <h2 class="clr-white">Transforming Payment Operations</h2>
+            <p class="subtitle clr-white">See how we helped a multinational manufacturer revolutionize their supplier
+                payments</p>
+
+            <div class="comparison">
+                <div class="comparison-col">
+                    <h3><i class="fas fa-times"></i> Before Implementation</h3>
+                    <ul>
+                        <li>42% of invoices paid after due date</li>
+                        <li>$280k in missed early payment discounts annually</li>
+                        <li>15+ hours weekly spent resolving payment discrepancies</li>
+                        <li>Supplier satisfaction score of 68%</li>
+                        <li>Quarterly audits took 3+ weeks</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-col">
+                    <h3><i class="fas fa-check"></i> After Implementation</h3>
+                    <ul>
+                        <li>98% of invoices paid on or before due date</li>
+                        <li>$310k annual savings from captured discounts</li>
+                        <li>75% reduction in payment discrepancies</li>
+                        <li>Supplier satisfaction score improved to 94%</li>
+                        <li>Audit time reduced to 4 days</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="testimonial clr-white">"The payment management system paid for itself in 7 months through discount
+                capture and process efficiencies alone."</p>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Transform Your Payment Processes?</h2>
+        <p>Join hundreds of companies who've turned accounts payable from a cost center into a value driver.</p>
+        <a href="#" class="cta-button">
+            <span>Schedule a Demo</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/supplier_payment_management.js' %}"></script>
+
 {% endblock %}

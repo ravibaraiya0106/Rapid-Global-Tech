@@ -1,0 +1,100 @@
+/* Desktop hover for dropdown */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+  }
+}
+
+/* Display mega menu in full width */
+.dropdown-mega {
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 2rem;
+}
+
+.dropdown-mega .col {
+  margin-bottom: 1rem;
+}
+
+.dropdown-mega a {
+  color: #001133;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-mega a:hover {
+  background-color: #eaf6fd;
+  color: #0077b6;
+}
+.nav-link.active {
+  border-bottom: 2px solid #6f42c1; /* Adjust to your preferred color */
+  font-weight: 500;
+}
+
+.navbar-brand img {
+  height: 40px;
+}
+
+.btn-contact {
+  background-color: #0092e0;
+  color: white;
+}
+
+.btn-contact:hover {
+  background-color: #0077b6;
+}
+
+/* Modify hover effect for nav links */
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0077b6;
+}
+
+/* Adjust dropdown toggle hover effect */
+.nav-item.dropdown:hover .nav-link {
+  color: #0077b6;
+}
+.nav-heading{
+  color: #0077b6;
+}
+
+/* Add bottom border to active link */
+.navbar-nav .nav-link.active {
+  border-bottom: 3px solid #0077b6; /* Adjust color as needed */
+}
+
+/* Ensure dropdown appears on mobile tap */
+.dropdown-menu.show {
+  display: block !important;
+}
+
+/* Display in two columns on small screens */
+@media (max-width: 991px) {
+  .dropdown-mega .container {
+      padding: 0;
+  }
+
+  .dropdown-mega .row {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .dropdown-mega .col {
+      flex: 0 0 50%; /* 2 columns on small screens */
+      box-sizing: border-box;
+  }
+
+  /* Show mega menu on hover on mobile as well */
+  .dropdown:hover .dropdown-menu {
+      display: block;
+  }
+}

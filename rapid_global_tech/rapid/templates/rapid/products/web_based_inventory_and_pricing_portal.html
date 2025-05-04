@@ -1,5 +1,210 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Web-Based Inventory & Pricing Portal</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/products/web_based_inventory_and_pricing_portal.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="erp-icon">
+            <i class="fas fa-boxes"></i>
+        </div>
+        <h1>Web-Based Inventory & Pricing Portal</h1>
+        <p>Smarter Visibility. Faster Decisions. Centralized Control.</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-lightbulb"></i> Transform the way your team interacts with pricing, inventory, and
+                procurement from any internet-connected device.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>Key Features</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-user-shield"></i></span> Role-Based Login for Sales & Accounts Teams
+            </h3>
+            <p>Secure access with simplified workflows for different roles:</p>
+            <ul>
+                <li><strong>Sales Representatives:</strong> Search prices, check stock, generate quotations</li>
+                <li><strong>Accounts Personnel:</strong> Manage pricing rules, track payments, tax reports</li>
+                <li><strong>Administrators:</strong> Full visibility into inventory, pricing logic, and reports</li>
+                <li>Ensures accountability and protects sensitive data</li>
+                <li>Streamlines user experience for each role</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-search-dollar"></i></span> Real-Time Price Lookup by Part Number
+            </h3>
+            <p>Instant answers mean faster deals with our advanced search:</p>
+            <ul>
+                <li>Search by part number, brand, description, or category</li>
+                <li>View live pricing with customer-specific rates</li>
+                <li>See current stock availability across all locations</li>
+                <li>Access product specs and alternate brands</li>
+                <li>View past transaction history instantly</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-box-open"></i></span> Auto PO Suggestions Based on Sales & Safety
+                Stock</h3>
+            <p>Intelligent forecasting maintains the perfect stock balance:</p>
+            <ul>
+                <li>Tracks sales velocity of each part over time</li>
+                <li>Monitors safety stock levels you set</li>
+                <li>Generates automatic PO suggestions when needed</li>
+                <li>Filter suggestions by supplier, brand, or urgency</li>
+                <li>Proactive purchasing saves time and money</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-file-download"></i></span> Downloadable Price Lists & Inventory
+                Reports</h3>
+            <p>Stay organized with ready-to-share reports in seconds:</p>
+            <ul>
+                <li>Generate brand-wise or category-wise price lists</li>
+                <li>Export live inventory summaries by warehouse</li>
+                <li>Create customer-specific pricing reports</li>
+                <li>Download inventory vs. sales trend reports</li>
+                <li>Available in PDF and Excel formats</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Business Benefits</h2>
+    </div>
+
+    <div class="benefits">
+        <div class="benefit">
+            <h3><i class="fas fa-clock"></i> Faster Decision Making</h3>
+            <p>Real-time data access eliminates delays in pricing and inventory decisions.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-chart-line"></i> Improved Stock Optimization</h3>
+            <p>Auto PO suggestions help maintain ideal inventory levels.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-mobile-alt"></i> Anywhere Access</h3>
+            <p>Web-based platform works on any internet-connected device.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-user-lock"></i> Secure Role-Based Access</h3>
+            <p>Protect sensitive data while giving teams what they need.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-file-export"></i> Effortless Reporting</h3>
+            <p>Generate compliance and analysis reports with one click.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-handshake"></i> Better Customer Service</h3>
+            <p>Instant price and stock visibility means faster responses to customers.</p>
+        </div>
+    </div>
+
+    <div class="ideal-for">
+        <div class="section-title">
+            <h2>Ideal For</h2>
+        </div>
+
+        <div class="ideal-for-grid">
+            <div class="ideal-for-item">
+                <h4><i class="fas fa-warehouse"></i> Auto Parts Wholesalers</h4>
+                <p>Managing hundreds of brands and SKUs across multiple locations.</p>
+            </div>
+
+            <div class="ideal-for-item">
+                <h4><i class="fas fa-store"></i> Retail Counters</h4>
+                <p>Needing quick stock and price visibility at the point of sale.</p>
+            </div>
+
+            <div class="ideal-for-item">
+                <h4><i class="fas fa-truck"></i> Distributors</h4>
+                <p>With remote sales teams or multiple warehouse locations.</p>
+            </div>
+
+            <div class="ideal-for-item">
+                <h4><i class="fas fa-users-cog"></i> Back-Office Teams</h4>
+                <p>Managing POs, invoicing, and customer-specific pricing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-choose">
+        <div class="section-title">
+            <h2>Why Choose Our Portal?</h2>
+        </div>
+
+        <div class="why-choose-grid">
+            <div class="why-choose-item">
+                <i class="fas fa-car"></i>
+                <div>
+                    <h4>Auto Parts Specialization</h4>
+                    <p>Built specifically for the unique needs of auto parts businesses.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-bolt"></i>
+                <div>
+                    <h4>Real-Time Updates</h4>
+                    <p>Live inventory and pricing data keeps everyone in sync.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-cloud"></i>
+                <div>
+                    <h4>Web-Based Convenience</h4>
+                    <p>Access from anywhere without complex installations.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-rupee-sign"></i>
+                <div>
+                    <h4>Cost-Effective</h4>
+                    <p>No expensive hardware or IT infrastructure needed.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h4>Secure & Reliable</h4>
+                    <p>Enterprise-grade security protects your business data.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-sliders-h"></i>
+                <div>
+                    <h4>Customizable</h4>
+                    <p>Configure to match your specific workflows and needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Transform Your Inventory Management?</h2>
+        <p>Get smarter visibility, faster decisions, and centralized control with our web-based portal.</p>
+        <a href="#" class="cta-button">
+            <span>Request a Demo Today</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/products/web_based_inventory_and_pricing_portal.js' %}"></script>
+
 {% endblock %}

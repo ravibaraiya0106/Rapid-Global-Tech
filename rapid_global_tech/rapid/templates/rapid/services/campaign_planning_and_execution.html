@@ -1,5 +1,106 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Campaign Planning & Execution</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/campaign_planning_and_execution.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="campaign-icon">
+            <i class="fas fa-bullhorn"></i>
+        </div>
+        <h1>Campaign Planning & Execution</h1>
+        <p>Fuel your auto parts business with precision-targeted campaigns that drive real results</p>
+    </div>
+</section>
+<div class="main-container">
+    <!-- Key Features -->
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><i class="fas fa-envelope"></i> Multichannel Execution</h3>
+            <ul>
+                <li>Email, WhatsApp & SMS campaigns</li>
+                <li>Smart segmentation & scheduling</li>
+                <li>Integrated campaign control</li>
+                <li>On-site banner placements</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><i class="fas fa-calendar-alt"></i> Campaign Scheduling</h3>
+            <ul>
+                <li>Product launch timelines</li>
+                <li>Stock arrival alerts</li>
+                <li>Clearance campaign triggers</li>
+                <li>Automated repeat campaigns</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><i class="fas fa-bullseye"></i> Targeted Bundling</h3>
+            <ul>
+                <li>Customer-specific offers</li>
+                <li>Smart product bundles</li>
+                <li>Back-in-stock alerts</li>
+                <li>Loyalty-based promotions</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><i class="fas fa-chart-line"></i> Performance Tracking</h3>
+            <ul>
+                <li>Real-time campaign analytics</li>
+                <li>Open & click-through rates</li>
+                <li>Conversion tracking</li>
+                <li>Visual dashboards</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Use Cases -->
+    <h2 style="text-align: center; margin: 3rem 0">Proven Results</h2>
+    <div class="use-cases">
+        <div class="case-card">
+            <h4>Auto Parts Distributor</h4>
+            <p><strong>Challenge:</strong> Overstock of slow-moving brake pads</p>
+            <p><strong>Solution:</strong> Regional WhatsApp blast with BOGO offer</p>
+            <div class="result">60% inventory cleared in 5 days</div>
+        </div>
+
+        <div class="case-card">
+            <h4>E-Commerce Seller</h4>
+            <p><strong>Challenge:</strong> Low cart conversion rates</p>
+            <p><strong>Solution:</strong> Abandoned cart nudges + discounts</p>
+            <div class="result">22% uplift in weekly orders</div>
+        </div>
+
+        <div class="case-card">
+            <h4>Retail Chain</h4>
+            <p><strong>Challenge:</strong> New product awareness</p>
+            <p><strong>Solution:</strong> Weekly email campaigns</p>
+            <div class="result">35% higher first-week sales</div>
+        </div>
+    </div>
+
+    <!-- Integrations -->
+    <h2 style="text-align: center; margin: 3rem 0">Seamless Integrations</h2>
+    <div class="integrations">
+        <div class="integration"><i class="fab fa-shopify"></i> Shopify</div>
+        <div class="integration"><i class="fas fa-comments"></i> WhatsApp API</div>
+        <div class="integration"><i class="fas fa-database"></i> Zoho CRM</div>
+        <div class="integration"><i class="fas fa-box"></i> Inventory Systems</div>
+        <div class="integration"><i class="fab fa-google"></i> Google Ads</div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="cta">
+        <h2>Ready to Launch Better Campaigns?</h2>
+        <p>Transform clicks into customers and stock into sales</p>
+        <button
+            style="background: white; color: var(--primary); border: none; padding: 1rem 2rem; border-radius: 50px; margin-top: 1.5rem; cursor: pointer; font-weight: 600;">
+            Schedule Free Consultation
+        </button>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/campaign_planning_and_execution.js' %}"></script>
+
 {% endblock %}

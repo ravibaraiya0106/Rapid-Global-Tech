@@ -1,5 +1,229 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Process Automation Bots</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/process_automation_bots.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="bot-icon">
+            <i class="fas fa-robot"></i>
+        </div>
+        <h1>Process Automation Bots</h1>
+        <p>Transform Your Operations with Smart, Custom-Built Bots</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-bolt"></i> Cut down human error, accelerate business cycles, and empower your team to
+                focus on strategic work with our automation bots.</p>
+        </div>
+    </div>
+</section>
+
+<div class="main-container">
+    <div class="section-title">
+        <h2>Key Features of Our Automation Bots</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-tools"></i></span> Custom-Built to Your Needs</h3>
+            <p>We design bots specifically tailored to your business processes — no cookie-cutter solutions!</p>
+            <ul>
+                <li>Dynamic pricing updates</li>
+                <li>Procurement approvals</li>
+                <li>Stock adjustments</li>
+                <li>Complex sales report generation</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-clock"></i></span> Scheduled or On-Demand Triggers</h3>
+            <p>Run bots exactly when you need them.</p>
+            <ul>
+                <li><strong>Scheduled Actions:</strong> Daily, weekly, or monthly automation</li>
+                <li><strong>On-Demand Execution:</strong> Instant triggers via web interface</li>
+                <li>Flexible triggering for your business pace</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-comments"></i></span> Integrated Communications</h3>
+            <p>Keep teams and customers informed in real time.</p>
+            <ul>
+                <li>Email integration for reports and updates</li>
+                <li>WhatsApp alerts for instant notifications</li>
+                <li>Auto-generated PDF documents (quotes, invoices)</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-lock"></i></span> Secure and Reliable</h3>
+            <p>Enterprise-grade security for your operations.</p>
+            <ul>
+                <li>Secure authentication protocols</li>
+                <li>Encrypted data transfer</li>
+                <li>Strict access controls</li>
+                <li>Regular security audits</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Where Our Process Automation Bots Help</h2>
+    </div>
+
+    <div class="use-cases">
+        <div class="use-case">
+            <h3><span class="number">1</span> Dynamic Pricing Automation</h3>
+            <p>Automatically adjust prices based on market conditions, supplier updates, or competitor movements.</p>
+            <ul>
+                <li>Pull latest data from multiple sources</li>
+                <li>Update pricing across all systems</li>
+                <li>Ensure accuracy and speed</li>
+            </ul>
+        </div>
+
+        <div class="use-case">
+            <h3><span class="number">2</span> Procurement Workflow Automation</h3>
+            <p>Streamline your entire procurement cycle from requests to approvals.</p>
+            <ul>
+                <li>Validate and submit purchase orders</li>
+                <li>Check supplier SLAs and compliance</li>
+                <li>Push approvals via email/WhatsApp</li>
+            </ul>
+        </div>
+
+        <div class="use-case">
+            <h3><span class="number">3</span> Stock Synchronization</h3>
+            <p>Automate stock management across multiple locations.</p>
+            <ul>
+                <li>Real-time stock level updates</li>
+                <li>Backorder notifications</li>
+                <li>Automated reordering triggers</li>
+            </ul>
+        </div>
+
+        <div class="use-case">
+            <h3><span class="number">4</span> Sales Reporting and Analysis</h3>
+            <p>Automate data gathering and report generation.</p>
+            <ul>
+                <li>Fetch data from CRM, ERP, and POS systems</li>
+                <li>Aggregate into clean reports</li>
+                <li>Deliver to decision-makers in minutes</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="benefits">
+        <div class="section-title">
+            <h2>Benefits of Using Our Automation Bots</h2>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h4>Save Time and Resources</h4>
+                    <p>Automate repetitive tasks, freeing up human hours for strategic growth initiatives.</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i class="fas fa-bullseye"></i>
+                <div>
+                    <h4>Increase Accuracy</h4>
+                    <p>Eliminate manual errors in procurement, pricing, and reporting workflows.</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i class="fas fa-tachometer-alt"></i>
+                <div>
+                    <h4>Improve Speed</h4>
+                    <p>Respond to market changes faster with real-time actions and reporting.</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h4>Enhance Collaboration</h4>
+                    <p>Automatically share reports, documents, and updates across departments.</p>
+                </div>
+            </div>
+
+            <div class="benefit">
+                <i class="fas fa-expand"></i>
+                <div>
+                    <h4>Scalability</h4>
+                    <p>Easily extend bot capabilities to handle more data, platforms, and processes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Technologies We Use</h2>
+    </div>
+
+    <div class="technologies">
+        <div class="tech-badge"><i class="fab fa-python"></i> Python + Selenium</div>
+        <div class="tech-badge"><i class="fas fa-code"></i> Flask APIs</div>
+        <div class="tech-badge"><i class="fas fa-robot"></i> RPA Tools</div>
+        <div class="tech-badge"><i class="fas fa-envelope"></i> Email Servers</div>
+        <div class="tech-badge"><i class="fab fa-whatsapp"></i> WhatsApp APIs</div>
+        <div class="tech-badge"><i class="fas fa-cloud"></i> AWS/Azure</div>
+        <div class="tech-badge"><i class="fas fa-file-pdf"></i> PDF Libraries</div>
+    </div>
+
+    <div class="why-choose">
+        <div class="section-title">
+            <h2>Why Choose Us?</h2>
+        </div>
+
+        <div class="why-choose-grid">
+            <div class="why-choose-item">
+                <i class="fas fa-cut"></i>
+                <div>
+                    <h4>Tailored Solutions</h4>
+                    <p>We analyze your workflows deeply before building bots — you get what fits you best.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-briefcase"></i>
+                <div>
+                    <h4>Business-Savvy Automation</h4>
+                    <p>Our focus is not just tech but solving real business problems.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-rocket"></i>
+                <div>
+                    <h4>Quick Deployment</h4>
+                    <p>Many bots are ready to deliver business value in just 2–4 weeks.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-sync-alt"></i>
+                <div>
+                    <h4>Continuous Improvement</h4>
+                    <p>Post-deployment support and enhancements as your needs evolve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Automate and Accelerate?</h2>
+        <p>Let's make your operations smarter, faster, and future-ready.</p>
+        <a href="#" class="cta-button">
+            <span>Contact Us Today</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/process_automation_bots.js' %}"></script>
+
 {% endblock %}

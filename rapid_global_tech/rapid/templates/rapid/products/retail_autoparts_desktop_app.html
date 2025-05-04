@@ -1,5 +1,187 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Retail Autoparts Desktop App</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/products/retail_autoparts_desktop_app.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="erp-icon">
+            <i class="fas fa-car"></i>
+        </div>
+        <h1>Retail AutoParts Desktop App</h1>
+        <p>The All-in-One Solution for Local Auto Parts Businesses</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-lightbulb"></i> Streamline billing, control inventory, and monitor sales — all from a
+                single screen.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>Key Features</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-receipt"></i></span> Customer Billing & Counter Invoicing</h3>
+            <p>Speed is everything at the sales counter — and this app ensures your billing process is fast, accurate,
+                and professional.</p>
+            <ul>
+                <li>Quick Invoicing: Generate bills within seconds</li>
+                <li>GST-Ready Format: Complies with local tax rules</li>
+                <li>Discounts & Custom Rates: Adjust prices as needed</li>
+                <li>Multi-Mode Payments: Cash, card, UPI, or credit account</li>
+                <li>Real-time sales logging</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-boxes"></i></span> Stock Management with Part-Wise Search</h3>
+            <p>Managing parts inventory simplified for auto parts businesses.</p>
+            <ul>
+                <li>Part-Wise Search: Find by number, brand, or description</li>
+                <li>Real-Time Stock View: Know exactly what's available</li>
+                <li>Batch Tracking: For expiry-sensitive parts</li>
+                <li>Stock Alerts: Get notified when items are low</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-chart-bar"></i></span> Daily Sales Reporting & Expense Tracker</h3>
+            <p>Powerful dashboard for tracking daily financials.</p>
+            <ul>
+                <li>Daily Sales Summary: View totals and top-selling parts</li>
+                <li>Expense Logging: Record all business expenses</li>
+                <li>Profit Snapshot: Understand daily profitability</li>
+                <li>Export to Excel: Share with your CA or accountant</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-tags"></i></span> Brand, Part & Category-Level Rate Control</h3>
+            <p>Flexibility to manage complex pricing rules.</p>
+            <ul>
+                <li>Set Default Prices: MRP, selling rates, cost prices</li>
+                <li>Brand-Based Pricing: Apply margin rules per brand</li>
+                <li>Category-Level Controls: Fixed margins by category</li>
+                <li>Custom Pricing: Override prices for special deals</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-warehouse"></i></span> Basic Inventory & Purchase Module</h3>
+            <p>Manage incoming stock and restocking operations smoothly.</p>
+            <ul>
+                <li>Manual Stock In/Out: Update inventory easily</li>
+                <li>Supplier Invoice Entry: Track purchases and payments</li>
+                <li>Stock Alerts: Low stock notifications</li>
+                <li>Expiry Alerts: Avoid losses on time-sensitive products</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-file-alt"></i></span> Standard Reports for Smart Decision-Making
+            </h3>
+            <p>Ready-to-use reports for better visibility and compliance.</p>
+            <ul>
+                <li>Daily Sales Report: Track turnover and revenue</li>
+                <li>Stock Summary Report: View inventory movement</li>
+                <li>GST-Ready Invoice Report: Easy tax filing</li>
+                <li>Brand-wise Sales Report: Identify top performers</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ideal-for">
+        <div class="section-title">
+            <h2>Ideal For</h2>
+        </div>
+
+        <div class="ideal-for-grid">
+            <div class="ideal-for-item">
+                <h4><i class="fas fa-store"></i> Local Auto Parts Shops</h4>
+                <p>Digitize billing, stock control, and reporting for single-location shops with minimal learning curve.
+                </p>
+            </div>
+
+            <div class="ideal-for-item">
+                <h4><i class="fas fa-tools"></i> Single-Outlet Garage Chains</h4>
+                <p>Benefit from better inventory visibility and customer tracking for spare parts sales.</p>
+            </div>
+
+            <div class="ideal-for-item">
+                <h4><i class="fas fa-exchange-alt"></i> Small Traders Shifting from Paper/Excel</h4>
+                <p>Your smooth, affordable step into organized retail operations without complex ERP systems.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-choose">
+        <div class="section-title">
+            <h2>Why Choose Our Desktop App?</h2>
+        </div>
+
+        <div class="why-choose-grid">
+            <div class="why-choose-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                    <h4>Built for Indian Auto Parts Businesses</h4>
+                    <p>Tailored specifically for local market needs and challenges.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-file-invoice-dollar"></i>
+                <div>
+                    <h4>GST-Ready & Easy to Use</h4>
+                    <p>Compliant with tax rules and designed for simplicity.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-rupee-sign"></i>
+                <div>
+                    <h4>Affordable, One-Time Pricing</h4>
+                    <p>No recurring subscriptions or hidden fees.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-desktop"></i>
+                <div>
+                    <h4>Simple UI, No Training Required</h4>
+                    <p>Intuitive interface that anyone can use immediately.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-wifi-slash"></i>
+                <div>
+                    <h4>Offline Operation</h4>
+                    <p>Works without constant internet connection.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-lock"></i>
+                <div>
+                    <h4>Secure & Reliable</h4>
+                    <p>Data backup options and user access control.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Get Started Today</h2>
+        <p>Say goodbye to billing books, Excel headaches, and inventory confusion.</p>
+        <a href="#" class="cta-button">
+            <span>Contact Us for a Free Demo</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/products/retail_autoparts_desktop_app.js' %}"></script>
+
 {% endblock %}

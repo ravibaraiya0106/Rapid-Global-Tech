@@ -1,5 +1,320 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Python-Based Task Automation</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/python_based_task_automation.css' %}">
+
+<section class="hero">
+    <div class="hero-content" style="padding-top: 80px;">
+        <div class="python-logo">
+            <i class="fab fa-python"></i>
+        </div>
+        <h1>Simplify, Accelerate, and Scale Your Operations with Intelligent Automation</h1>
+        <p>In today's fast-paced business environment, efficiency isn't a luxury — it's a necessity. Time-consuming,
+            repetitive tasks not only drain productivity but also increase the risk of errors, miscommunication, and
+            missed opportunities.</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-lightbulb"></i> We harness the power of Python — one of the world's most versatile
+                programming languages — to automate your tedious processes, ensuring you can focus on what truly
+                matters: growing your business.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>Why Choose Python for Automation?</h2>
+    </div>
+
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--text-light);">Python is trusted by
+        industry leaders like Google, Netflix, Spotify, and NASA — and for good reason:</p>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-check"></i></span> Powerful & Readable</h3>
+            <p>Python combines simplicity with powerful capabilities, making it perfect for automation tasks of any
+                complexity.</p>
+            <ul>
+                <li>Clean, readable syntax</li>
+                <li>Rapid development cycle</li>
+                <li>Easy to maintain and modify</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-box-open"></i></span> Extensive Libraries</h3>
+            <p>Thousands of specialized libraries for every automation need.</p>
+            <ul>
+                <li>Pandas for data processing</li>
+                <li>OpenPyXL for Excel automation</li>
+                <li>Requests for API integration</li>
+                <li>BeautifulSoup for web scraping</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-sync-alt"></i></span> Cross-Platform</h3>
+            <p>Run your automations anywhere your business operates.</p>
+            <ul>
+                <li>Windows desktop applications</li>
+                <li>Linux servers</li>
+                <li>Cloud environments (AWS, Azure, GCP)</li>
+                <li>Containerized with Docker</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Core Capabilities of Our Python-Based Automation Service</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon">1</span> Automate Repetitive Processes</h3>
+            <p>Replace manual, error-prone tasks with reliable Python automation.</p>
+
+            <p><strong>Common Automations:</strong></p>
+            <ul>
+                <li><strong>Cost Merging:</strong> Combine cost data from multiple sources with business-specific logic
+                </li>
+                <li><strong>Price Sheet Generation:</strong> Dynamic creation of customized price sheets</li>
+                <li><strong>Margin Calculation:</strong> Instant calculations across thousands of SKUs</li>
+                <li><strong>Report Formatting:</strong> Transform raw data into polished, ready-to-share reports</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-chart-line"></i> Key Benefits</h4>
+                <ul>
+                    <li>Save hundreds of hours annually</li>
+                    <li>Reduce human errors and inconsistencies</li>
+                    <li>Enable faster decision-making with on-demand reports</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon">2</span> Intelligent Data Processing Bots</h3>
+            <p>Automate the cleaning, processing, and analysis of Excel/CSV files.</p>
+
+            <p><strong>Our Solution:</strong></p>
+            <ul>
+                <li><strong>Data Cleaning:</strong> Remove duplicates, standardize formats, fix anomalies</li>
+                <li><strong>Data Processing:</strong> Split/combine columns, match across sources, normalize units</li>
+                <li><strong>Data Analysis:</strong> Summarize data, identify outliers, create visualizations</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-database"></i> Key Benefits</h4>
+                <ul>
+                    <li>Improved data accuracy</li>
+                    <li>Reduced manual rework</li>
+                    <li>Faster insights and reporting</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon">3</span> Cross-Platform Deployment</h3>
+            <p>Your automation solutions work wherever you need them.</p>
+
+            <p><strong>Deployment Options:</strong></p>
+            <ul>
+                <li><strong>Windows:</strong> Integrates with Office, Outlook, SharePoint</li>
+                <li><strong>Linux:</strong> Ideal for server-based operations</li>
+                <li><strong>Cloud-Hosted:</strong> Accessible anywhere, auto-scalable</li>
+            </ul>
+
+            <div class="benefits">
+                <h4><i class="fas fa-server"></i> Key Benefits</h4>
+                <ul>
+                    <li>No hardware dependencies</li>
+                    <li>Easy scaling with business growth</li>
+                    <li>24/7 automation potential</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>How Our Python-Based Automation Service Works</h2>
+    </div>
+
+    <div class="process-steps">
+        <div class="process-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h3>Process Discovery and Mapping</h3>
+                <p>We deeply understand your current workflows, pain points, and automation opportunities.</p>
+                <ul>
+                    <li>Identify time-draining manual tasks</li>
+                    <li>Prioritize high-impact areas</li>
+                    <li>Define success metrics</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h3>Custom Solution Design</h3>
+                <p>Tailored Python scripts designed for your specific business needs.</p>
+                <ul>
+                    <li>Analyze file structures and business rules</li>
+                    <li>Determine output requirements</li>
+                    <li>Plan integration points</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h3>Development and Testing</h3>
+                <p>We build robust, maintainable automation scripts.</p>
+                <ul>
+                    <li>Clean, documented code</li>
+                    <li>Comprehensive error handling</li>
+                    <li>Rigorous testing across scenarios</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h3>Deployment and Training</h3>
+                <p>Seamless implementation and knowledge transfer.</p>
+                <ul>
+                    <li>On-premise or cloud deployment</li>
+                    <li>Complete operational training</li>
+                    <li>Monitoring setup</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="process-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <h3>Maintenance and Enhancements</h3>
+                <p>Ongoing support for your automation solutions.</p>
+                <ul>
+                    <li>Script updates as needs change</li>
+                    <li>Performance optimization</li>
+                    <li>Scaling for growing data volumes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Real-World Automation Success Stories</h2>
+    </div>
+
+    <div class="case-studies">
+        <div class="case-study">
+            <h3><i class="fas fa-shopping-cart"></i> E-commerce Company</h3>
+            <p><strong>Problem:</strong> Spent 8+ hours weekly compiling vendor cost updates and margin reports
+                manually.</p>
+            <p><strong>Solution:</strong> Python bots now pull cost files, merge them, apply margin formulas, and
+                generate updated price lists daily.</p>
+            <div class="result">
+                <ul>
+                    <li>30+ hours saved monthly</li>
+                    <li>Error-free pricing updates</li>
+                    <li>Reports ready by 9 AM daily without manual intervention</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="case-study">
+            <h3><i class="fas fa-chart-line"></i> Financial Services Firm</h3>
+            <p><strong>Problem:</strong> Excel files from multiple teams were messy, inconsistent, and hard to
+                consolidate.</p>
+            <p><strong>Solution:</strong> Python-based data-cleaning bots that standardize files in minutes,
+                highlighting discrepancies automatically.</p>
+            <div class="result">
+                <ul>
+                    <li>5x faster monthly reporting cycle</li>
+                    <li>100% standardized data</li>
+                    <li>Staff reallocated from manual cleanup to analysis work</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="advantages">
+        <div class="section-title">
+            <h2>Key Advantages of Automating with Python</h2>
+        </div>
+
+        <div class="advantages-grid">
+            <div class="advantage">
+                <i class="fas fa-dollar-sign"></i>
+                <div>
+                    <h4>Incredible ROI</h4>
+                    <p>Most automation scripts pay for themselves within 2-3 months through time savings and error
+                        reduction.</p>
+                </div>
+            </div>
+
+            <div class="advantage">
+                <i class="fas fa-bullseye"></i>
+                <div>
+                    <h4>Accuracy at Scale</h4>
+                    <p>Process thousands of records without a single typo or calculation error.</p>
+                </div>
+            </div>
+
+            <div class="advantage">
+                <i class="fas fa-redo"></i>
+                <div>
+                    <h4>Perfect Consistency</h4>
+                    <p>Same high-quality output every time, regardless of workload or time constraints.</p>
+                </div>
+            </div>
+
+            <div class="advantage">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h4>Employee Empowerment</h4>
+                    <p>Free your team from drudgery to focus on strategy, creativity, and customer service.</p>
+                </div>
+            </div>
+
+            <div class="advantage">
+                <i class="fas fa-trophy"></i>
+                <div>
+                    <h4>Competitive Edge</h4>
+                    <p>Faster processes enable faster decisions and accelerated business growth.</p>
+                </div>
+            </div>
+
+            <div class="advantage">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h4>Future-Proof</h4>
+                    <p>Python's popularity ensures long-term support and continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2 class="clr-white">Ready to Transform Your Business with Automation?</h2>
+        <p class="clr-white">At a time when agility is everything, investing in automation isn't just smart — it's
+            essential.</p>
+        <a href="#" class="cta-button">
+            <span>Get Your Free Consultation</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+
+    <div class="final-note">
+        <p>Python is not just about coding; it's about creating freedom. Freedom from manual work. Freedom to focus on
+            innovation. Freedom to scale without friction.</p>
+        <p style="margin-top: 1rem;">Let's automate your success — one process at a time. <i class="fas fa-rocket"></i>
+        </p>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/python_based_task_automation.js' %}"></script>
+
 {% endblock %}

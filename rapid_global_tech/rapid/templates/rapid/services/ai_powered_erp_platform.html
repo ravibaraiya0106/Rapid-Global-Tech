@@ -1,5 +1,220 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>AI-Powered ERP Platform</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/ai_powered_erp_platform.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="erp-icon">
+            <i class="fas fa-brain"></i>
+        </div>
+        <h1>AI-Powered ERP Platform</h1>
+        <p>Smarter, Faster, and More Predictive Business Management</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-lightbulb"></i> The next generation of enterprise management: modular, intelligent, and
+                fully customizable to your needs.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>Key Features of Our AI-Powered ERP</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-puzzle-piece"></i></span> Modular Architecture</h3>
+            <p>Build exactly what you need with our fully modular ERP system:</p>
+            <ul>
+                <li>Sales and Customer Management</li>
+                <li>Procurement and Supplier Management</li>
+                <li>Inventory and Stock Control</li>
+                <li>Pricing Automation</li>
+                <li>Finance and Accounting</li>
+                <li>Reporting and Analytics</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-robot"></i></span> Embedded AI Logic</h3>
+            <p>AI built at the core - not bolted on as an afterthought:</p>
+            <ul>
+                <li><strong>Dynamic Pricing Engine:</strong> Auto-adjusts based on costs, competition, and demand</li>
+                <li><strong>Smart Stock Movement:</strong> Predicts replenishments and slow movers</li>
+                <li><strong>Customer Behavior Prediction:</strong> Forecasts buying patterns and churn risks</li>
+                <li><strong>Supplier Lead Time Forecasting:</strong> Anticipates delays or early deliveries</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-chart-line"></i></span> Smart Dashboards</h3>
+            <p>Visually rich dashboards with actionable suggestions:</p>
+            <ul>
+                <li>Automated reorder recommendations</li>
+                <li>Margin anomaly alerts</li>
+                <li>Promotional pricing suggestions</li>
+                <li>Personalized customer offers</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-bell"></i></span> Margin Anomaly Detection</h3>
+            <p>Real-time alerts for unusual patterns:</p>
+            <ul>
+                <li>Products selling below expected margins</li>
+                <li>Supplier cost increases</li>
+                <li>Discount impacts on profitability</li>
+                <li>Financial leaks before they become major issues</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Powerful Integrations</h2>
+    </div>
+
+    <div class="integrations">
+        <div class="integration"><i class="fas fa-car"></i> PartFinder</div>
+        <div class="integration"><i class="fas fa-database"></i> TecDoc</div>
+        <div class="integration"><i class="fas fa-users"></i> CRM</div>
+        <div class="integration"><i class="fas fa-calculator"></i> Accounting</div>
+        <div class="integration"><i class="fas fa-warehouse"></i> WMS</div>
+    </div>
+
+    <div class="section-title">
+        <h2>Business Benefits</h2>
+    </div>
+
+    <div class="benefits">
+        <div class="benefit">
+            <h3><i class="fas fa-check-circle"></i> Better Decision-Making</h3>
+            <p>Act with confidence using AI-backed forecasts and insights.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-tachometer-alt"></i> Operational Efficiency</h3>
+            <p>Automate routine tasks like reordering, pricing updates, and reporting.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-smile"></i> Customer Satisfaction</h3>
+            <p>Serve customers faster, smarter, and with personalized offers.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-chart-pie"></i> Increased Margins</h3>
+            <p>Identify and correct profit leaks with real-time anomaly alerts.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-expand"></i> Scalability</h3>
+            <p>Grow seamlessly by adding new modules without disruption.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-cloud"></i> Future-Ready</h3>
+            <p>Cloud-first and mobile-first principles — accessible anywhere.</p>
+        </div>
+    </div>
+
+    <div class="tech-stack">
+        <div class="section-title">
+            <h2>Technology Stack</h2>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item">
+                <i class="fab fa-python"></i>
+                <span>Python (Flask, Django)</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fab fa-react"></i>
+                <span>React.js</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fas fa-database"></i>
+                <span>PostgreSQL</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fas fa-brain"></i>
+                <span>TensorFlow</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fab fa-aws"></i>
+                <span>AWS</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fas fa-lock"></i>
+                <span>OAuth 2.0</span>
+            </div>
+
+            <div class="tech-item">
+                <i class="fas fa-plug"></i>
+                <span>RESTful APIs</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-choose">
+        <div class="section-title">
+            <h2>Why Choose Our AI-Powered ERP?</h2>
+        </div>
+
+        <div class="why-choose-grid">
+            <div class="why-choose-item">
+                <i class="fas fa-industry"></i>
+                <div>
+                    <h4>Deep Industry Understanding</h4>
+                    <p>Tailored for distribution, retail, automotive parts, and manufacturing.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-bolt"></i>
+                <div>
+                    <h4>Speed to Value</h4>
+                    <p>Fast deployments with pre-built modules — go live in weeks, not months.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-sync-alt"></i>
+                <div>
+                    <h4>Continuous Innovation</h4>
+                    <p>Regular AI upgrades so your ERP gets smarter over time.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                    <h4>Customer-Centric</h4>
+                    <p>Every feature solves real-world problems — no fluff.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Let's Build the Future of Your Business, Today</h2>
+        <p>Ready to move beyond traditional ERP systems?</p>
+        <a href="#" class="cta-button">
+            <span>Request a Personalized Demo</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/ai_powered_erp_platform.js' %}"></script>
+
 {% endblock %}

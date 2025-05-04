@@ -1,5 +1,192 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>VAT & Customs Filing Support</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/vat_and_customs_filing_support.css' %}">
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="clr-white ">Simplifying Global Tax Compliance for Your Business</h1>
+            <p class="clr-white">End-to-end support for VAT preparation, customs documentation, and international
+                tax compliance, ensuring your business operates smoothly across borders.</p>
+            <div class="hero-buttons">
+                <button class="primary-button" onclick="scrollToSection('contact')">
+                    Book Free Consultation
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </button>
+                <button class="secondary-button" onclick="scrollToSection('services')">
+                    Explore Our Services
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <span>Scroll to learn more</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 5v14" />
+            <path d="m19 12-7 7-7-7" />
+        </svg>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>What We Offer</h2>
+            <p class="clr-black">Our comprehensive VAT & Customs Filing Support Service removes the complexity from
+                international tax compliance.</p>
+        </div>
+        <div class="services-grid">
+            <!-- Service cards will be populated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section id="why-us" class="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">WHY CHOOSE US</span>
+            <h2>Trusted By Businesses Worldwide</h2>
+            <p>We take the complexity out of international tax compliance so you can focus on growing your business.</p>
+        </div>
+        <div class="benefits-grid">
+            <!-- Benefits will be populated by JavaScript -->
+        </div>
+        <div class="testimonial-box">
+            <div class="testimonial-content">
+                <div class="icon-award">
+                    <i class="fa-solid fa-award fa-3x clr-yellow"></i>
+                </div>
+                <h3 class="clr-white">Who We Help</h3>
+                <p class="clr-white">Our VAT & Customs Filing Support Service is ideal for businesses operating across
+                    borders:</p>
+                <ul class="benefits-list">
+                    <!-- Benefits list will be populated by JavaScript -->
+                </ul>
+            </div>
+            <div class="testimonial-image">
+                <blockquote>
+                    <p class="clr-white">"Their expertise in both UK and EU VAT regulations saved us from potential
+                        compliance issues and penalties. Worth every penny for the peace of mind alone."</p>
+                    <footer>
+                        <strong>Sarah Johnson</strong> - CEO, TechGlobal Solutions
+                    </footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="how-it-works">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">THE PROCESS</span>
+            <h2>How It Works</h2>
+            <p>Our streamlined process makes tax compliance simple and stress-free.</p>
+        </div>
+        <div class="timeline">
+            <!-- Timeline steps will be populated by JavaScript -->
+        </div>
+        <div class="step-details">
+            <!-- Step details will be populated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="subtitle">CONTACT US</span>
+            <h2>Let's Take the Stress Out of International Tax Compliance</h2>
+            <p>Don't let VAT or customs filings hold your business back. With our tailored support service,
+                you can expand confidently into new markets.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3 class="clr-white">Contact Information</h3>
+                <p class="clr-white">Book a free consultation or reach out to our team to learn more about our services.
+                </p>
+                <div class="contact-details">
+                    <!-- Contact details will be populated by JavaScript -->
+                </div>
+                <div class="global-presence">
+                    <h4 class="clr-white">Our Global Presence</h4>
+                    <p class="clr-white">With offices in London, Brussels, and Mumbai, we provide localized support with
+                        global expertise.</p>
+                </div>
+            </div>
+            <div class="contact-form-container">
+                <div class="success-message hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <path d="m9 11 3 3L22 4" />
+                    </svg>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been received. One of our tax specialists will contact you within 24 hours to
+                        schedule your free consultation.</p>
+                </div>
+                <form id="contactForm" class="contact-form">
+                    <h3>Book Your Free Consultation</h3>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" placeholder="Eg. John Smith" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Eg. john@company.com" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label>Countries of Operation (Select all that apply)</label>
+                            <div class="checkbox-grid"></div>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company" placeholder="Eg. Your Company Ltd.">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Eg. +1 (555) 123-4567">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">How can we help you? *</label>
+                        <textarea id="message" name="message" rows="4"
+                            placeholder="Tell us about your business and VAT/customs needs..." required></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        <span class="button-content">
+                            Request Consultation
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m22 2-7 20-4-9-9-4Z" />
+                                <path d="M22 2 11 13" />
+                            </svg>
+                        </span>
+                        <span class="loading-spinner hidden"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{% static 'rapid/js/services/vat_and_customs_filing_support.js' %}"></script>
+
 {% endblock %}

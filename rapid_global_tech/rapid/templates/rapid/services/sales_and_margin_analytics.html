@@ -1,5 +1,208 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Sales & Margin Analytics</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/sales_and_margin_analytics.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="erp-icon">
+            <i class="fas fa-chart-line"></i>
+        </div>
+        <h1>Sales & Margin Analytics</h1>
+        <p>Turn raw sales data into strategic growth opportunities with our powerful analytics service</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-lightbulb"></i> In today's competitive market, simply tracking sales numbers isn't
+                enough. You need deep insights into profitability.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>Powerful Features</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-calculator"></i></span> Gross and Net Margin Calculation</h3>
+            <p>Profitability isn't one-size-fits-all. We break down margins at multiple levels:</p>
+            <ul>
+                <li><strong>By Brand:</strong> Understand which brands contribute most to your bottom line</li>
+                <li><strong>By Part/SKU:</strong> Identify high and low performers in your catalog</li>
+                <li><strong>By Customer Group:</strong> See profitability across different customer types</li>
+                <li>Gross Margin: Revenue minus COGS</li>
+                <li>Net Margin: True profitability after all costs</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-chart-bar"></i></span> Sales Trend Analysis</h3>
+            <p>Beyond static numbers, trends tell the real story:</p>
+            <ul>
+                <li><strong>YoY Growth Analysis:</strong> Compare against last year's performance</li>
+                <li><strong>MoM Growth Analysis:</strong> Spot short-term fluctuations</li>
+                <li>Identify seasonal cycles and growth patterns</li>
+                <li>Build realistic forecasts based on data</li>
+                <li>Spot early indicators of declining sales</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-search"></i></span> Lost Sales Tracking</h3>
+            <p>Every lost sale is a potential long-term customer loss:</p>
+            <ul>
+                <li>Track when and where sales are missed</li>
+                <li>Root cause analysis for lost opportunities</li>
+                <li>Customer feedback collection</li>
+                <li>Competitive price analysis</li>
+                <li>Stock availability audits</li>
+                <li>Sales rep activity tracking</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-percentage"></i></span> Promotion Impact Measurement</h3>
+            <p>Track before vs after effects of promotions:</p>
+            <ul>
+                <li>Did promotions drive real incremental sales?</li>
+                <li>Measure margin effects of promotions</li>
+                <li>Identify best-performing products/bundles</li>
+                <li>Detect cannibalization of regular sales</li>
+                <li>Analyze sales volume, revenue, and margin changes</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-gem"></i></span> High-Margin Product Identification</h3>
+            <p>Find your most profitable products:</p>
+            <ul>
+                <li>Identify "hidden heroes" in your catalog</li>
+                <li>Create upsell and bundle strategies</li>
+                <li>Improve average order value (AOV)</li>
+                <li>Equip sales teams with profitable options</li>
+                <li>Boost overall profitability without volume increases</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-bell"></i></span> Intelligent Alerts</h3>
+            <p>Proactively manage sales health:</p>
+            <ul>
+                <li>Negative margin notifications</li>
+                <li>Missed sales target warnings</li>
+                <li>Low-conversion item identification</li>
+                <li>Real-time corrective action prompts</li>
+                <li>Prevent margin leakage and sales slumps</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Why Sales & Margin Analytics Matters</h2>
+    </div>
+
+    <div class="benefits">
+        <div class="benefit">
+            <h3><i class="fas fa-eye"></i> Clear Visibility</h3>
+            <p>See both sales and profitability drivers in one place.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-tachometer-alt"></i> Proactive Management</h3>
+            <p>Spot winning trends early and course-correct quickly.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-chart-pie"></i> Data-Driven Strategies</h3>
+            <p>Maximize both revenue and profit with informed decisions.</p>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Industry Applications</h2>
+    </div>
+
+    <table class="industry-table">
+        <thead>
+            <tr>
+                <th>Industry</th>
+                <th>Application</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Automotive Parts</td>
+                <td>Track part-level profitability, optimize seasonal promotions</td>
+            </tr>
+            <tr>
+                <td>Retail</td>
+                <td>Identify high-margin items for upselling; manage seasonal stock clearance</td>
+            </tr>
+            <tr>
+                <td>Wholesale Distribution</td>
+                <td>Manage customer group margins and prevent negative-margin bulk sales</td>
+            </tr>
+            <tr>
+                <td>Consumer Electronics</td>
+                <td>Measure promotional effectiveness and minimize lost sales due to stockouts</td>
+            </tr>
+            <tr>
+                <td>Manufacturing</td>
+                <td>Track margins by component and optimize bundle offerings</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="why-choose">
+        <div class="section-title">
+            <h2>Why Choose Our Solution?</h2>
+        </div>
+
+        <div class="why-choose-grid">
+            <div class="why-choose-item">
+                <i class="fas fa-user-tie"></i>
+                <div>
+                    <h4>Expertise</h4>
+                    <p>We specialize in turning raw numbers into strategic actions.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-cogs"></i>
+                <div>
+                    <h4>Customization</h4>
+                    <p>Tailored to your specific brands, parts, and customer groups.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-lightbulb"></i>
+                <div>
+                    <h4>Actionable Insights</h4>
+                    <p>We don't just give reports — we deliver clear recommendations.</p>
+                </div>
+            </div>
+
+            <div class="why-choose-item">
+                <i class="fas fa-robot"></i>
+                <div>
+                    <h4>Automation</h4>
+                    <p>Smart alerts and real-time dashboards keep you informed.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Transform Your Sales Strategy?</h2>
+        <p>Understanding your sales and margins at a detailed level is no longer optional — it's a strategic necessity.
+        </p>
+        <a href="#" class="cta-button">
+            <span>Contact Us Today</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/sales_and_margin_analytics.js' %}"></script>
+
 {% endblock %}

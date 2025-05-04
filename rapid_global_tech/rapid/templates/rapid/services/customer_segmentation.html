@@ -1,5 +1,267 @@
 {% extends 'rapid/main.html' %}
 {% load static %}
 {% block content %}
-    <h1>Customer Segmentation</h1>
+<link rel="stylesheet" href="{% static 'rapid/css/services/customer_segmentation.css' %}">
+
+<section class="hero">
+    <div class="hero-content">
+        <div class="erp-icon">
+            <i class="fas fa-users"></i>
+        </div>
+        <h1>Mastering Customer Segmentation</h1>
+        <p>Unlocking Sales Growth with Precision Targeting</p>
+
+        <div class="highlight-box">
+            <p><i class="fas fa-lightbulb"></i> Personalization and precision are not just trends—they are necessities
+                in today's competitive landscape.</p>
+        </div>
+    </div>
+</section>
+<div class="main-container">
+    <div class="section-title">
+        <h2>What is Customer Segmentation?</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-chart-pie"></i></span> Definition</h3>
+            <p>Customer segmentation is the practice of dividing a customer base into distinct groups that share similar
+                characteristics:</p>
+            <ul>
+                <li>Demographic (age, industry, company size)</li>
+                <li>Geographic (country, region, city)</li>
+                <li>Behavioral (purchase history, engagement)</li>
+                <li>Psychographic (values, interests, lifestyle)</li>
+                <li>Transactional (order value, frequency)</li>
+            </ul>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-bullseye"></i></span> Purpose</h3>
+            <p>Effective segmentation enables businesses to:</p>
+            <ul>
+                <li>Tailor marketing messages for higher relevance</li>
+                <li>Improve customer service experiences</li>
+                <li>Optimize resource allocation</li>
+                <li>Increase conversion rates</li>
+                <li>Address specific needs of each group</li>
+                <li>Boost customer lifetime value</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Strategic Segmentation Models</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-globe"></i></span> By Country</h3>
+            <p>Global businesses can tailor approaches by region:</p>
+            <ul>
+                <li>Localize marketing messages and content</li>
+                <li>Adjust pricing based on economic factors</li>
+                <li>Comply with regional regulations</li>
+                <li>Optimize inventory by regional demand</li>
+            </ul>
+            <div class="example-box">
+                <h5><i class="fas fa-lightbulb"></i> Example</h5>
+                <p>A vehicle parts distributor notices higher sales of winter-grade brake fluids in Scandinavian
+                    countries and launches a localized winter campaign in Norway, Sweden, and Finland.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-car"></i></span> By Vehicle Group</h3>
+            <p>Segment by vehicle type for enhanced relevance:</p>
+            <ul>
+                <li>Recommend compatible parts/upgrades</li>
+                <li>Create targeted content for specific owners</li>
+                <li>Offer tailored warranties and service plans</li>
+                <li>Develop vehicle-specific promotions</li>
+            </ul>
+            <div class="example-box">
+                <h5><i class="fas fa-lightbulb"></i> Example</h5>
+                <p>For commercial fleet owners, promote heavy-duty braking systems rather than standard passenger car
+                    parts.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-shopping-cart"></i></span> By Buying Patterns</h3>
+            <p>Group customers based on purchasing behavior:</p>
+            <ul>
+                <li>Bulk buyers (large scheduled orders)</li>
+                <li>Frequent buyers (small regular orders)</li>
+                <li>Seasonal buyers (active certain months)</li>
+                <li>Infrequent buyers (one-time/irregular)</li>
+            </ul>
+            <div class="example-box">
+                <h5><i class="fas fa-lightbulb"></i> Example</h5>
+                <p>Automate reordering reminders with volume discounts for clients who place large brake pad orders
+                    quarterly.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-money-bill-wave"></i></span> By Margin Level</h3>
+            <p>Prioritize efforts based on profitability:</p>
+            <ul>
+                <li>High-margin: Personalized service, VIP programs</li>
+                <li>Medium-margin: Targeted promotions</li>
+                <li>Low-margin: Self-service, bundled offers</li>
+            </ul>
+            <div class="example-box">
+                <h5><i class="fas fa-lightbulb"></i> Example</h5>
+                <p>High-margin customers receive early access to new products and dedicated support lines.</p>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-chart-line"></i></span> By Sales Potential</h3>
+            <p>Forecast and segment by future value:</p>
+            <ul>
+                <li>Rising stars (small but growing)</li>
+                <li>Steady contributors (consistent revenue)</li>
+                <li>At-risk accounts (declining activity)</li>
+            </ul>
+            <div class="example-box">
+                <h5><i class="fas fa-lightbulb"></i> Example</h5>
+                <p>A mid-sized garage increasing electronic parts purchases is tagged as "rising star" and assigned a
+                    sales rep.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Tagging and Filtering</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-tags"></i></span> From Data to Action</h3>
+            <p>Metadata labels enable easy classification:</p>
+            <ul>
+                <li>Product preferences ("braking components")</li>
+                <li>Volume-based ("bulk buyer")</li>
+                <li>Communication style ("prefers calls")</li>
+                <li>Customer tier ("Gold", "Silver")</li>
+            </ul>
+            <p>These tags support:</p>
+            <ul>
+                <li>Advanced campaign targeting</li>
+                <li>Faster CRM lookups</li>
+                <li>Dynamic list generation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Micro-Targeted Campaigns</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-bullseye"></i></span> Laser-Sharp Messaging</h3>
+            <p>Example campaign for bulk buyers of braking components in Poland:</p>
+            <ul>
+                <li>Localization: Polish messages, regional benefits</li>
+                <li>Personalization: Reference order history</li>
+                <li>Channel selection: Based on past engagement</li>
+                <li>Timing: Align with purchase cycles</li>
+            </ul>
+            <p>Results in higher open rates, conversions, and loyalty.</p>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Dashboard Insights</h2>
+    </div>
+
+    <div class="features-container">
+        <div class="feature-card">
+            <h3><span class="icon"><i class="fas fa-tachometer-alt"></i></span> Visualizing Segments</h3>
+            <p>Key dashboard features:</p>
+            <ul>
+                <li>Customer tiering visualization</li>
+                <li>Geographical heat maps</li>
+                <li>Trend analysis between segments</li>
+                <li>Performance metrics by group</li>
+            </ul>
+            <p>Enables:</p>
+            <ul>
+                <li>Outreach prioritization</li>
+                <li>Resource allocation</li>
+                <li>Underperforming segment identification</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Benefits of Effective Segmentation</h2>
+    </div>
+
+    <div class="benefits">
+        <div class="benefit">
+            <h3><i class="fas fa-user-shield"></i> Higher Retention</h3>
+            <p>Tailored offers strengthen customer loyalty.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-chart-pie"></i> Better ROI</h3>
+            <p>More conversions per marketing dollar spent.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-users"></i> Efficient Sales</h3>
+            <p>Focus on high-potential accounts.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-box-open"></i> Improved Recommendations</h3>
+            <p>Relevant suggestions boost satisfaction.</p>
+        </div>
+
+        <div class="benefit">
+            <h3><i class="fas fa-clock"></i> Faster Decisions</h3>
+            <p>Reduce planning and targeting time.</p>
+        </div>
+    </div>
+
+    <div class="use-cases">
+        <div class="section-title">
+            <h2>Real-World Success Story</h2>
+        </div>
+
+        <div class="use-cases-grid">
+            <div class="use-case">
+                <h4><i class="fas fa-chart-line"></i> The Challenge</h4>
+                <p>A spare parts company sending generic newsletters saw low engagement and stagnant growth.</p>
+            </div>
+
+            <div class="use-case">
+                <h4><i class="fas fa-cogs"></i> The Solution</h4>
+                <p>Implemented segmentation for bulk buyers in Poland, seasonal buyers in Scandinavia, and high-margin
+                    clients in Germany.</p>
+            </div>
+
+            <div class="use-case">
+                <h4><i class="fas fa-medal"></i> The Results</h4>
+                <p>Within 6 months: 22% revenue increase and 15% decrease in customer churn through targeted approaches.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <h2>Ready to Transform Your Customer Strategy?</h2>
+        <p>Implement smart segmentation to unlock growth and efficiency in your business.</p>
+        <a href="#" class="cta-button">
+            <span>Get Started Today</span>
+            <i class="fas fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+<script src="{% static 'rapid/js/services/customer_segmentation.js' %}"></script>
+
 {% endblock %}
