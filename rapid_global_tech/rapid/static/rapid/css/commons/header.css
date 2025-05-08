@@ -19,7 +19,7 @@
 }
 
 .dropdown-mega a {
-  color: #001133;
+  color: #312E81;
   text-decoration: none;
   display: block;
   padding: 10px 15px;
@@ -29,10 +29,10 @@
 
 .dropdown-mega a:hover {
   background-color: #eaf6fd;
-  color: #0077b6;
+  color: #312E81;
 }
 .nav-link.active {
-  border-bottom: 2px solid #6f42c1; /* Adjust to your preferred color */
+  border-bottom: 2px solid #312E81; /* Adjust to your preferred color */
   font-weight: 500;
 }
 
@@ -41,12 +41,12 @@
 }
 
 .btn-contact {
-  background-color: #0092e0;
+  background-color: #312E81;
   color: white;
 }
 
 .btn-contact:hover {
-  background-color: #0077b6;
+  background-color: #312E81;
 }
 
 /* Modify hover effect for nav links */
@@ -56,20 +56,20 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: #0077b6;
+  color: #312E81;
 }
 
 /* Adjust dropdown toggle hover effect */
 .nav-item.dropdown:hover .nav-link {
-  color: #0077b6;
+  color: #312E81;
 }
 .nav-heading{
-  color: #0077b6;
+  color: #312E81;
 }
 
 /* Add bottom border to active link */
 .navbar-nav .nav-link.active {
-  border-bottom: 3px solid #0077b6; /* Adjust color as needed */
+  border-bottom: 3px solid #312E81; /* Adjust color as needed */
 }
 
 /* Ensure dropdown appears on mobile tap */

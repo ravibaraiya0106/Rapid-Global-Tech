@@ -126,7 +126,7 @@ def tecdoc_and_cross_reference_services(request):
     return render(request, 'rapid/services/tecdoc_and_cross_reference_services.html')
 
 def vat_and_customs_filing_support(request):
-    return render(request, 'rapid/services/vat_and_customs_filing_support.html.html')
+    return render(request, 'rapid/services/vat_and_customs_filing_support.html')
 
 def virtual_assistant_services(request):
     return render(request, 'rapid/services/virtual_assistant_services.html')

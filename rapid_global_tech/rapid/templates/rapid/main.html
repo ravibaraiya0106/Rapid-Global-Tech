@@ -9,30 +9,22 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'rapid/img/logo/favicon.png' %}">
     <!-- CSS here -->
     <!-- Common -->
+    <link rel="stylesheet" href="{% static 'rapid/css/commons/footer.css' %}">
+    <link rel="stylesheet" href="{% static 'rapid/css/commons/header.css' %}">
+    <link rel="stylesheet" href="{% static 'rapid/css/commons/main.css' %}">
     <link rel="stylesheet" href="{% static 'rapid/css/commons/animate.css' %}">
     <link rel="stylesheet" href="{% static 'rapid/css/commons/bootstrap.css' %}">
     <link rel="stylesheet" href="{% static 'rapid/css/commons/custom-animation.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/data-analysis.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/financial-a.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/font-awesome-pro.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/footer.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/header.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/magnific-popup.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/main.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/nice-select.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/research.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/sem&ppc.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/seo.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/slick.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/social.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/spacing.css' %}">
     <link rel="stylesheet" href="{% static 'rapid/css/commons/swiper-bundle.css' %}">
+    <link rel="stylesheet" href="{% static 'rapid/css/commons/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'rapid/css/commons/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'rapid/css/commons/font-awesome-pro.css' %}">
+    <link rel="stylesheet" href="{% static 'rapid/css/commons/spacing.css' %}">
+    <link rel="stylesheet" href="{% static 'rapid/css/commons/social.css' %}">
     <link rel="stylesheet" href="{% static 'rapid/css/commons/tech.css' %}">
-    <link rel="stylesheet" href="{% static 'rapid/css/commons/ui-ux.css' %}">
-    
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coreui/icons/css/all.min.css">
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -70,24 +62,19 @@
                             <div class="container">
                                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                                     <div class="col">
-                                        <h6 class="nav-heading">Auto Parts Software Suite</h6>
-                                        <a href="{% url 'retail_autoparts_desktop_app' %}">Retail Autoparts Desktop
-                                            App</a>
-                                        <a href="{% url 'distributor_management_application' %}">Distributor Management
-                                            Application</a>
-                                        <a href="{% url 'web_based_inventory_and_pricing_portal' %}">Web-Based Inventory
-                                            & Pricing Portal</a>
+                                        <h6 class="nav-heading">AUTO PARTS SOFTWARE SUITE</h6>
+                                        <a href="{% url 'retail_autoparts_desktop_app' %}">Retail Autoparts Desktop App</a>
+                                        <a href="{% url 'distributor_management_application' %}">Distributor Management Application</a>
+                                        <a href="{% url 'web_based_inventory_and_pricing_portal' %}">Web-Based Inventory & Pricing Portal</a>
                                         <a href="{% url 'ai_integrated_crm_platform' %}">AI-Integrated CRM Platform</a>
-                                        <a href="{% url 'cloud_erp_for_auto_parts_trading' %}">Cloud ERP for Auto Parts
-                                            Trading</a>
+                                        <a href="{% url 'cloud_erp_for_auto_parts_trading' %}">Cloud ERP for Auto Parts Trading</a>
                                     </div>
                                     <div class="col">
-                                        <h6 class="nav-heading">Industries We Serve</h6>
-                                        <a href="{% url 'auto_parts_aftermarket' %}">Auto Parts Aftermarket</a>
+                                        <h6 class="nav-heading">INDUSTRIES WE SERVE</h6>
+                                        <a href="{% url 'auto_parts_aftermarket' %}">Auto Parts Aftermarket (Specialization)</a>
                                         <a href="{% url 'retail_and_e_commerce' %}">Retail & E-Commerce</a>
                                         <a href="{% url 'export_import_and_logistics' %}">Export-Import & Logistics</a>
-                                        <a href="{% url 'sme_automatio_and_saas_enablement' %}">SME Automation & SaaS
-                                            Enablement</a>
+                                        <a href="{% url 'sme_automatio_and_saas_enablement' %}">SME Automation & SaaS Enablement</a>
                                         <a href="{% url 'data_driven_enterprises' %}">Data-Driven Enterprises</a>
                                     </div>
                                 </div>
@@ -105,59 +92,52 @@
                             <div class="container">
                                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
                                     <div class="col">
-                                        <h6 class="nav-heading">Offshore & Staffing Solutions</h6>
+                                        <h6 class="nav-heading">OFFSHORE & STAFFING SOLUTIONS</h6>
                                         <a href="{% url 'offshore_office_setup' %}">Offshore Office Setup</a>
                                         <a href="{% url 'dedicated_full_time_employees' %}">Dedicated Full-Time
                                             Employees</a>
-                                        <a href="{% url 'shared_employees' %}">Shared Employees</a>
+                                        <a href="{% url 'shared_employees' %}">Shared Employees (Task-Based)</a>
                                         <a href="{% url 'freelance_project_support' %}">Freelance Project Support</a>
                                         <a href="{% url 'virtual_assistant_services' %}">Virtual Assistant Services</a>
                                     </div>
                                     <div class="col">
-                                        <h6 class="nav-heading">Auto Parts Operations Support</h6>
-                                        <a href="{% url 'logistic_coordination_and_tracking' %}">Logistic
-                                            Coordination</a>
-                                        <a href="{% url 'invoicing_and_export_documentation' %}">Invoicing & Export
-                                            Documentation</a>
-                                        <a href="{% url 'procurement_admin_and_po_management' %}">Procurement Admin & PO
-                                            Management</a>
-                                        <a href="{% url 'supplier_negotiation_and_sourcing' %}">Supplier Negotiation</a>
-                                        <a href="{% url 'tecdoc_and_cross_reference_services' %}">TecDoc &
-                                            Cross-Reference</a>
+                                        <h6 class="nav-heading">AUTO PARTS OPERATIONS SUPPORT</h6>
+                                        <a href="{% url 'logistic_coordination_and_tracking' %}">Logistic Coordination & Tracking</a>
+                                        <a href="{% url 'invoicing_and_export_documentation' %}">Invoicing & Export Documentation</a>
+                                        <a href="{% url 'procurement_admin_and_po_management' %}">Procurement Admin & PO Management</a>
+                                        <a href="{% url 'supplier_negotiation_and_sourcing' %}">Supplier Negotiation & Sourcing</a>
+                                        <a href="{% url 'tecdoc_and_cross_reference_services' %}">TecDoc & Cross-Reference Services</a>
                                     </div>
                                     <div class="col">
-                                        <h6 class="nav-heading">Data & Business Intelligence</h6>
-                                        <a href="{% url 'pricing_strategy_and_market_research' %}">Pricing Strategy</a>
-                                        <a href="{% url 'best_price_engine_setup' %}">Best Price Engine</a>
-                                        <a href="{% url 'inventory_analysis_and_optimization' %}">Inventory
-                                            Optimization</a>
-                                        <a href="{% url 'monthly_reporting_dashboards' %}">Monthly Dashboards</a>
+                                        <h6 class="nav-heading">DATA & BUSINESS INTELLIGENCE</h6>
+                                        <a href="{% url 'pricing_strategy_and_market_research' %}">Pricing Strategy & Market Research</a>
+                                        <a href="{% url 'best_price_engine_setup' %}">Best Price Engine Setup</a>
+                                        <a href="{% url 'inventory_analysis_and_optimization' %}">Inventory Analysis & Optimization</a>
+                                        <a href="{% url 'monthly_reporting_dashboards' %}">Monthly Reporting Dashboards</a>
                                         <a href="{% url 'sales_and_margin_analytics' %}">Sales & Margin Analytics</a>
                                     </div>
                                     <div class="col">
-                                        <h6 class="nav-heading">Accounting & Compliance</h6>
-                                        <a href="{% url 'bookkeeping_and_financial_analysis' %}">Bookkeeping &
-                                            Analysis</a>
-                                        <a href="{% url 'vat_and_customs_filing_support' %}">VAT & Customs Filing</a>
-                                        <a href="{% url 'supplier_payment_management' %}">Supplier Payment
-                                            Management</a>
+                                        <h6 class="nav-heading">ACCOUNTING & COMPLIANCE</h6>
+                                        <a href="{% url 'bookkeeping_and_financial_analysis' %}">Bookkeeping & Financial Analysis</a>
+                                        <a href="{% url 'vat_and_customs_filing_support' %}">VAT & Customs Filing Support</a>
+                                        <a href="{% url 'supplier_payment_management' %}">Supplier Payment Management</a>
                                         <a href="{% url 'profitability_analysis' %}">Profitability Analysis</a>
                                     </div>
                                     <div class="col">
-                                        <h6 class="nav-heading">AI & Automation</h6>
-                                        <a href="{% url 'python_based_task_automation' %}">Python Task Automation</a>
+                                        <h6 class="nav-heading">AI & AUTOMATION</h6>
+                                        <a href="{% url 'python_based_task_automation' %}">Python-Based Task Automation</a>
                                         <a href="{% url 'excel_to_web_conversions' %}">Excel To Web Conversions</a>
-                                        <a href="{% url 'flask_django_custom_web_apps' %}">Custom Flask/Django Apps</a>
+                                        <a href="{% url 'flask_django_custom_web_apps' %}">Flask/Django Custom Web Apps</a>
                                         <a href="{% url 'process_automation_bots' %}">Process Automation Bots</a>
                                         <a href="{% url 'ai_forecasting_tools' %}">AI Forecasting Tools</a>
                                         <a href="{% url 'ai_powered_erp_platform' %}">AI-Powered ERP Platform</a>
                                     </div>
                                     <div class="col">
-                                        <h6 class="nav-heading">Marketing & CRM</h6>
-                                        <a href="{% url 'campaign_planning_and_execution' %}">Campaign Planning</a>
+                                        <h6 class="nav-heading">MARKETING & CRM</h6>
+                                        <a href="{% url 'campaign_planning_and_execution' %}">Campaign Planning & Execution</a>
                                         <a href="{% url 'customer_segmentation' %}">Customer Segmentation</a>
-                                        <a href="{% url 'ai_enabled_crm_automation' %}">CRM Automation</a>
-                                        <a href="{% url 'market_entry_support' %}">Market Entry Support</a>
+                                        <a href="{% url 'ai_enabled_crm_automation' %}">AI-Enabled CRM Automation</a>
+                                        <a href="{% url 'market_entry_support' %}">Market Entry Support (UK, EU, US)</a>
                                     </div>
                                 </div>
                             </div>
@@ -293,24 +273,23 @@
 
     <!-- JS here -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="{% static 'rapid/js/commons/ajax-form.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/bootstrap-bundle.js' %}"></script>
+    <script src="{% static 'js/commons/main.js' %}"></script>
+    <script src="{% static 'js/commons/jquery.js' %}"></script>
+    <script src="{% static 'rapid/js/commons/gsap.js' %}"></script>
     <script src="{% static 'rapid/js/commons/gsap-scroll-smoother.js' %}"></script>
     <script src="{% static 'rapid/js/commons/gsap-scroll-to-plugin.js' %}"></script>
     <script src="{% static 'rapid/js/commons/gsap-scroll-trigger.js' %}"></script>
     <script src="{% static 'rapid/js/commons/gsap-split-text.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/gsap.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/imagesloaded-pkgd.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/isotope-pkgd.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/magnific-popup.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/main.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/nice-select.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/research.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/seo-main.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/silder-active.js' %}"></script>
+    <script src="{% static 'rapid/js/commons/wow.js' %}"></script>
     <script src="{% static 'rapid/js/commons/slick.js' %}"></script>
     <script src="{% static 'rapid/js/commons/swiper-bundle.js' %}"></script>
-    <script src="{% static 'rapid/js/commons/wow.js' %}"></script>
+    <script src="{% static 'js/commons/magnific-popup.js' %}"></script>
+    <script src="{% static 'rapid/js/commons/imagesloaded-pkgd.js' %}"></script>
+    <script src="{% static 'rapid/js/commons/nice-select.js' %}"></script>
+    <script src="{% static 'rapid/js/commons/isotope-pkgd.js' %}"></script>
+    <script src="{% static 'rapid/js/commons/ajax-form.js' %}"></script>
+    <script src="{% static 'rapid/js/commons/bootstrap-bundle.js' %}"></script>
+    <script src="{% static 'rapid/js/commons/silder-active.js' %}"></script>
 </body>
 
 </html>
